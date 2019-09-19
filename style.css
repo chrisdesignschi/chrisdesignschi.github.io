@@ -1,6 +1,6 @@
 .w3-bar {
 	width:100%;
-	
+
 	text-align:center;
 }
 
@@ -10,6 +10,8 @@
 	padding:20px;
 	font-family: Graphik;
 	font-weight:lighter;
+	width:auto;
+	display: inline-block;
 	font-size:20px;
 	border:none;
 	color:#444;
@@ -120,7 +122,7 @@ p {
 #splashcont {
 	width:100%;
 	background-color:#F26B6B;
-	background:url(links/desktop.webp);
+	background:url(links/desktop.jpg);
 	background-size:cover;
 	background-position:center;
 	height:100vh;
