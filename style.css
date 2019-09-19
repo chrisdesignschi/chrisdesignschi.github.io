@@ -385,7 +385,7 @@ p {
 	padding:20px;
 	display:grid;
 	grid-template-columns:auto 1fr;
-	margin: 0 0 6vh 0;
+	margin: 0px;
 	transition: all 0.2s;
 	-webkit-transition: all 0.2s;
 }
