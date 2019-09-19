@@ -262,8 +262,9 @@ p {
 
 #maincont-feat1 {
 	background-color:green;
-	background-image:url(links/fea1.png);
+	background-image:url(https://i.imgur.com/cDAoS0L.gif);
 	display:block;
+	background-position:center;
 }
 
 #maincont-feat2 {
@@ -301,12 +302,50 @@ p {
 	grid-template-rows: 1.8fr 1fr;
 }
 
-#maincont-antho:hover .maincont-hover-desc, #maincont-feat1:hover .maincont-hover-desc, #maincont-feat2:hover .maincont-hover-desc {
+/*#maincont-antho:hover .maincont-hover-desc, #maincont-feat1:hover .maincont-hover-desc, #maincont-feat2:hover .maincont-hover-desc {
 	opacity:1;
 	transition:all, 0.15s;
 	display:flex;
 	align-items:middle;
 	-webkit-transition:all, 0.15s;
+}*/
+
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .maincont-title-small {
