@@ -1,3 +1,67 @@
+.w3-bar {
+	width:100%;
+	text-align:center;
+}
+
+.w3-bar-item {
+	cursor: pointer;
+	outline:0;
+	padding:20px;
+	font-family: Graphik;
+	font-weight:lighter;
+	font-size:20px;
+	border:none;
+	color:#444;
+	margin: 20px 15px 0 15px;
+	border-bottom:3px solid #eee;
+	transition:all, 0.2s;
+	-webkit-transition:all, 0.2s;
+}
+
+.w3-bar-item:hover {
+	border-bottom:3px solid #f1a7c0;
+	transition:all, 0.2s;
+	-webkit-transition:all, 0.2s;
+}
+
+.w3-red {
+	font-weight:bolder;
+	border-bottom:3px solid #d91c5c;
+}
+
+.w3-red:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(217, 28, 92, 0);
+	border-top-color: #d91c5c;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.navh {
+	text-align:center;
+	width:58%;
+	display:block;
+	font-size:20px;
+	margin:50px auto 20px auto;
+	font-weight:bold;
+}
+
+.navp {
+	text-align:center;
+	width:58%;
+	display:block;
+	font-size:16px;
+	margin:20px auto 20px auto;
+	line-height:25px;
+}
+
 @font-face {
   font-family: Graphik;
   src: url(links/Graphik/Graphik-Bold.otf);
@@ -51,16 +115,6 @@ p {
 }
 
 /** splash **/
-
-.sticky {
-  position: fixed;
-  top: 0px;
-  width: 100%
-}
-
-.sticky+#maincont {
-  margin-top:18vh;
-}
 
 #splashcont {
 	width:100%;
@@ -164,7 +218,7 @@ p {
 
 #main {
 	margin: 0 auto 0 auto;
-	padding:0vh 0 100px 0;
+	padding:0vh 0 10px 0;
 	background-color:#fff;
 }
 
@@ -173,58 +227,6 @@ p {
 	height:20px;
 	display:block;
 	position:relative;
-}
-
-#nav {
-	width:100%;
-	background-color:#fff;
-	z-index:10;
-}
-
-#navcont {
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	margin-left:auto;
-	margin-right:auto;
-	width:80%;
-}
-
-#navlist li, #navlogo {
-	height:100%;
-	list-style:none;
-	color:#ccc;
-	display:inline-block;
-}
-
-#navlist li {
-	color:#08B89D;
-	margin-bottom:15px;
-	font-weight: lighter;
-}
-
-#navlist li:hover {
-	color:#F15854;
-}
-
-#navlogo {
-	background-image:url("links/logo.png");
-	background-size: auto 100%;
-	background-repeat: no-repeat;
-	width:100%;
-	height:100%;
-	z-index:10;
-	display:flex;
-	align-items:center;
-	justify-content: flex-start;
-}
-
-#navlist {
-	height:10vh;
-	margin:0px;
-	display:flex;
-	align-items:flex-end;
-	justify-content: flex-end;
-	text-align:right;
 }
 
 /** maincont stuff **/
@@ -523,12 +525,12 @@ p {
 }
 
 .whatever {
-	letter-spacing: 2px;
-	text-transform: uppercase;
+	text-align:center;
 	color:#000;
-	margin-bottom:30px;
+	margin-bottom:40px;
 	font-weight:bolder;
 	display: block;
+	font-size:20px;
 }
 
 .showthis {

@@ -29,34 +29,48 @@
 		<div id="splashright">
 		</div>
 
-	</div>
-
 <!-- SPLASH CONTENT ENDS -->
+<!-- nav tabs begin here -->
+
+  <div class="w3-bar" id="main">
+    <button class="w3-bar-item tablink w3-red" onclick="openNav(event,'Work')">Work</button>
+    <button class="w3-bar-item tablink" onclick="openNav(event,'About')">About</button>
+    <button class="w3-bar-item tablink" onclick="openNav(event,'Sticks')">Chicago Stick Figures</button>
+    <button class="w3-bar-item tablink" onclick="openNav(event,'Resume')">Resume</button>
+  </div>
+
+<div class="navtab" id="About" style="display:none">
+	test
+</div>
+
+<div class="navtab" id="Sticks" style="display:none">
+	<p class="navh">
+		Documenting the City I Love with Lopsided Smiley Faces
+	</p>
+	<p class="navp">
+		I've documented my time in Chicago with a long series of stick doodles; as life changes, the happy (and sometimes, sad) stick figures stay the same! I've drawn lopsided smileys in all sorts of places; the bowels of Lower Wacker; the rooftop of the Obama Foundation; countless bars. If you'll have me on your team, I guarantee the stick figures will join you too.
+	</p>
+
+	<img width="58%" height="auto" src="links/doodles.png" style="display:block; margin:0 auto 100px auto">
+</div>
+
+<div class="navtab" id="Resume" style="display:none">
+	about
+</div>
 
 
-	<div id="main">
+ <div class="navtab" id="Work">
 
-		<div id="nav">
-		<div id="navcont">
-			<a href="#splashcont" id="navlogo">
-			</a>
+ 	<p class="navh">
+		My Creative Design Work
+	</p>
+	<p class="navp">
+		This is a collection of my primarily digital design projects! It includes my work on brand launches, large-scale volunteer projects, and self motivated interactive/motion work. If you are looking for something more specific, feel free to email me at <span style="color:#d91c5c">chris.zixun.zhu@gmail.com</span>!
+	</p>
 
-			<ul id="navlist">
-				<a href="#footer" class="showthis"><li style="margin-right:30px;">About</li></a>
-				<a href="#main" class="showthis"><li style="margin-right:30px;">Work</li></a>
-				<a href="links/ChrisZhuResume.pdf" class="showthis" target="_blank"><li>Resume</li></a>
-			</ul>
-		</div>
-	</div>
 			<div id="maincont">
-
-
-
 <!-- ANTHOLOGY PROJECT BEGINS -->
 
-
-
-			<span class="whatever">My <span class="ha">creative</span> work</span><span></span>
 			<a id="maincont-antho" class="hvr-rotate" onclick="appear()" href="#pf-cont-anchor">
 
 				<div class="maincont-title">
@@ -387,8 +401,8 @@
 
 <div id="newcolor1">
 
-		<div id="secondarycont" style="margin-top:60px !important">
-<span class="whatever">Some more projects</span>
+		<div id="secondarycont" style="margin-top:-35px !important">
+<span class="whatever">More projects</span>
 			<div class="secpf hvr-sweep-to-right" style="z-index:4">
 				<a href="#goup1" onclick="sec1()"><div class="secpf-img" id="s1"></div></a>
 
@@ -668,18 +682,8 @@
 
 	</div>
 
-<!-- FOOTER -->
-
-<!-- <div id="footer">
-
-	<div class="footerimg">
-
-	</div>
-
-	<div class="footerright">
-	</div>
-
-</div> -->
+</p>
+</div>
 
 </body>
 
