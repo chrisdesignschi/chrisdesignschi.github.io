@@ -4,6 +4,10 @@
 	text-align:center;
 }
 
+* {
+	outline: 0;
+}
+
 .w3-bar-item {
 	cursor: pointer;
 	outline:0;
