@@ -55,14 +55,21 @@
 	text-align:center;
 	width:58%;
 	display:block;
+	line-height: 30px;
 	font-size:20px;
 	margin:50px auto 20px auto;
 	font-weight:bold;
 }
 
+.nava {
+	color:#d91c5c;
+	font-weight:bold;
+	text-decoration: none !important;
+}
+
 .navp {
-	text-align:center;
-	width:58%;
+	text-align:left;
+	width:55%;
 	display:block;
 	font-size:16px;
 	margin:20px auto 20px auto;
