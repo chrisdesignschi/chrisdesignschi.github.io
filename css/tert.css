@@ -1,0 +1,41 @@
+@font-face {
+	font-family: DINNextLTPro-Regular;
+	src: url(../links/fonts/DIN/DINNextLTPro-Regular.otf);
+	font-weight:normal;
+}
+
+@font-face {
+	font-family: DINNextLTPro-Medium;
+	src: url(../links/fonts/DIN/DINNextLTPro-Medium.otf);
+	font-weight:bold;
+}
+
+@font-face {
+	font-family: DINNextLTPro-Heavy;
+	src: url(../links/fonts/DIN/DINNextLTPro-Heavy.otf);
+	font-weight:bolder;
+}
+
+#Resume {
+	background-color:var(--material-color);
+	width:50vw;
+	height:auto;
+}
+
+.resumebot {
+	width:50vw;
+	padding-top:50px;
+	height:70vw;
+	background-image: var(--resume);
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	display:block;
+	margin-top:-30px;
+}
+
+#About {
+	background-color:var(--material-color);
+	width:50vw;
+	padding:30px;
+}

@@ -1,784 +1,245 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<div class="theme-switch-wrapper">
+		<label class="theme-switch hvr-grow" for="checkbox">
+		<input type="checkbox" id="checkbox" />
+		<div class="slider round tooltiphost">
+			
+			<span id="tooltiptext">
+			</span>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="pfstyle.css">
-	<title>Chris Zhu: Digital Designer</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<!-- 	<link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css"> -->
+		</div>
+		</label>
+	</div>
+
+	<a href="#top" class="upbutton hvr-grow">
+		<i class="fas fa-chevron-up"></i>
+	</a>
+
+	<button class="copylink hvr-grow tooltiphost" onclick="copyFunction()">
+		<i class="far fa-copy"></i>
+
+		<span id="tooltiptext2">
+		Copy website link
+
+		<input type="text" value="google.com" id="copyInput" style="position:absolute; opacity: 0; top:-1000px;">
+		</span>
+	</button>
+
+<!-- Hey there! This website was designed and coded by Chris Zhu, a Chicago digital designer and art director. -->
+
+<head>
+	
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chris Z Portfolio</title>
+	<meta name="description" content="The creative work portfolio of Chris Zhu, a Chicago art director + digital designer." />
+	<meta name="keywords" content="art director, digital designer, interaction, marketing, advertising, designer, director, visual designer, chicago" />
+	<meta name="author" content="Chris Zhu" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/tert.css"
+	>
+	<script src="https://kit.fontawesome.com/3a2b9eae0b.js" crossorigin="anonymous"></script>
+	<script src="java.js"></script>
+
+
 </head>
 
 <body>
+<span id="top"></span>
+
+<div class="nav">
+
+<a href="#" class="nav1">!Chris Zhu<span class="sub"> / Art Director & Digital Designer</span></a>
+<span class="nav2">
+	<div class="container" id="activator" onclick="menuOpen(this)">
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+	</div>
+</span>
+
+</div>
 
 
-<!-- SPLASH CONTENT BEGINS -->
+<div href="" id="box">
 
+<div class="topborder"></div>
+<ul class="navlist">
+	<li class="navitems" onclick="openTab('Work');menuOpen(this)">Work</li>
+	<li class="navitems" onclick="openTab('About');menuOpen(this)">About</li>
+	<li class="navitems" onclick="openTab('Resume');menuOpen(this)">Resume</li>		
+	</div>
 
-	<div id="splashcont">
+	</li>
+</ul>
 	
-		<div id="splashleft">
-			<img src="links/splashhero.gif" id="hero" width="70% height="auto>
-			<p id="splashsub"><b>I'm Chris.</b><br>I'm a creative designer for <span class="ha">digital and interactive</span> ventures.<br>I work in small but diverse teams to make great ideas happen.</p>
-
-			<a href="#main"><button id="clickthis">See my work</button></a>
-
-			<a href="links/ChrisZhuResume.pdf" target="_blank"><button id="couldclick">Resume</button></a>
-		</div>
-		</div>
-
-		<div id="splashright">
-		</div>
-
-<!-- SPLASH CONTENT ENDS -->
-<!-- nav tabs begin here -->
-
-  <div class="w3-bar" id="main">
-    <div class="w3-bar-item tablink w3-red" onclick="openNav(event,'Work')">Work</div>
-    <div class="w3-bar-item tablink" onclick="openNav(event,'About')">About</div>
-    <div class="w3-bar-item tablink" onclick="openNav(event,'Sticks')">Chicago Stick Figures</div>
-    <div class="w3-bar-item tablink" onclick="openNav(event,'Resume')">Resume
-  </div>
-</div>
-
-<div class="navtab" id="About" style="display:none">
-	<p class="navh">
-		I'm Chris. I love design, because I love people. <br>Talking, working, and designing with them.
-	</p>
-
-	<img width="25%" height="auto" src="links/pic.jpg" style="display:block; margin:0 auto 30px auto">
-
-	<p class="navp">
-		From working for <a class="nava" href="https://obama.org">President Obama</a>, to owning a project on a <a class="nava" href="https://razorfish.health">multi-million dollar brand launch</a>, I've been fortunate enough to not only design for great projects, but to also lead and present. On campus, in addition to my regular classwork, I also host a weekly 2-hour lecture/workshop for my department. Lastly, I've built my portfolio on a foundation of volunteer leadership work for health causes like fighting the Opioid Crisis or raising awareness for Multiple Sclerosis. I care!
-	</p>
-
-		<p class="navp" style="margin-bottom:100px">
-		If you're looking for someone that you can rely on to show up with a smile and put in the hours to make something great, I'm your guy. If you like painting model kits or <a class="nava" onclick="openNav(event,'Sticks')">drawing stick figures</a>, I'm also your guy.
-	</p>
-</div>
-
-<div class="navtab" id="Sticks" style="display:none">
-	<p class="navh">
-		Documenting the City I Love with Lopsided Smiley Faces
-	</p>
-	<p class="navp">
-		I've documented my time in Chicago with a long series of stick doodles; as life changes, the happy (and sometimes, sad) stick figures stay the same! I've drawn lopsided smileys in all sorts of places; the bowels of Lower Wacker; the rooftop of the Obama Foundation; by the lake and at the bar. If you'll have me on your team, I guarantee the stick figures will join you too.
-	</p>
-
-	<img width="58%" height="auto" src="links/doodles.png" style="display:block; margin:0 auto 100px auto">
-</div>
-
-<div class="navtab" id="Resume" style="display:none">
-
-	<p class="navp">
-		<a target="_blank" href="links/ChrisZhuResume.pdf" style="color:#d91c5c; text-transform: underline;">Click here to download a PDF</a>
-	</p>
-
-	<img width="53%" height="auto" src="links/Resume.jpg" style="display:block; margin:0px auto 100px auto; border:1px solid #eee;">
 </div>
 
 
- <div class="navtab" id="Work">
 
- 	<p class="navh">
-		My Creative Design Work
-	</p>
-	<p class="navp">
-		This is a collection of my primarily digital design projects! It includes my work on brand launches, large-scale volunteer projects, and self motivated interactive/motion work. Feel free to reach out with inquiries at <span style="color:#d91c5c">chris.zixun.zhu@gmail.com</span>!
-	</p>
-
-			<div id="maincont">
-<!-- ANTHOLOGY PROJECT BEGINS -->
-
-			<a id="maincont-antho" class="hvr-rotate" onclick="appear()" href="#pf-cont-anchor">
-
-				<div class="maincont-title">
-					<span class="maincont-title-small">
-						Featured project
-					</span>
-
-					<span class="maincont-title-big">
-						Going Beneath the Surface <br>of Multiple Sclerosis
-					</span>
-				</div>
-
-				<div class="maincont-hover-desc">
-					A creative ad campaign for the Multiple Sclerosis Association of America, rallying a younger audience to recognize MS—an invisible disease. In competition with 80+ Publicis interns, my work won the pitch.
-				</div>
-
-			</a>
-
-
-
-<!-- ANTHOLOGY PROJECT ENDS -->
-<!-- SECOND FEATURE PROJECT BEGINS -->
-
-
-			<div id="maincont-featcontainer">
-
-			<a id="maincont-feat1" class="hvr-rotate" onclick="appear2()" href="#pf-cont-anchor">
-
-				<div class="maincont-title">
-					<span class="maincont-title-small">
-						Featured project
-					</span>
-
-					<span class="maincont-title-big">
-						Superdry: A retail site that breathes
-					</span>
-				</div>
-
-				<div class="maincont-hover-desc">
-					Daily engagement powers brands far more than expensive, seasonal campaigns. Knowing that, I designed and coded a retail site for Superdry.
-				</div>
-
-			</a>
-
-
-<!-- SECOND FEATURE PROJECT ENDS -->
-<!-- THIRD FEATURE PROJECT BEGINS -->
-
-
-
-			<a id="maincont-feat2" onclick="appear3()" href="#pf-cont-anchor" class="hvr-rotate">
-
-				<div class="maincont-title">
-					<span class="maincont-title-small">
-						Anthology Project
-					</span>
-
-					<span class="maincont-title-big">
-						Public Health: Knowing the<br>Opioid Crisis
-					</span>
-				</div>
-
-				<div class="maincont-hover-desc">
-					I've lead a volunter group in partnership with the Chicago Department of Public Health for 2 years. Here's my solo work including data visualization, motion graphics, and print work.
-				</div>
-
-			</a>
-
-			</div>
-
-		</div>
-
-
-
-
-<!-- THIRD FEATURE PROJECT ENDS -->
-
-
-
-		<span id="main-anchor"></span>
-		<span id="pf-cont-anchor"></span>
-
-
-<!-- ANTHOLOGY REVEAL BEGINS -->
-
-
-		<div id="pf-cont">
-
-			<!-- here we go -->
-			<div class="pf-header">
-				<div class="pf-header-square">
-					<p class="pf-square-cont">Beneath the Surface for Multiple Sclerosis</p>
-				</div>
-
-				<div class="pf-header-banner" id="tc1">
-
-					<div class="pf-butt-container">
-						<button class="pf-button" onclick="disappear()">Return</button>
-					</div>
-
-					<div class="pf-title-container">
-						<p class="pf-header-sub"><b>2019</b> / Advertising Campaign / Nonprofit
-						</p>
-					</div>
-			</div>
-		</div>
-
-				<div class="pf-main">
-
-			<span class="pfb">MS is an invisible disease. <br>The symptoms are debilitating, but hard to describe or see.</span>
-
-			<p>
-			During my internship at Razorfish Health, the Multiple Sclerosis Association of America (MSAA) asked us to create a year-long creative ad campaign to raise awareness + funds for their Swim for MS program. Against 80+ other Publicis Groupe interns, my pitch won!
-			</p><hr>
-
-			<img width="100%" height="auto" src="links/msaahero.gif">
-
-			<p><br>
-			<b>Beneath the Surface</b> is about showing the unseen truths of Multiple Sclerosis.
-			</p>
-
-			<p>
-			My goal was to prime online users to associate swimming with MS, using iconic swimming gear to represent common symptoms of the disease. These animated illustrations also allowed me to excite a younger audience and show the truth of MS better than any combination of stock photos and text.
-			</p>
-
-			<img width="100%" height="auto" src="links/msaastats.jpg">
-			<p class="pfq" style="margin-bottom:7px;">"I am not great like everyone thinks I am. But do you know what is great?<br>Finding someone who knows that you aren't."</p>
-			<p style="margin:auto; text-align:center; margin-bottom:25px;">Reddit user Sonoallie, diagnosed with relapsing-remitting MS</p>
-			<p>
-			My ethnographic research of both MS patients and Gen Z found that they shared one common trait: frustration over not being understood when it came to unseen feelings. I created a collection of case studies from Reddit and Facebook online communities, as well as Google Search trends data.
-			</p>
-
-			<img width="30%" height="auto" src="links/msaainsta1.gif"style="margin-right:5px;">
-			<img width="30%" height="auto" src="links/msaainsta2.gif"style="margin-right:5px;">
-			<img width="30%" height="auto" src="links/msaainsta3.gif">
-			<p>
-			Instagram sponsored story advertisements, with the goal of educating and empathizing.
-			</p>
-
-			<img width="100%" height="auto" src="links/msaaflow.jpg">
-			<p style="margin-bottom:15px !important">
-			Swim for MS is a DIY fundraiser. That can be daunting. In collaboration with our linguistics intern, I created a flowchart that would make it easier for individuals to set up events with the tools they already had.
-			</p>
-			<img width="100%" height="auto" src="links/msaacandy.png">
-			<p>
-			Some bonus collateral I created for the client, in a merchandise proposal.
-			</p>
-
-			<hr>
-
-			<button class="pf-button2" onclick="disappear()">RETURN</button>
-		</div>
-
-	</div>
-
-
-<!-- SECONDARY FEATURE BEGINS -->
-
-		<div id="pf-cont-2">
-			<!-- here we go -->
-			<div class="pf-header">
-				<div class="pf-header-square">
-					<p class="pf-square-cont">Superdry's Breathing Retail Website</p>
-				</div>
-
-				<div class="pf-header-banner" id="tc2">
-
-					<div class="pf-butt-container">
-						<button class="pf-button" onclick="disappear2()">Return</button>
-					</div>
-
-					<div class="pf-title-container">
-						<p class="pf-header-sub"><b>2018</b> / Coding, Interaction / Retail Fashion
-						</p>
-					</div>
-			</div>
-		</div>
-
-				
-				<div class="pf-main">
-
-			<span class="pfb">I love the Superdry fashion brand. <br>I wanted to redesign and code their retail site.</span>
-
-			<p>
-			My research showed Superdry's competitors succeeded by frequently engaging customers at a low-level online versus massive seasonal campaigns.
-			I surmised that online, Superdry might improve sales the same way—thus, I built a site that focused on weekly engagement.
-			</p><hr>
-
-			<a class="pfi" href="https://manwithoutfair.github.io/Superdry-Online/" target="_blank">Click here to see the fully-coded site on my Github!</a>
-
-			<img width="45%" style="display:block; margin:50px auto 0px auto;" height="auto" src="links/superprocess.png">
-			<img width="60%" style="display:block; margin:25px auto 0px auto;" height="auto" src="links/superprocess2.png">
-			<img width="90%" style="display:block; margin:10px auto 20px auto;" height="auto" src="links/supercomb.png">
-			<p>
-			I knew that both the store locator and the cart would be the most important interactions on the site. Thus, I took cues from Superdry competitor sites to create UI blocks with a natural hierarchy encouraging users to proceed with purchases.
-			</p>
-
-			<img width="80%" height="auto" src="links/supermain.png" style="margin-right:6px">
-			<img width="17%" height="auto" src="links/supermob.png">
-
-			<p>
-			The new hero section, on both desktop and mobile, has 5 key elements: a headline, subhead, hero graphic, social link, and call to action.
-			</p>
-
-
-			<img width="90%" style="display:block; margin:80px auto 10px auto;" height="auto" src="links/supercollab.png">
-			<img width="80%" style="display:block; margin:20px auto 15px auto;" height="auto" src="links/superalign.png">
-			<p>
-			My research showed that competitor streetwear brands like Supreme spiked in popularity during collaborations—for example, Google Trends showed mutual growth each time Nike and Supreme released a collab. Thus, I planned for my new site to take as much advantage of Superdry's collaborative works.
-			</p>
-
-
-			<img width="90%" style="display:block; margin:80px auto 15px auto;" height="auto" src="links/supernew.png">
-			<img width="80%" style="display:block; margin:10px auto 15px auto;" height="auto" src="links/superfreq.png">
-			<p>
-			Additionally, streetwear brands proved far more successful when they "drip" products, usually on a weekly basis. I proposed that Superdry release clothing online on a more frequent basis, rather than through large collections that might fall to short attention spans.
-			</p>
-
-
-
-			<img width="50%" style="display:block; margin:50px auto 15px auto;" height="auto" src="links/supersquare.gif"><img width="80%" style="display:block; margin:20px auto 15px auto;" height="auto" src="links/supermenu.gif">
-
-			<p>
-			My vision for the new site included a degree of playful interactiveness that encouraged users to explore the site, and see the new sales/drops on a daily basis.
-			</p>
-
-
-<!-- don't delete this bit down here -->
-
-			<hr>
-
-			<button class="pf-button2" onclick="disappear2()">RETURN</button>
-		</div>
-		</div>
-
-
-<!-- TERTIARY FEATURE BEGINS -->
-
-
-		<div id="pf-cont-3">
-
-			<!-- here we go -->
-			<div class="pf-header">
-				<div class="pf-header-square">
-					<p class="pf-square-cont">Public Health: Knowing the Opioid Crisis</p>
-				</div>
-
-				<div class="pf-header-banner" id="tc3">
-
-					<div class="pf-butt-container">
-						<button class="pf-button" onclick="disappear3()">Return</button>
-					</div>
-
-					<div class="pf-title-container">
-						<p class="pf-header-sub"><b>2017-19</b> / Data Visualization, Motion Design / Public Health
-						</p>
-					</div>
-			</div>
-		</div>
-
-				<div class="pf-main">
-
-			<span class="pfb">Opioid addiction is a complex and worsening crisis. <br>I've led volunteers in raising awareness and training civic partners for 2 years.</span>
-
-			<p>
-			In Chicago, the introduction of fentanyl, a drug identical in appearance to heroin yet many times stronger, has ravaged low-income communities. In addition to the body of work created by my volunteer group for the Chicago Department of Public Health (CDPH), I've also created a series of solo work dedicated to informing and preparing the general public to do good in their own communities.
-			</p><hr>
-
-			<img width="100%" style="display:block; margin:50px auto 20px auto;" height="auto" src="links/slides.jpg">
-			<p>
-			I started with data. The Annual Opioid Surveillance Report, composed by the Office of Epidemiology and Research, is used to track the severity of opioid crisis and allows for officials to speak accurately to the state of their communities.
-			</p>
-
-			<img width="100%" style="display:block; margin:50px auto 20px auto;" height="auto" src="links/optable1.png">
-
-			<p>
-			Before designing anything, I studied dozens of ethnographic data tables supplied by the CDPH. This allowed me to highlight correlations between variables like prescription vs illegal drug usage, income-level, and types of drug.
-			</p>
-
-			<img width="100%" style="display:block; margin:50px auto 20px auto;" height="auto" src="links/slides2.jpg">
-			<img width="100%" style="display:block; margin:50px auto 20px auto;" height="auto" src="links/slides3.jpg">
-			<p>
-			I also included data taken from the Cook County Medical examiner. Despite Chicago's reputation for gun violence, the data shows that opioid overdoses take far more lives.
-			</p>
-			<img width="100%" style="display:block; margin:50px auto 20px auto;" height="auto" src="links/slides5.jpg">
-			<p>
-			An important distinction to make is Chicago's unique severity regarding opioids—rates of death in Chicago are far higher than in the rest of Illinois.
-			</p>
-			<img width="100%" style="display:block; margin:50px auto 20px auto;" height="auto" src="links/slides6.jpg">
-			<p>
-			I also found that the most at-risk demographic for opioid overdose death was 40-50 year old African American men in low-income brackets.
-			</p>
-			<img width="100%" style="display:block; margin:50px auto 20px auto;" height="auto" src="links/slides8.jpg">
-			<p>
-			An important function of the Opioid Surveillance Report is to dispel misinformation. I found that the opioid misuse was not a race-specific problem; rather, an income issue.
-			</p>
-			<img width="100%" style="display:block; margin:50px auto 20px auto;" height="auto" src="links/slides9.jpg">
-			<p>
-			Fentanyl is a new drug identical to heroin in powdered form, which leads to accidental ingestion and hundreds of deaths annually. This was the focus of my report.
-			</p>
-			<img width="100%" style="display:block; margin:50px auto 20px auto;" height="auto" src="links/slides10.jpg">
-			<p>
-			With this graph, I hoped to show that while heroin still made up the bulk of opioid deaths in 2017, fentanyl had nearly surpassed it in severity within just a year.
-			</p>
-			<img width="100%" style="display:block; margin:50px auto 50px auto;" height="auto" src="links/slides12.jpg">
-
-			<iframe style="margin-left:50px !important; margin-right:auto !important" src="https://player.vimeo.com/video/300661927" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/300661927"></a>
-	<p>
-			In addition to the Opioid Surveillance Report, I also produced a 2-minute motion design video made to quickly train new CDPH employees or volunteers on the benefits of Naloxone, an overdose-reversing drug.
-			</p>
-
-			<a class="pfi" href="https://overcomeopioids.org/respond" target="_blank">On the CDPH website</a><br><br>
-
-<!-- don't delete this bit down here -->
-
-			<hr>
-
-			<button class="pf-button2" onclick="disappear3()">RETURN</button>
-		</div>
-		</div>
-		<span id="goup0"></span>
-
-
-<!-- ALL MAIN CONTENT ENDS -->
-
-<!-- GRID CONTENT 1-3 BEGINS -->
-
-<div id="newcolor1">
-
-		<div id="secondarycont" style="margin-top:-35px !important">
-<span class="whatever">More projects</span>
-			<div class="secpf hvr-sweep-to-right" style="z-index:4">
-				<a href="#goup1" onclick="sec1()"><div class="secpf-img" id="s1"></div></a>
-
-				<div class="secpf-article">
-					<a href="#goup1" onclick="sec1()" class="secpf-article-left">
-						<p class="secpf-article-title">Redesigning SAIC's Education Infrastructure</p>
-						<i class="secpf-article-titlesub">2018 / User Interaction Design + Prototyping in Education</i><br><br>
-						<p class="secpf-article-titlesub">Here's my take on a mobile-first infrastructure that allows SAIC students to manage classes, paperwork, and payments in one place.</p>
-					</a>
-				</div>
-
-			</div>
-
-			<div class="secpf hvr-sweep-to-right" style="z-index:4">
-				<a href="#goup1" onclick="sec2()"><div class="secpf-img" id="s2"></div></a>
-
-				<div class="secpf-article">
-					<a href="#goup1" onclick="sec2()" class="secpf-article-left">
-						<p class="secpf-article-title">Motion Design Reel</p>
-						<i class="secpf-article-titlesub">2018-2019</i><br><br>
-						<p class="secpf-article-titlesub">Here is a collection of my motion design work for ad campaigns, brand launches, and user interaction.</p>
-					</a>
-				</div>
-
-			</div>
-
-
-					<div class="secpf hvr-sweep-to-right" style="z-index:4">
-				<a href="#goup1" onclick="sec3()"><div class="secpf-img" id="s3"></div></a>
-
-				<div class="secpf-article">
-					<a href="#goup1" onclick="sec3()" class="secpf-article-left">
-						<p class="secpf-article-title">Primer Mood-Changing App</p>
-						<i class="secpf-article-titlesub">2019 / User Experience, User Interface Design</i><br><br>
-						<p class="secpf-article-titlesub">I designed and created a colorful, gamified app to aid overthinkers in managing their thoughts.</p>
-					</a>
-				</div>
-
-			</div>
-
-
-			<div class="secpf hvr-sweep-to-right" style="z-index:4">
-				<a href="#goup1" onclick="sec4()"><div class="secpf-img" id="s4"></div></a>
-
-				<div class="secpf-article">
-					<a href="#goup1" onclick="sec4()" class="secpf-article-left">
-						<p class="secpf-article-title">Opioid Crisis Explainer</p>
-						<i class="secpf-article-titlesub">2018 / Public Health, Motion Design</i><br><br>
-						<p class="secpf-article-titlesub">In collaboration with the Chicago Department of Public Health, I created a narrated video used for training new employees and volunteers on both the severity of fentanyl, and the uses of Naloxone.</p>
-					</a>
-				</div>
-
-			</div>
-
-
-		</div>
+<div id="overlay" onclick="menuOpen(this)">
 </div>
 
-<!-- GRID CONTENT 1-3 ENDS -->
+<span class="test">
 
-<!-- SECONDARY GRID CONTENT 1-3 PAGES -->
+<div id="Work" class="tab" style="display:none;">
 
-
-<!-- portfolio section #1 -->
-			<span id="goup1"></span>
-
-		<div id="sec-cont1">
-			<!-- here we go -->
-				<div class="pf-header">
-				<div class="pf-header-square">
-					<p class="pf-square-cont">Redesigning SAIC's Education Infrastructure</p>
-				</div>
-
-				<div class="pf-header-banner" id="tc-1">
-
-					<div class="pf-butt-container">
-						<button class="pf-button" onclick="secd1()">Return</button>
-					</div>
-
-					<div class="pf-title-container">
-						<p class="pf-header-sub"><b>2018</b> / User Interaction Design, Prototyping / Education
-						</p>
-					</div>
-			</div>
+	<a class="block hvr-grow" id="b1" href="#">
+		<div class="weoweo-hover">
+			<img src="links/1-logo.png" class="cloutimg" height="auto" width="100%">
+			<div class="falsebutton">See work</div>
 		</div>
+		
+		<img src="links/1.png" width="100%" height="auto" class="weo">
 
-				<div class="pf-main">
-
-			<span class="pfb">Nearly all of SAIC's digital infrastructure is accessible by desktop only. Here's my mobile-first take.</span>
-
-			<p>
-			Being a student requires use of many desktop-only sites to access buildings, class schedules, and pay fees. More than that, these infrastructures are split across 3 platforms: Canvas, Self Service, and Engage.<br><br><b>I wanted to create a mobile app that would cover it all.</b>
-			</p>
-
-			<hr>
-
-			<img width="100%" style="display:block; margin:35px auto 20px auto;" height="auto" src="links/herocampus.png">
-			<a class="pfi" href="https://sketch.cloud/s/LnGlE/a/DVMJDq/play" target="_blank">Try the Sketch interactive prototype here</a>
-
-			<img width="100%" style="display:block; margin:35px auto 20px auto;" height="auto" src="links/userflowcampus.png">
-
-			<p>
-			Shows the tasks required to navigate the app. I tried to group all my functions under a maximum of 3 tabs, which you can easily cycle between. Forms are shown in pop-up form.
-			</p>
-
-
-			<img width="90%" style="display:block; margin:60px auto 20px auto;" height="auto" src="links/stylecampus.png">
-
-			<p>
-			Use states were important to me, as I knew I would be designing an app with lots of functions on one page; as such, I needed users to know exactly how to navigate a screen.<br><br>Additionally, I built a modern visual library that matched the school's colors and brand as an institute for fine art.
-			</p>
-
-			<img width="30%" style="display:inline-block; margin:35px auto 20px auto;" height="auto" src="links/opencampus.png">
-			<img width="30%" style="display:inline-block; margin:35px auto 20px auto;" height="auto" src="links/loadcampus.gif">
-			<img width="30%" style="display:inline-block; margin:35px auto 20px auto;" height="auto" src="links/logocampus.png">
-
-			<p><b>Onboarding</b><br>
-
-			My sign-in page is simple, colorful, and enhanced by Leroy Neiman's (SAIC alum) bright artwork. I additionally animated a loading screen based on the school logo.</p>
-
-			<img width="100%" style="display:inline-block; margin:35px auto 20px auto;" height="auto" src="links/screenscampus.png">
-			<p><b>Adding Funds</b><br>
-
-			Financial transactions via the SAIC page requires passing through 4 levels of navigation. While adding cards and securing transactions is a lengthy process, I minimized it by making it feel like it was one fluid interaction.
-			</p>
-
-
-			<img width="100%" style="display:inline-block; margin:35px auto 20px auto;" height="auto" src="links/roomservcampus.png">
-			<p><b>Booking Room Reservations</b><br>
-
-			Room reservation at SAIC is done via the Engage platform — I wanted to merge it into the same app as other similar functions. The barcode is taken from the student card, available at all times for easy access.
-			</p>
-
-			<!-- don't delete this bit down here -->
-
-			<hr>
-
-			<button class="pf-button2" onclick="secd1()">RETURN</button>
-		</div>
-	</div>
-
-
-<!-- portfolio section #1 ENDS -->
-
-
-
-<!-- portfolio section #2 -->
-
-		<div id="sec-cont2">
-			<!-- here we go -->
-			<div class="pf-header">
-				<div class="pf-header-square">
-					<p class="pf-square-cont">Motion Design Collection</p>
-				</div>
-
-				<div class="pf-header-banner" id="tc-2">
-
-					<div class="pf-butt-container">
-						<button class="pf-button" onclick="secd2()">Return</button>
-					</div>
-
-					<div class="pf-title-container">
-						<p class="pf-header-sub"><b>2019</b> / Branding, Mobile, Personal /  Motion
-						</p>
-					</div>
-			</div>
-		</div>
-
-<!-- in between here -->
-
-		<div class="pf-main">
-
-			<span class="pfb">Motion design is one of my great joys in digital work.</span>
-
-			<p>
-			I've brought excitement in motion to numerous brand launches, ad campaigns, and mobile designs. This is a collection of my work for various projects in the past 2 years—feel free to ask me about any of them!
-			</p>
-
-			<hr>
-			<img width="600px" height="auto" style="margin-bottom:20px;margin-left:auto; margin-right:auto; display:block; border:1px solid #ccc" src="links/motion/fearandlove.gif">
-			<span class="centerthis">
-			<img height="500px" width="auto" style="margin-right:10px" src="links/motion/mood.gif">
-			<img height="500px" width="auto" style="margin-right:10px" src="links/motion/sign.gif">
-			<img height="500px" width="auto" src="links/motion/load.gif"></span>
-			<p style="margin-bottom:50px;">
-			I'm skilled in creating high-level animations for mobile concepts, like interactions, onboarding, or loadscreens.
-			</p>
-
-			<img width="600px" height="auto" style="margin-bottom:60px;margin-left:auto; margin-right:auto; display:block; border:1px solid #ccc" src="links/motion/morph.gif">
-
-			<img width="600px" height="auto" style="margin-bottom:60px;margin-left:auto; margin-right:auto; display:block; margin-top: 20px" src="links/motion/early.gif">
-
-			<img width="600px" height="auto" style="margin-bottom:60px;margin-left:auto; margin-right:auto; display:block; border:1px solid #ccc" src="links/motion/museum.gif">
-
-			<img width="600px" height="auto" style="margin-bottom:60px;margin-left:auto; margin-right:auto; display:block; margin-top: 20px" src="links/motion/pong.gif">
-
-			<img width="600px" height="auto" style="margin-bottom:60px;margin-left:auto; margin-right:auto; display:block; margin-top: 20px" src="links/motion/stopmo.gif">
-
-			<!-- don't delete this bit down here -->
-
-			<hr>
-
-			<button class="pf-button2" onclick="secd2()">RETURN</button>
-		</div>
-	</div>
-
-<!-- in between here -->
-
-<!-- portfolio section #2 ENDS -->
-
-
-
-<!-- portfolio section #3 -->
-
-		<div id="sec-cont3">
-			<!-- here we go -->
-			<div class="pf-header">
-				<div class="pf-header-square">
-					<p class="pf-square-cont">Primer Mood-Changing App</p>
-				</div>
-
-				<div class="pf-header-banner" id="tc-3">
-
-					<div class="pf-butt-container">
-						<button class="pf-button" onclick="secd3()">Return</button>
-					</div>
-
-					<div class="pf-title-container">
-						<p class="pf-header-sub"><b>2019</b> / User Interface, User Experience Design /  Mobile App
-						</p>
-					</div>
-			</div>
-		</div>
-
-		<div class="pf-main">
-
-			<span class="pfb">In psychology, "priming" is the theory of previous stimuli affecting future performance.​
-			</span>
-
-			<p>
-			I wanted to create a fun app that someone might use before a stressful interview, speaking in public, or anything else where "priming" or some kind of preparation would help you. I researched  case studies to create an app that uses color + motion to help.
-			</p>
-
-			<hr>
-			<span class="centerthis">
-			<img width="200px" height="auto" style="margin-right:10px" src="links/prim-1.gif">
-			<img width="200px" height="auto" style="margin-right:10px" src="links/prim-2.gif">
-			</span>
-			<p>
-			I had a lot of fun using Adobe XD's "auto-animate" feature to simulate the background changing as you use the UI — even if you never played the game, I imagined just using the app as being a calming experience.
-
-
-			</p>
-			<hr>
-
-
-			<img width="90%" height="auto" style="margin-bottom:20px;margin-left:auto; margin-right:auto; display:block;" src="links/prim-c.gif">
-			<p>
-			The "creative" game that I programmed — clicking changes the color of the dot, and also leaves behind a smaller and slowly shrinking dot behind it. <b>I envisioned this as being a fun, short, game that one could play to get their mind primed for creative thinking.</b>
-
-			</p>
-
-			<img width="90%" height="auto" style="margin-bottom:20px;margin-left:auto; margin-right:auto; display:block;" src="links/prim-ca.gif">
-			<p>
-			The "calm" game that I programmed — you're given 5 dots of varying sizes, and your interactions slowly but surely affect their size and color. This could be something you fiddled to distract yourself from stress.
-
-			</p>
-
-			<img width="90%" height="auto" style="margin-bottom:20px;margin-left:auto; margin-right:auto; display:block;" src="links/prim-a.gif">
-			<p>
-			The "amp game — my favorite. I created a simple dot that was falling off the screen, and clicking it postpones the inevitable "game over". I encouraged users to go faster by having the dot increase in size momentarily after being clicked, making it easier to go at speed.
-			</p>
-
-			<img width="100%" height="auto" style="margin-bottom:20px;margin-left:auto; margin-right:auto; display:block;" src="links/prim-d.jpg">
-
-			<!-- don't delete this bit down here -->
-
-			<hr>
-
-			<button class="pf-button2" onclick="secd3()">RETURN</button>
-		</div>
-	</div>
-
-
-<!-- another one -->
-
-<div id="sec-cont4">
-			<!-- here we go -->
-			<div class="pf-header">
-				<div class="pf-header-square">
-					<p class="pf-square-cont">Opioid Crisis Explainer</p>
-				</div>
-
-				<div class="pf-header-banner" id="tc3">
-
-					<div class="pf-butt-container">
-						<button class="pf-button" onclick="secd3()">Return</button>
-					</div>
-
-					<div class="pf-title-container">
-						<p class="pf-header-sub"><b>2018</b> / Motion Design, Public Health /  Video Explainer
-						</p>
-					</div>
-			</div>
-		</div>
-
-		<div class="pf-main">
-
-			<span class="pfb">In Chicago, fentanyl has created an opioid crisis by almost equaling heroin fatalities in just a few years.
-			</span>
-
-			<p>
-			To fight the opioid crisis, I worked with the Chicago Department of Public Health to help train employees and volunteers. This was part of a larger project I led, involving dozens of students.
-			</p>
+		<div class="weoweo motion">
 			
-			<iframe style="border:1px solid #ccc; margin-right:auto; margin-bottom:10px" src="https://player.vimeo.com/video/300661927" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			<span class="weoweo-tag"><span style="color:#008dde">#Motion Design</span> / 2020</span>
 
-			<p>
-			In order to produce this video, I worked with a professional voice actor at an agency, initially providing a script and storyboards. Afterwards, I began putting the video into production.
-			</p>
-
-			<img width="100%" height="auto" src="links/cdphscreens.png" style="display:block; margin:50px auto 30px auto">
-
-			<hr>
-
-			<!-- don't delete this bit down here -->
-
-			<button class="pf-button2" onclick="secd4()">RETURN</button>
-		</div>
-	</div>
-
+			<span class="weoweo-headline">
+				Women Who Make America
+			</span>
 
 		</div>
 
+	</a>
 
+	<a class="block hvr-grow" id="b2" href="#">
+		<div class="weoweo-hover">
+			<img src="links/2-logo.png" class="cloutimg" height="auto" width="100%">
+			<div class="falsebutton">See work</div>
+		</div>
+		
+		<img src="links/1.png" width="100%" height="auto" class="weo">
 
-<!-- portfolio section #3 ENDS -->
+		<div class="weoweo product">
+			
+			<span class="weoweo-tag"><span style="color:#d11963">#Product Design</span> / 2019</span>
 
+			<span class="weoweo-headline">
+				Love You Too: Long Distance App
+			</span>
 
 		</div>
 
-	</div>
+	</a>
 
-</p>
+	<a class="block hvr-grow" id="b3" href="#">
+		<div class="weoweo-hover">
+			<img src="links/3-logo.png" class="cloutimg" height="auto" width="100%">
+			<div class="falsebutton">See work</div>
+		</div>
+		
+		<img src="links/3.png" width="100%" height="auto" class="weo">
+
+		<div class="weoweo art">
+			
+			<span class="weoweo-tag"><span style="color:#1ac9b8">#Art Direction</span> / 2019</span>
+
+			<span class="weoweo-headline">
+				Beneath the Surface of Multiple Sclerosis
+			</span>
+
+		</div>
+
+	</a>
+
+	<a class="block hvr-grow" id="b4" href="#">
+		<div class="weoweo-hover">
+			<img src="links/4-logo.png" class="cloutimg" height="auto" width="100%">
+			<div class="falsebutton">See work</div>
+		</div>
+		
+		<img src="links/4.png" width="100%" height="auto" class="weo">
+
+		<div class="weoweo art">
+			
+			<span class="weoweo-tag"><span style="color:#1ac9b8">#Art Direction</span> / 2020</span>
+
+			<span class="weoweo-headline">
+				Bladerunner 2049 Augmented Reality
+			</span>
+
+		</div>
+
+	</a>
+
+	<a class="block hvr-grow" id="b5" href="#">
+		<div class="weoweo-hover">
+			<img src="links/5-logo.png" class="cloutimg" height="auto" width="100%">
+			<div class="falsebutton">See work</div>
+		</div>
+		
+		<img src="links/1.png" width="100%" height="auto" class="weo">
+
+		<div class="weoweo branding">
+			
+			<span class="weoweo-tag"><span style="color:#eb8810">#Branding</span> / 2019</span>
+
+			<span class="weoweo-headline">
+				MBK: Empowering Young Black Leaders
+			</span>
+
+		</div>
+
+	</a>
+
+	<a class="block hvr-grow" id="b6" href="#">
+		<div class="weoweo-hover">
+			<img src="links/6-logo.png" class="cloutimg" height="auto" width="100%">
+			<div class="falsebutton">See work</div>
+		</div>
+		
+		<img src="links/1.png" width="100%" height="auto" class="weo">
+
+		<div class="weoweo data">
+
+			<span class="weoweo-tag"><span style="color:#6225db">#Data Viz</span> / 2019</span>	
+			
+			<span class="weoweo-headline">
+				Understanding the Opioid Crisis
+			</span>
+
+		</div>
+
+	</a>
+
+</div> 
+
+
+<!-- ABOUT ME SECTION -->
+
+<div id="About" class="tab" style="display:inline-grid">
+
+s
+
 </div>
 
+<!-- Resume SECTION -->
 
-<!-- footer here -->
+<div id="Resume" class="tab" style="display:none">
 
+<a href="links/chriszhu-resume.pdf" target="_blank" class="resumebot"></a>
+
+</div>
+
+</span>
+
+<!-- footer begins -->
+
+<div id="footer">
+<span class="credits">
+<a href="#top" onclick="openTab('Work')">My work</a> /
+<a href="#top" onclick="openTab('About')">About me</a> /
+<a href="#top" onclick="openTab('Resume')">Resume</a>
+<span class="creditline"></span>
+Lovingly designed & coded by Chris Zhu in 2020<br>chris.zixun.zhu@gmail.com</span>
+
+</div>
 
 </body>
-
-<script type="text/javascript" src="scripts.js"></script>
-<script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
-<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
-
 </html>
