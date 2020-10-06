@@ -28,6 +28,11 @@
 	--resume:url(../links/resume-dark.png);
 }
 
+.sidecontainer {
+	z-index:100;
+	position:relative;
+}
+
 .upbutton {
 	right:10vw;
 	top:40vh;
@@ -300,7 +305,20 @@ a {
 	z-index:25;
 	width:100%;
 	display:block;
+}
 
+#Resume, #About {
+	background-color:var(--material-color);
+	width:50vw;
+	height:auto;
+}
+
+#Work {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap:30px;
+	grid-column-gap: 15px;
+	width:50vw;
 }
 
 .nav {
@@ -308,7 +326,7 @@ a {
 	margin-left:25vw;
 	margin-right:25vw;
 	display:grid;
-	right:-8px; /* why?? */
+	/*right:-8px;*/ /* why?? */
 	grid-template-columns: 8fr 1fr;
 	z-index:25;
 	position:absolute;
@@ -322,25 +340,17 @@ a {
 	line-height: 200px;
 }
 
-.topborder {
-	width:100%;
-	height:5px;
-	margin-bottom:50px;
-}
-
 .test {
 	padding-top:100px;
 	width:50vw;
 	display:block;
-	margin: 0px auto 0 auto;
+	margin: 0px 25vw 0 25vw;
 }
 
-#Work {
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	grid-row-gap:30px;
-	grid-column-gap: 15px;
-	width:50vw;
+.topborder {
+	width:100%;
+	height:5px;
+	margin-bottom:50px;
 }
 
 .creditline {
@@ -469,13 +479,6 @@ body {
 	text-align:right;
 	padding-top:30px;
 }
-
-
-/*#About, #Resume {
-	display:block;
-	background-color:var(--material-color);
-	width:50vw;
-}*/
 
 .block {
 	height:auto;
@@ -613,20 +616,51 @@ body {
 	line-height: 20px;
 }
 
-/** **/
+/** mobile things **/
 
 
 @media only screen and (max-width: 1000px) {
 
-#Work {
-	display:grid;
-	grid-template-columns: 1fr;
-	grid-column-gap: 15px;
-	width:50vw;
-}
-
 .sub {
 	display:none;
+}
+
+#Resume, #About {
+	width:80vw;
+}
+
+#Work {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap:30px;
+	grid-column-gap: 15px;
+	width:80vw;
+}
+
+.nav {
+	width:80vw;
+	margin-left:10vw;
+	margin-right:10vw;
+	display:grid;
+	/*right:-8px;*/ /* why?? */
+	grid-template-columns: 8fr 1fr;
+	z-index:25;
+	position:absolute;
+}
+
+.navlist {
+	width:80vw;
+	margin:auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	display: grid;
+	line-height: 200px;
+}
+
+.test {
+	padding-top:100px;
+	width:80vw;
+	display:block;
+	margin: 0px 10vw 0 10vw;
 }
 
 }

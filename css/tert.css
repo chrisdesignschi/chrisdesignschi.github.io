@@ -16,15 +16,8 @@
 	font-weight:bolder;
 }
 
-#Resume {
-	background-color:var(--material-color);
-	width:50vw;
-	height:auto;
-}
-
 .resumebot {
 	width:50vw;
-	padding-top:50px;
 	height:70vw;
 	background-image: var(--resume);
 	background-size:contain;
@@ -32,10 +25,4 @@
 	background-repeat:no-repeat;
 	display:block;
 	margin-top:-30px;
-}
-
-#About {
-	background-color:var(--material-color);
-	width:50vw;
-	padding:30px;
 }
