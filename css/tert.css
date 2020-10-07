@@ -1,6 +1,6 @@
 @font-face {
 	font-family: DINNextLTPro-Regular;
-	src: url(../links/fonts/DIN/DINNextLTPro-Regular.otf);
+	src: url(../links/fonts/DIN/DINNextLTPro-Light.otf);
 	font-weight:normal;
 }
 
@@ -16,13 +16,38 @@
 	font-weight:bolder;
 }
 
-.resumebot {
-	width:50vw;
-	height:70vw;
-	background-image: var(--resume);
-	background-size:contain;
-	background-position:center;
-	background-repeat:no-repeat;
-	display:block;
-	margin-top:-30px;
+#Resume, .res-link {
+	border-radius: 5px 5px 0 0;
+}
+
+.res-link {
+	background:var(--material-color);
+	line-height:60px;
+	font-family:DINNextLTPro-Medium;
+	font-size:1em;
+	text-align: center;
+	color:#fff;
+	text-decoration: none;
+	transition:all, 0.3s;
+	background:var(--accent-1);
+}
+
+.res-link:hover {
+	transition:all, 0.3s;
+	background:var(--accent-2);
+	color:#fff;
+}
+
+.res-copy {
+	padding:30px;
+	font-family: DINNextLTPro-Regular;
+	font-size:1em;
+	color:var(--font-color);
+}
+
+.res-head {
+	font-family: DINNextLTPro-Medium;
+	font-size:;
+	color:var(--accent-1);
+	display: block;
 }
