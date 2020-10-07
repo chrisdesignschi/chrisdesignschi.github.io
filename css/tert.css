@@ -20,9 +20,14 @@
 	border-radius: 5px 5px 0 0;
 }
 
+.res-links {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 .res-link {
-	background:var(--material-color);
 	line-height:60px;
+	border-radius: 5px 0px 0 0;
 	font-family:DINNextLTPro-Medium;
 	font-size:1em;
 	text-align: center;
@@ -32,10 +37,21 @@
 	background:var(--accent-1);
 }
 
-.res-link:hover {
-	transition:all, 0.3s;
-	background:var(--accent-2);
+.res-linkin {
+	line-height:60px;
+	border-radius: 0px 5px 0 0;
+	font-family:DINNextLTPro-Medium;
+	font-size:1em;
+	text-align: center;
 	color:#fff;
+	text-decoration: none;
+	transition:all, 0.3s;
+	background:var(--accent-1);
+	border-left:1px solid #fff;
+}
+
+.res-linkin:hover, .res-link:hover {
+	background:var(--accent-2);
 }
 
 .res-copy {
