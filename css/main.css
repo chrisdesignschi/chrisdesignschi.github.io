@@ -648,11 +648,18 @@ body {
 	display:none;
 }
 
-#Resume, #About {
-	width:70vw;
+body {
+	overflow-y:hidden;
 }
 
-#, #About {
+#Resume {
+	position:absolute;
+	left:5vw;
+	right:5vw;	
+	width:90vw;
+}
+
+#About {
 	width:70vw;
 }
 
