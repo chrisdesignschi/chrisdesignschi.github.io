@@ -13,6 +13,10 @@
 	--resume:url(../links/resume.png);
 }
 
+body {
+	overflow: hidden;
+}
+
 [data-theme="dark"] {
 	--body-color: #111;
 	--material-color: #222;
@@ -313,15 +317,17 @@ a {
 #Resume, #About {
 	background-color:var(--material-color);
 	width:50vw;
+	margin:0 25vw 0 25vw;
 	height:auto;
 }
 
 #Work {
 	display:grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 	grid-row-gap:30px;
 	grid-column-gap: 15px;
 	width:50vw;
+	margin:0 25vw 0 25vw;
 }
 
 .nav {
@@ -338,16 +344,14 @@ a {
 .navlist {
 	width:50vw;
 	margin:auto;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	display: grid;
 	line-height: 200px;
 }
 
 .test {
 	padding-top:100px;
-	width:50vw;
 	display:block;
-	margin: 0px 25vw 0 25vw;
 }
 
 .topborder {
@@ -533,7 +537,7 @@ body {
 	padding-top:50px;
 	position:absolute;
 	z-index: 3;
-	border-radius: 0 0 6px 6px;
+	border-radius: 6px;
 }
 
 .block .weoweo-hover {
@@ -653,9 +657,7 @@ body {
 }
 
 #Resume {
-	position:absolute;
-	left:5vw;
-	right:5vw;	
+	margin:0 5vw 0 5vw;
 	width:90vw;
 }
 
@@ -669,6 +671,7 @@ body {
 	grid-row-gap:30px;
 	grid-column-gap: 15px;
 	width:70vw;
+	margin:0 15vw 0 15vw;
 }
 
 .nav {
@@ -685,16 +688,15 @@ body {
 .navlist {
 	width:70vw;
 	margin:auto;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	display: grid;
 	line-height: 200px;
 }
 
 .test {
-	padding-top:100px;
-	width:70vw;
+/*	padding-top:100px;
 	display:block;
-	margin: 0px 15vw 0 15vw;
+	margin: 0px 15vw 0 15vw;*/
 }
 
 .upbutton, .copylink {
