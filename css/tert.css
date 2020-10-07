@@ -50,4 +50,23 @@
 	font-size:;
 	color:var(--accent-1);
 	display: block;
+	border-bottom:1px solid var(--accent-1);
+	margin-bottom:15px;
+	padding-bottom: 5px;
+}
+
+.res-split {
+	margin-bottom:20px;
+	display:grid;
+	grid-column-gap: 1.2em;
+	grid-template-columns: 8fr 1fr;
+}
+
+.res-2 {
+	font-style:Italic;
+}
+
+.res-split p {
+	padding:0px;
+	margin:0px;
 }

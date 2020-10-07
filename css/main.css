@@ -252,7 +252,9 @@ html {
 	scroll-behavior: smooth;
 }
 
-
+b {
+	font-family:DINNextLTPro-Medium;
+}
 
 a {
 	text-decoration: underline;
@@ -644,6 +646,10 @@ body {
 
 .sub {
 	display:none;
+}
+
+#Resume, #About {
+	width:70vw;
 }
 
 #, #About {
