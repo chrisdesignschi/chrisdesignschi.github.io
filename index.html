@@ -35,6 +35,7 @@
 
 <head>
 	
+	<link rel="preload" href="css/main.css" as="style">
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,13 +45,9 @@
 	<meta name="author" content="Chris Zhu" />
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/tert.css"
-	>
-	<script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
-	<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<script src="https://kit.fontawesome.com/3a2b9eae0b.js" crossorigin="anonymous"></script>
 	<script src="java.js"></script>
-
 
 </head>
 
@@ -59,9 +56,10 @@
 
 <div class="nav">
 
-<a href="#" class="nav1">!Chris Zhu<span class="sub"> / Art Director & Digital Designer</span></a>
-<span class="nav2">
-	<div class="container" id="activator" onclick="menuOpen(this)">
+<a href="#" class="nav1"><span class="nav1-a">!</span>chris zhu
+	<span class="sub">Art Director + Digital Designer</span>
+</a><span class="nav2">
+	<div class="container animate__animated" id="activator" onclick="menuOpen(this)">
 	<div class="bar1"></div>
 	<div class="bar2"></div>
 	<div class="bar3"></div>
@@ -71,13 +69,14 @@
 </div>
 
 
-<div href="" id="box">
+<div href="" id="box" onclick="menuOpen(this)">
 
 <div class="topborder"></div>
 <ul class="navlist">
-	<li class="navitems" onclick="openTab('Work');menuOpen(this)">Work</li>
-	<li class="navitems" onclick="openTab('About');menuOpen(this)">About</li>
-	<li class="navitems" onclick="openTab('Resume');menuOpen(this)">Resume</li>		
+	<li class="navitems animate__animated" style="color:var(--accent-2)" onclick="openTab('Work');menuOpen(this)"><i class="fas fa-briefcase"></i> Work</li>
+	<li class="navitems animate__animated" onclick="openTab('About');menuOpen(this)">About</li>
+	<li class="navitems animate__animated" onclick="openTab('Resume');menuOpen(this)">Resume</li>
+			
 	</div>
 
 	</li>
@@ -94,7 +93,7 @@
 
 <div id="Work" class="tab" style="display:inline-grid;">
 
-	<a class="block hvr-grow" id="b1" href="#">
+	<a class="block hvr-grow" id="b1" href="sub/women.html">
 		<div class="weoweo-hover">
 			<img src="links/1-logo.png" class="cloutimg" height="auto" width="100%">
 			<div class="falsebutton">See work</div>

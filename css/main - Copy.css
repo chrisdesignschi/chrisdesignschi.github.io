@@ -147,7 +147,6 @@ a {
 .upbutton:hover {
 	color:var(--accent-2);
 	transition:all, 0.3s;
-	background-color:#fff;
 }
 
 .copylink {
@@ -343,20 +342,12 @@ input:checked + .slider:before {
 }
 
 .container {
-/*	-webkit-transform: scale(1.3);
-	transform: scale(1.3);*/
 	display: inline-block;
 	cursor: pointer;
 }
 
-.container:hover {
-	animation: tada; /* referring directly to the animation's @keyframe declaration */
-	animation-duration: 1s; /* don't forget to set a duration! */
-	--animate-delay: 3s;
-}
-
 .container:hover div {
-	margin-bottom:10px;
+	margin-bottom:9px;
 	background:var(--accent-1);
 }
 
@@ -373,8 +364,8 @@ input:checked + .slider:before {
 }
 
 .change .bar3 {
-	-webkit-transform: rotate(45deg) translate(-8px, -8px);
-	transform: rotate(45deg) translate(-9px, -9px);
+	-webkit-transform: rotate(45deg) translate(-6px, -6px);
+	transform: rotate(45deg) translate(-6px, -6px);
 	margin-bottom:5px !important;
 	background:var(--accent-2);
 }
@@ -395,7 +386,7 @@ input:checked + .slider:before {
 	margin:auto;
 	grid-template-rows: repeat(3, minmax(0, 1fr));
 	display: grid;
-	padding-top:20vh;
+	line-height: 200px;
 }
 
 .topborder {
@@ -405,12 +396,11 @@ input:checked + .slider:before {
 }
 
 .bar1, .bar2, .bar3 {
-	width: 35px;
-	height: 7px;
+	width: 30px;
+	height: 5px;
 	background-color: var(--font-color);
 	margin: 5px 0;
 	transition: 0.3s;
-	transition-timing-function: ease;
 }
 
 #box {
@@ -420,7 +410,7 @@ input:checked + .slider:before {
 	padding:0px;
 	cursor:pointer;
 	text-align:center;
-	position:fixed;
+	position:absolute;
 	z-index: 20;
 	opacity:1;
 	top:-100vh;
@@ -430,18 +420,14 @@ input:checked + .slider:before {
 
 .navitems {
 	list-style: none;
-	display:inline-block;
+	display:block;
 	cursor:pointer;
 	color:var(--font-color);
-	font-size:3.5em;
-	letter-spacing: -1px;
-	text-align: left;
-	font-family:"Graphik Bold";
+	font-size:1.2em;
+	font-family:"Graphik Regular";
 	font-weight:normal;
-	margin-bottom:20px;
 	transition:all, 0.3s;
 	-webkit-transition:all, 0.3s;
-	width:auto;
 }
 
 .navitems:hover {
@@ -450,20 +436,18 @@ input:checked + .slider:before {
 	font-weight:bold;
 	transition:all, 0.3s;
 	-webkit-transition:all, 0.3s;
-	animation: headShake; /* referring directly to the animation's @keyframe declaration */
-	animation-duration: 1s; /* don't forget to set a duration! */
 }
 
-/*.navitems:after {
+.navitems:after {
 	display:block;
 	content: '';
 	border-bottom: solid 5px var(--accent-1);	
 	transform: scaleX(0);	
 	transition: transform 225ms ease-in-out;
 }
-.navitems:hover:after { transform: scaleX(1); }*/
+.navitems:hover:after { transform: scaleX(1); }
 
-/*#overlay {
+#overlay {
 	background-color:black;
 	opacity:0;
 	cursor:pointer;
@@ -473,7 +457,7 @@ input:checked + .slider:before {
 	position:fixed;
 	z-index: 19;
 	transition:opacity, 0.3s;
-}*/
+}
 
 .nav1 {
 	display:inline-block;
@@ -540,7 +524,7 @@ input:checked + .slider:before {
 body {
 	background-color:var(--body-color);
 	padding:0px;
-	transition:0s !important;
+	transition:0.3s;
 }
 
 .block {
@@ -815,14 +799,16 @@ body {
 	display:grid;
 	/*right:-8px;*/ /* why?? */
 	grid-template-columns: 8fr 1fr;
-	z-index:21;
+	z-index:15;
 	position:absolute;
 }
 
 .navlist {
 	width:70vw;
 	margin:auto;
-	display: block;
+	grid-template-rows: repeat(3, minmax(0, 1fr));
+	display: grid;
+	line-height: 200px;
 }
 
 .test {

@@ -12,7 +12,7 @@ function menuOpen(x) {
 
 	var x = document.getElementById("box");
 	if (x.style.top === "0px") {
-	x.style.top = "-300px";
+	x.style.top = "-100vh";
 	} else {
 	x.style.top = "0px";
 	}
