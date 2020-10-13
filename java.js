@@ -17,20 +17,6 @@ function menuOpen(x) {
 	x.style.top = "0px";
 	}
 
-	var x = document.getElementById("overlay");
-	if (x.style.opacity === "0.7") {
-	x.style.opacity = "0";
-	} else {
-	x.style.opacity = "0.7";
-	}
-
-	var x = document.getElementById("overlay");
-	if (x.style.visibility === "visible") {
-	x.style.visibility = "hidden";
-	} else {
-	x.style.visibility = "visible";
-	}
-
 	var x = document.getElementById("activator");
 	x.classList.toggle("change");
 
