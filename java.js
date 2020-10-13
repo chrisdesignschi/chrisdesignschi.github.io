@@ -8,21 +8,40 @@ function openTab(tabName) {
 	document.getElementById(tabName).style.display = "inline-grid";	
 	}
 
+	/* this sets the container */
+
 function menuOpen(x) {
 
 	var x = document.getElementById("box");
-	if (x.style.top === "0px") {
-	x.style.top = "-100vh";
-	} else {
-	x.style.top = "0px";
-	}
+	x.classList.toggle("bouncehouse");
+
+	var x = document.getElementById("box");
+
+	x.classList.toggle("magneto");
 
 	var x = document.getElementById("activator");
 	x.classList.toggle("change");
 
+
 }
 
-/* danger zone */
+// function boxBounce() {
+// 		ar element, name, arr;
+// 		element = document.getElementById("box");
+// 		name = "boxbounce";
+// 		arr = element.className.split(" ");
+// 	if (arr.indexOf(name) == -1) {
+// 		element.className += " " + name;
+// 	}
+// 	else {
+// 		element.className -= " " + name;
+// 	}
+// }
+
+/* box bounce */
+
+
+/* night switch content */
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
