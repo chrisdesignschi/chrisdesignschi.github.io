@@ -74,9 +74,18 @@
 
 <div class="topborder"></div>
 <ul class="navlist" onclick="menuOpen(this)">
-	<li class="navitems animate__animated" style="color:var(--accent-2)" onclick="openTab('Work');menuOpen(this)"><i class="fas fa-briefcase"></i> Work</li>
-	<li class="navitems animate__animated" onclick="openTab('About');menuOpen(this)">About Me</li>
-	<li class="navitems animate__animated" onclick="openTab('Resume');menuOpen(this)">Resume</li>
+	<li id="1" class="navitems hvr-grow nav-select" onclick="openTab('Work');menuOpen(this);omae1(this)">
+		<i class="fas fa-briefcase"></i> Work</li>
+	<li id="2" class="navitems hvr-grow" onclick="openTab('About');menuOpen(this);omae2(this)">
+		About Me</li>
+	<li id="3" class="navitems hvr-grow" onclick="openTab('Resume');menuOpen(this);omae3(this)">
+		Resume</li>
+	<li id="4" class="navitems hvr-grow" onclick="openTab('Resume');menuOpen(this);omae4(this)">
+		Play</li>
+
+	<span class="oldman">
+		Like what you see? Click "Play" for some fun interactions.
+	</span>
 			
 	</div>
 

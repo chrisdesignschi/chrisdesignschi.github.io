@@ -1,12 +1,52 @@
 function openTab(tabName) {
 
-	var i;
+	var i, x, tablinks;
 	var x = document.getElementsByClassName("tab");
 	for (i = 0; i < x.length; i++) {
-	x[i].style.display = "none";	
+	x[i].style.display = "none";
 	}
-	document.getElementById(tabName).style.display = "inline-grid";	
-	}
+	document.getElementById(tabName).style.display = "inline-grid";
+}
+
+function omae1(moName) {
+
+	var i, x, y, highlights;
+	var x = document.getElementsByClassName("navitems");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.color = "var(--font-color)";
+	document.getElementById("1").style.color = "var(--accent-2)";
+
+}}
+
+function omae2(moName) {
+
+	var i, x, y, highlights;
+	var x = document.getElementsByClassName("navitems");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.color = "var(--font-color)";
+	document.getElementById("2").style.color = "var(--accent-2)";
+
+}}
+
+function omae3(moName) {
+
+	var i, x, y, highlights;
+	var x = document.getElementsByClassName("navitems");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.color = "var(--font-color)";
+	document.getElementById("3").style.color = "var(--accent-2)";
+
+}}
+
+function omae4(moName) {
+
+	var i, x, y, highlights;
+	var x = document.getElementsByClassName("navitems");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.color = "var(--font-color)";
+	document.getElementById("4").style.color = "var(--accent-2)";
+
+}}
 
 	/* this sets the container */
 
@@ -15,30 +55,13 @@ function menuOpen(x) {
 	var x = document.getElementById("box");
 	x.classList.toggle("bouncehouse");
 
-	var x = document.getElementById("box");
-
-	x.classList.toggle("magneto");
-
 	var x = document.getElementById("activator");
 	x.classList.toggle("change");
 
+	var x = document.getElementById("box");
+	x.classList.toggle("magneto");
 
 }
-
-// function boxBounce() {
-// 		ar element, name, arr;
-// 		element = document.getElementById("box");
-// 		name = "boxbounce";
-// 		arr = element.className.split(" ");
-// 	if (arr.indexOf(name) == -1) {
-// 		element.className += " " + name;
-// 	}
-// 	else {
-// 		element.className -= " " + name;
-// 	}
-// }
-
-/* box bounce */
 
 
 /* night switch content */
