@@ -336,7 +336,7 @@ input:checked + .slider:before {
 
 #top {
 	background: linear-gradient(to right, var(--accent-1),var(--accent-2));
-	height:5px;
+	height:8px;
 	position:relative;
 	z-index:25;
 	width:100%;
@@ -425,13 +425,13 @@ input:checked + .slider:before {
 	top:0vh;
 	transition:all, 0.3s;
 	transition-timing-function: ease-in-out;
-	animation: bounceIn; 
-	animation-duration: 0.7s;
+	animation: zoomIn; 
+	animation-duration: 0.5s;
 }
 
 .bouncehouse {
-	animation: bounceOut !Important; 
-	animation-duration: 0.7s !important;
+	animation: zoomOutUp !Important; 
+	animation-duration: 0.5s !important;
 }
 
 .magneto {
@@ -802,7 +802,7 @@ body {
 
 
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 890px) {
 
 
 .sub {
@@ -828,23 +828,22 @@ body {
 	grid-template-columns: 1fr;
 	grid-row-gap:30px;
 	grid-column-gap: 15px;
-	width:70vw;
-	margin:0 15vw 0 15vw;
+	width:56vw;
+	margin:0 22vw 0 22vw;
 }
 
 .nav {
-	width:70vw;
-	margin-left:15vw;
-	margin-right:15vw;
+	width:56vw;
+	margin-left:22vw;
+	margin-right:2vw;
 	display:grid;
-	/*right:-8px;*/ /* why?? */
 	grid-template-columns: 8fr 1fr;
 	z-index:21 !important;
 	position:absolute;
 }
 
 .navlist {
-	width:70vw;
+	width:56vw;
 	margin:auto;
 	padding-top:10vh;
 	display: block;
@@ -886,9 +885,9 @@ body {
 .theme-switch {
 	position: absolute;
 	display: inline-block;
-	right:-78vw;
+	right:-72vw;
 	margin-right:10px;
-	top:40px;
+	top:43px;
 	height: 26px !important;
 	width: 50px;
 }

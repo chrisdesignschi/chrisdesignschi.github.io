@@ -54,12 +54,10 @@ function menuOpen(x) {
 
 	var x = document.getElementById("box");
 	x.classList.toggle("bouncehouse");
+	x.classList.toggle("magneto");
 
 	var x = document.getElementById("activator");
 	x.classList.toggle("change");
-
-	var x = document.getElementById("box");
-	x.classList.toggle("magneto");
 
 }
 
