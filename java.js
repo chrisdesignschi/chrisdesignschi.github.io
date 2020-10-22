@@ -118,3 +118,7 @@ function openArray(evt, arrayName) {
 function changeImg(img) {
 	img.src = img.src.replace('png', 'gif');
 }
+
+function revertImg(img) {
+	img.src = img.src.replace('gif', 'png');
+}
