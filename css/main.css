@@ -842,14 +842,14 @@ body {
 	grid-template-columns: 1fr;
 	grid-row-gap:30px;
 	grid-column-gap: 15px;
-	width:56vw;
-	margin:0 22vw 0 22vw;
+	width:70vw;
+	margin:0 15vw 0 15vw;
 }
 
 .nav {
-	width:56vw;
-	margin-left:22vw;
-	margin-right:2vw;
+	width:70vw;
+	margin-left:15vw;
+	margin-right:15vw;
 	display:grid;
 	grid-template-columns: 8fr 1fr;
 	z-index:21 !important;
@@ -857,7 +857,7 @@ body {
 }
 
 .navlist {
-	width:56vw;
+	width:70vw;
 	margin:auto;
 	padding-top:10vh;
 	display: block;
