@@ -98,3 +98,23 @@ function copyFunction() {
   var tooltip = document.getElementById("tooltiptext2");
   tooltip.innerHTML = "Copied link!";
 }
+
+/* cont css begins */
+
+function openArray(evt, arrayName) {
+  var i, arraycontent, arraylinks;
+  arraycontent = document.getElementsByClassName("arraycontent");
+  for (i = 0; i < arraycontent.length; i++) {
+    arraycontent[i].style.display = "none";
+  }
+  arraylinks = document.getElementsByClassName("arraylinks");
+  for (i = 0; i < arraylinks.length; i++) {
+    arraylinks[i].className = arraylinks[i].className.replace(" active", "");
+  }
+  document.getElementById(arrayName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function changeImg(img) {
+	img.src = img.src.replace('png', 'gif');
+}

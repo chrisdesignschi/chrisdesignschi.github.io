@@ -19,6 +19,18 @@
 }
 
 @font-face {
+	font-family: DINNextLTPro-RegularItalic;
+	src: url(../links/fonts/DIN/DINNextLTPro-LightItalic.otf);
+	font-weight:italic;
+}
+
+@font-face {
+	font-family: DINNextLTPro-MediumItalic;
+	src: url(../links/fonts/DIN/DINNextLTPro-MediumItalic.otf);
+	font-weight:italic;
+}
+
+@font-face {
 	font-family: "Graphik Regular";
 	font-weight:normal;
 	src:url(../links/fonts/Graphik/Graphik-Regular.otf);
@@ -34,9 +46,9 @@
 	--body-color: rgb(240, 240, 243);
 	--material-color: #fff;
 	--material-2-color: #333;
-	--accent-1: #6225db;
-	--accent-2: #1ac9b8;
-	--accent-3: #008dde;
+	--accent-1: #eb8810;
+	--accent-2: #d11963;
+	--accent-3: #d11963;
 	--font-color: #333;
 	--accent-font-color: #000;
 	--button: #ccc;
@@ -49,9 +61,9 @@
 	--body-color: rgb(18, 18, 22);
 	--material-color: rgb(30, 30, 35);
 	--material-2-color: #333;
-	--accent-1: #eb8810;
-	--accent-2: #d11963;
-	--accent-3: #d11963;
+	--accent-1: #6225db;
+	--accent-2: #EE0B5B;
+	--accent-3: #008dde;
 	--font-color: #f0f0f0;
 	--accent-font-color: #fff;
 	--button: grey;
@@ -100,7 +112,7 @@ a {
 }
 
 
-	::-webkit-scrollbar {
+/*	::-webkit-scrollbar {
 		width: 10px;
 	}
 
@@ -115,7 +127,7 @@ a {
 	::-webkit-scrollbar-thumb:hover {
 		background: var(--accent-1);
 	}
-
+*/
 
 /* fixed side-navigation */
 /* fixed side-navigation */
@@ -425,17 +437,18 @@ input:checked + .slider:before {
 	top:0vh;
 	transition:all, 0.3s;
 	transition-timing-function: ease-in-out;
-	animation: zoomIn; 
-	animation-duration: 0.5s;
+	animation: pulse; 
+	animation-duration: 0.6s;
 }
 
 .bouncehouse {
-	animation: zoomOutUp !Important; 
-	animation-duration: 0.5s !important;
+	animation: fadeOutUp !important; 
+	animation-duration: 0.6s !important;
 }
 
 .magneto {
 	top:-100vh !important;
+	transition-timing-function: ease-in-out;
 }
 
 .tester {
@@ -487,6 +500,7 @@ input:checked + .slider:before {
 	font-family:"Graphik Bold";
 	font-weight:bold;
 	letter-spacing: -1.5px;
+	margin-top:-3px !important;
 	font-size:2em;
 	line-height:100px;
 	color:var(--font-color);
