@@ -139,7 +139,7 @@ input:checked + .slider:before {
 	display:grid;
 	grid-template-rows: auto auto;
 	grid-template-columns: auto auto;
-	background:var(--material-color);
+	grid-row-gap:20px;
 }
 
 .cont-container div {
@@ -156,6 +156,7 @@ input:checked + .slider:before {
 	display:flex;
 	align-items:middle;
 	align-items: center;
+
 }
 
 .cont-img img {
@@ -167,9 +168,8 @@ input:checked + .slider:before {
 
 .cont-header {
 	display:flex;
-	border-left:5px solid var(--accent-1);
 	align-items: center;
-	padding:30px 7em 30px 50px;
+	padding:30px 30px 30px 50px;
 	justify-content: center;
 }
 
@@ -262,7 +262,7 @@ input:checked + .slider:before {
 	display:grid;
 	width:90vw;
 	margin:auto;
-	margin-top:30px;
+	margin-top:20px;
 	height:auto;
 	grid-gap:12px;
 	grid-template-columns: 60vw auto;
