@@ -256,6 +256,8 @@ input:checked + .slider:before {
 
 .arraylinks.active {
 	opacity:1 !important;
+/*	animation:pulse;
+	animation-duration: 0.7s;*/
 }
 
 .cont-video {
@@ -266,7 +268,7 @@ input:checked + .slider:before {
 	height:auto;
 	grid-gap:12px;
 	grid-template-columns: 60vw auto;
-	margin-bottom:100px;
+	margin-bottom:5em;
 }
 
 .cont-video iframe {
@@ -282,6 +284,11 @@ input:checked + .slider:before {
 
 .cont-videoright {
 	height:auto;
+}
+
+.cont-vrlink:hover {
+	animation:pulse;
+	animation-duration: 1s; /* don't forget to set a duration! */
 }
 
 .cont-videoright a {

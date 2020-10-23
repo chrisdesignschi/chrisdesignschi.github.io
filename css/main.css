@@ -112,6 +112,8 @@ a {
 }
 
 
+
+
 /*	::-webkit-scrollbar {
 		width: 10px;
 	}
@@ -899,7 +901,7 @@ body {
 .theme-switch {
 	position: absolute;
 	display: inline-block;
-	right:-72vw;
+	right:-78vw;
 	margin-right:10px;
 	top:43px;
 	height: 26px !important;
