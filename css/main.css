@@ -1,5 +1,10 @@
 /** root **/
 
+img {
+	user-select:none;
+	-webkit-touch-callout:none;
+}
+
 @font-face {
 	font-family:DINNextLTPro-Condensed;
 	src: url(../links/fonts/DIN/DINNextLTPro-Condensed.otf);
