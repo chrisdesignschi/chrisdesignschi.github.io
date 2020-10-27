@@ -252,6 +252,7 @@ input:checked + .slider:before {
 .cont-array img {
 	width:100%;
 	opacity:0.2;
+	height:auto;
 	transition:0.2s;
 	cursor:pointer;
 
@@ -433,11 +434,7 @@ input:checked + .slider:before {
 @media only screen and (max-width: 600px) {
 
 	.cont-array {
-	display:grid;
-	grid-template-columns:auto;
-	grid-template-rows: auto;
-	grid-gap:8px;
-	padding:0px;
+	display:block;
 	}
 
 	.cont-video {
@@ -450,5 +447,10 @@ input:checked + .slider:before {
 	width:90vw;
 	height:50.87vw;
 }
+
+/*.cont-array img {
+	width:90vw;
+	height:50.84vw;
+}*/
 
 }
