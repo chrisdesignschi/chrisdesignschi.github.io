@@ -327,19 +327,22 @@ input:checked + .slider:before {
 	font-family:DINNextLTPro-Condensed;
 	letter-spacing:0px;
 	color:#fff;
-	padding:5px 15px 5px 15px;
+	padding:10px;
 	margin-top:20px;
 	animation:backInRight;
 	animation-duration: 8s;
+	text-transform: uppercase;
 	font-size:20px;
 }
 
 .cont-tags:nth-of-type(odd) {
-	background:var(--accent-1);
+	border: 3px solid var(--accent-1);
+	color: var(--accent-1);
 }
 
 .cont-tags:nth-of-type(even) {
-	background:var(--accent-2);
+	border: 3px solid var(--accent-2);
+	color:var(--accent-2);
 }
 
 .cont-para {
@@ -350,6 +353,12 @@ input:checked + .slider:before {
 	position:relative;
 	padding:50px 50px 30px 50px;
 	justify-content: center;
+}
+
+.titletype {
+	font-size:28px;
+	font-family:Graphik Regular;
+	margin-bottom: 5px;
 }
 
 .flexwrap {
@@ -373,7 +382,7 @@ input:checked + .slider:before {
 .cont-quote {
 	font-size:25px;
 	font-family: Graphik Bold;
-	line-height: 28px !important;
+	line-height: 35px !important;
 	letter-spacing: 0px;
 	text-align: center;
 }
@@ -394,7 +403,6 @@ input:checked + .slider:before {
 	font-family:Times New Roman;
 	font-weight: bolder;
 	color:var(--accent-1);
-	line-height: 0px;
 }
 
 .rightquote {
@@ -424,11 +432,15 @@ input:checked + .slider:before {
 
 .cont-array img {
 	width:100%;
+	height:auto;
+}
+
+.arraylinks {
 	opacity:0.2;
+	width:100%;
 	height:auto;
 	transition:0.2s;
 	cursor:pointer;
-
 	user-select:none;
 	-webkit-touch-callout:none;
 }
@@ -469,7 +481,7 @@ input:checked + .slider:before {
 	z-index:0;
 }`
 
-.cont-array img:hover {
+.arraylinks:hover {
 	opacity:1;
 	transition:0.2s;
 	z-index:20;
@@ -575,9 +587,45 @@ input:checked + .slider:before {
 	content:"Hover";
 }
 
+.cont-tripapp {
+	display:block;
+	width:90vw;
+	margin:auto;
+	margin-bottom:22px;
+	padding-bottom:30px;
+	padding-top:30px;
+	background:var(--material-color);
+	height:auto;
+}
+
+.cont-tripapp img {
+	height:auto;
+	width:18vw;
+}
+
+.imgright {
+	background:var(--accent-1) !important;
+	width:100%;
+}
+
+.imgright img {
+	width:50vw;
+	padding:0px;
+	margin:0px;
+}
+
 /* enter the dragon */
 
 @media only screen and (max-width: 1000px) {
+
+.cont-single {
+	width:90vw;
+}
+
+.cont-tripapp img {
+	height:auto;
+	width:29.33vw;
+}
 
 .return {
 	display:none;
@@ -620,6 +668,9 @@ input:checked + .slider:before {
 	height:46.5vw;
 }
 
+.goaway {
+	display:none !important;
+}
 
 }
 
@@ -684,6 +735,11 @@ input:checked + .slider:before {
 	display:none;
 }
 
+.cont-reg {
+	width:90vw;
+	margin:auto;
+}
+
 .cont-blank {
 	width:90vw;
 	margin:auto;
@@ -695,8 +751,6 @@ input:checked + .slider:before {
 .cont-blank .cont-para {
 	margin-bottom:30px;
 }
-
-
 
 /*.cont-array img {
 	width:90vw;

@@ -54,7 +54,6 @@
 	--button: #ccc;
 	--button-hover:#fff;
 	--tooltip:"Recruiting at night? Try dark mode!";
-	--resume:url(../links/resume.png);
 }
 
 [data-theme="dark"] {
@@ -69,7 +68,7 @@
 	--button: grey;
 	--button-hover:#fff;
 	--tooltip:"Use light mode!";
-	--resume:url(../links/resume-dark.png);
+
 }
 
 body {
@@ -409,7 +408,7 @@ input:checked + .slider:before {
 	margin:auto;
 	grid-template-rows: repeat(3, minmax(0, 1fr));
 	display: grid;
-	padding-top:17vh;
+	padding-top:10vh;
 }
 
 .topborder {
@@ -494,7 +493,7 @@ input:checked + .slider:before {
 }
 
 .nav1 {
-	animation:bounceIn;
+	animation:slideInDown;
 	animation-duration: 0.3s;
 	display:inline-block;
 	text-align:left;
