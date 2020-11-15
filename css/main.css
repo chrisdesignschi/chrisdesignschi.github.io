@@ -541,10 +541,9 @@ input:checked + .slider:before {
 	display:block;
 }
 
-#Resume, #About {
-	background-color:var(--material-color);
-	width:50vw;
-	margin:0 25vw 0 25vw;
+#About {
+	max-width: calc(100% / 12 * 7);
+	margin:0 auto 0 auto;
 	height:auto;
 }
 
@@ -725,9 +724,12 @@ body {
 /* secondary pages */
 /* secondary pages */
 
-
-#Resume, .res-link {
-	border-radius: 5px 5px 0 0;
+#About {
+	border-radius: 6px;
+	padding:30px;
+	font-family: DINNextLTPro-Regular;
+	font-size:1em;
+	color:var(--font-color);
 }
 
 .res-links {
@@ -776,7 +778,6 @@ body {
 	font-size:;
 	color:var(--accent-1);
 	display: block;
-	border-bottom:1px solid var(--accent-1);
 	margin-bottom:15px;
 	padding-bottom: 5px;
 }
@@ -797,15 +798,6 @@ body {
 	margin:0px;
 }
 
-/** about page **/
-
-#About {
-	border-radius: 6px;
-	padding:30px;
-	font-family: DINNextLTPro-Regular;
-	font-size:1em;
-	color:var(--font-color);
-}
 
 /** mobile screens **/
 /** mobile screens **/
@@ -826,11 +818,6 @@ body {
 
 body {
 	overflow-y:hidden;
-}
-
-#Resume {
-	margin:0 5vw 0 5vw;
-	width:90vw;
 }
 
 #About {
