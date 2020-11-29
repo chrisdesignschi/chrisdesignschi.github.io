@@ -5,7 +5,7 @@ function openTab(tabName) {
 	for (i = 0; i < x.length; i++) {
 	x[i].style.display = "none";
 	}
-	document.getElementById(tabName).style.display = "inline-grid";
+	document.getElementById(tabName).style.display = "grid";
 }
 
 function omae1(moName) {
