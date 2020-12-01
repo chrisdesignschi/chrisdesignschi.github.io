@@ -327,8 +327,8 @@ input:checked + .slider:before {
 	color:#fff;
 	padding:10px;
 	margin-top:20px;
-	animation:backInRight;
-	animation-duration: 3s;
+	animation:bounceIn;
+	animation-duration: 2.5s;
 	text-transform: uppercase;
 	font-size:20px;
 	letter-spacing: 1px;
@@ -350,6 +350,19 @@ input:checked + .slider:before {
 	position:relative;
 	padding:50px 50px 30px 50px;
 	justify-content: center;
+}
+
+.cont-triple {
+	font-size:17px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 50px;
+}
+
+.cont-triple b {
+	display:block;
+	color:var(--accent-1);
+	margin-bottom:10px;
 }
 
 .titletype {
@@ -412,7 +425,7 @@ input:checked + .slider:before {
 
 .cont-array {
 	display:grid;
-	grid-template-columns:auto auto;
+	grid-template-columns:auto auto auto;
 	grid-template-rows: auto auto;
 	padding:0px;
 }
@@ -569,6 +582,10 @@ input:checked + .slider:before {
 	content:"Hover";
 }
 
+.hoverclick {
+	color:var(--accent-2);
+}
+
 .imgright {
 	background:var(--accent-1) !important;
 	width:100%;
@@ -587,6 +604,14 @@ input:checked + .slider:before {
 /* enter the dragon */
 
 @media only screen and (max-width: 1000px) {
+
+.cont-triple {
+	display:block;
+}
+
+.cont-triple b {
+	margin-top:10px;
+}
 
 .cont-single {
 	width:85vw;
