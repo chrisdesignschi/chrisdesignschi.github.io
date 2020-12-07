@@ -491,7 +491,6 @@ input:checked + .slider:before {
 .arraylinks:hover {
 	opacity:1;
 	transition:0.2s;
-	z-index:20;
 }
 
 .cont-hover {
@@ -521,17 +520,10 @@ input:checked + .slider:before {
 	background:var(--material-color);
 }
 
-.videosplit {
-	grid-gap:12px;
-	grid-template-columns: 60vw auto;
-	display:grid;
-	margin-bottom:5em;
-}
-
 .cont-video iframe {
 	display:block;
 	margin:1em auto 1em auto;
-	padding:10px 0 20px 0;
+	padding:0px 0 2em 0;
 	width:60vw;
 	height:33.89vw;
 }
@@ -547,7 +539,7 @@ input:checked + .slider:before {
  display:block;
  margin:2em auto 10em auto;
  text-align:center;
- size:25px;
+ font-size:15px;
  color:var(--font-color);
  font-family:DINNextLTPro-Medium;
 }
