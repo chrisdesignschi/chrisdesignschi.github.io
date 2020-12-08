@@ -42,6 +42,16 @@
 	src:url(../links/fonts/Graphik/Graphik-Bold.otf);
 }
 
+.boxtest {
+	background:rgb(18, 18, 22);
+	z-index:-100;
+	position:fixed;
+	height:100vh;
+	width:100vw;
+	top:var(--boxheight);
+	transition:all, 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
 :root {
 	--body-color: rgb(240, 240, 243);
 	--material-color: #fff;
@@ -54,6 +64,7 @@
 	--button: #ccc;
 	--button-hover:#fff;
 	--tooltip:"Recruiting at night? Try dark mode!";
+	--boxheight:-100vh;
 }
 
 [data-theme="dark"] {
@@ -68,6 +79,8 @@
 	--button: grey;
 	--button-hover:#fff;
 	--tooltip:"Use light mode!";
+	--boxheight:0;
+	--boxwidth:0;
 
 }
 
@@ -311,7 +324,7 @@ a {
 	background-image:url(../links/day.png);
 	background-size:cover;
 	background-position:center;
-	top: 4px;
+	top: 3px;
 	content: "";
 	height: 26px;
 	left: 4px;
@@ -404,11 +417,11 @@ input:checked + .slider:before {
 }
 
 .navlist {
-	width:50vw;
+	width:60vw;
 	margin:auto;
 	grid-template-rows: repeat(3, minmax(0, 1fr));
 	display: grid;
-	padding-top:10vh;
+	padding-top:20vh;
 }
 
 .topborder {
@@ -468,6 +481,7 @@ input:checked + .slider:before {
 	font-weight:normal;
 	margin-bottom:20px;
 	transition:all, 0.3s;
+	width:auto;
 	-webkit-transition:all, 0.3s;
 }
 
@@ -483,15 +497,6 @@ input:checked + .slider:before {
 	color:var(--accent-2);
 }
 
-.oldman {
-	color:white;
-	font-family:"Graphik Regular";
-	font-size:1.2em;
-	text-align:left;
-	margin-top:20px;
-	cursor:default;
-}
-
 .nav1 {
 	animation:slideInDown;
 	animation-duration: 0.3s;
@@ -505,6 +510,7 @@ input:checked + .slider:before {
 	font-size:2em;
 	line-height:100px;
 	color:var(--font-color);
+	transition:all, 0.6s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .nav1-a {
@@ -551,8 +557,9 @@ input:checked + .slider:before {
 }
 
 body {
-	background:var(--body-color);
-	padding:0px;
+/*	background:var(--body-color);
+*/	padding:0px;
+	background:rgb(240, 240, 243);
 	transition:background, 0.3s !important;
 }
 
@@ -746,11 +753,11 @@ body {
 }
 
 .aboutbig {
-	font-size:20px !important;
+	font-size:18px !important;
 }
 
 .aboutbig h1 {
-	font-size:28px;
+	font-size:25px;
 	font-family: Graphik Regular;
 }
 
