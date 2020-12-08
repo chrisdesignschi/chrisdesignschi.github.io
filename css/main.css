@@ -52,13 +52,25 @@
 	transition:all, 0.5s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
+.colorpick-array {
+	width:100%;
+	display:block;
+}
+
+.colorpick {
+	display:inline-block;
+	padding:20px;
+	margin:5px;
+	border-radius: 100px;
+	background:pink;
+}
+
 :root {
 	--body-color: rgb(240, 240, 243);
 	--material-color: #fff;
 	--material-2-color: #333;
-	--accent-1: #5197b3;
-	--accent-2: #d11963;
-	--accent-3: #d11963;
+	--accent-1: #F24645;
+	--accent-2: #D74177;
 	--font-color: #333;
 	--accent-font-color: #000;
 	--button: #ccc;
@@ -71,17 +83,14 @@
 	--body-color: rgb(18, 18, 22);
 	--material-color: rgb(30, 30, 35);
 	--material-2-color: #333;
-	--accent-1: #6e25ff;
-	--accent-2: #EE0B5B;
-	--accent-3: #008dde;
+	--accent-1: #F24645;
+	--accent-2: #EBC08D;
 	--font-color: #f0f0f0;
 	--accent-font-color: #fff;
 	--button: grey;
 	--button-hover:#fff;
 	--tooltip:"Use light mode!";
 	--boxheight:0;
-	--boxwidth:0;
-
 }
 
 body {
@@ -704,6 +713,7 @@ body {
 	font-family: "Graphik Regular";
 	font-weight: normal;
 	line-height: 20px;
+	transition:all, 0.3s  cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .creditline {
@@ -723,6 +733,7 @@ body {
 /* secondary pages */
 /* secondary pages */
 /* secondary pages */
+
 
 #About {
 	background:var(--material-color);

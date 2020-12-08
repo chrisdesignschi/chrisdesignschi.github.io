@@ -122,3 +122,5 @@ function changeImg(img) {
 function revertImg(img) {
 	img.src = img.src.replace('gif', 'png');
 }
+
+/** **/
