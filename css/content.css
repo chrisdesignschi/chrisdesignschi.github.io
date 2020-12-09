@@ -356,7 +356,11 @@ input:checked + .slider:before {
 	font-size:17px;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 50px;
+	grid-column-gap: 10px;
+}
+
+.cont-triple {
+	margin-right:40px;
 }
 
 .cont-triple b {
