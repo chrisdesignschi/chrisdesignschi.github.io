@@ -411,7 +411,7 @@ input:checked + .slider:before {
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-9px, -9px);
 	margin-bottom:5px !important;
-	background:var(--accent-2);
+	background:var(--accent-1);
 }
 
 .nav {
@@ -628,13 +628,16 @@ body {
 	position:absolute;
 	z-index: 3;
 	border-radius: 6px;
+	background-image:url(../links/weo.gif);
+	background-size:cover;
+	background-position: center;
+	background-repeat:no-repeat;
 }
 
 .weoweo-hover2 {
 	display:none;
 	position:absolute;
 	z-index: 3;
-	border-radius: 6px;
 }
 
 .block .weoweo-hover2 {
@@ -649,7 +652,6 @@ body {
 }
 
 .block .weoweo-hover {
-	background:#2E1496;
 	width:100%;
 	height:100%;
 	transition: all 0.3s;
@@ -660,10 +662,10 @@ body {
 	transition: all 0.3s;
 }
 
-.block .weoweo-hover:hover img {
-	animation: pulse; /* referring directly to the animation's @keyframe declaration */
-	animation-duration: 0.8s; /* don't forget to set a duration! */
-}
+/*.block .weoweo-hover:hover img {
+	animation: pulse; 
+	animation-duration: 0.8s;
+}*/
 
 .falsebutton {
 	margin-left:auto;
