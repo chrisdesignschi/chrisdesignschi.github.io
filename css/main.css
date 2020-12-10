@@ -638,7 +638,6 @@ body {
 }
 
 .block .weoweo-hover2 {
-	background:rgb(30, 30, 35);
 	width:100%;
 	height:100%;
 	transition: all 0.3s;
@@ -650,7 +649,7 @@ body {
 }
 
 .block .weoweo-hover {
-	background:rgb(30, 30, 35);
+	background:#2E1496;
 	width:100%;
 	height:100%;
 	transition: all 0.3s;
@@ -764,6 +763,7 @@ body {
 
 #About {
 	color:var(--font-color);
+	z-index:20;
 }
 
 .aboutgrid {
@@ -825,6 +825,8 @@ body {
 }
 
 .resleft h1 {
+	width:30%;
+	margin:0px 0px 0px 50px;
 	color:var(--accent-1);
 }
 
@@ -921,6 +923,10 @@ body {
 .resleft {
 	text-align: left;
 	padding-left:50px;
+}
+
+.resleft h1 {
+	margin:0px;
 }
 
 .twe {
