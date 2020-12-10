@@ -47,9 +47,9 @@
 	z-index:-100;
 	position:fixed;
 	height:100vh;
-	width:100vw;
+	width:100%;
 	top:var(--boxheight);
-	transition:all, 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+	transition:top, 0.5s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .colorpick-array {
@@ -72,7 +72,7 @@
 	--accent-1: #F24645;
 	--accent-2: #D74177;
 	--font-color: #333;
-	--accent-font-color: #000;
+	--accent-font-color: #15314D;
 	--button: #ccc;
 	--button-hover:#fff;
 	--tooltip:"Recruiting at night? Try dark mode!";
@@ -594,6 +594,11 @@ body {
 	opacity:0;
 }
 
+.block:hover {
+	cursor:pointer;
+
+}
+
 .block img {
 }
 
@@ -623,6 +628,25 @@ body {
 	position:absolute;
 	z-index: 3;
 	border-radius: 6px;
+}
+
+.weoweo-hover2 {
+	display:none;
+	position:absolute;
+	z-index: 3;
+	border-radius: 6px;
+}
+
+.block .weoweo-hover2 {
+	background:rgb(30, 30, 35);
+	width:100%;
+	height:100%;
+	transition: all 0.3s;
+}
+
+.block .weoweo-hover2:hover {
+	opacity:1;
+	transition: all 0.3s;
 }
 
 .block .weoweo-hover {
@@ -665,6 +689,10 @@ body {
 	display:block;
 }
 
+.block:hover .weoweo-hover2 {
+	display:block;
+}
+
 .weo {
 	display:block;
 	border-radius:6px 6px 0 0;
@@ -682,12 +710,11 @@ body {
 .weoweo-headline {
 	font-family:"Graphik Bold";
 	font-weight: bold;
-	font-size:1.5em;
+	font-size:1.7em;
 	text-decoration:none !important;
 	display:block;
 	color:var(--accent-font-color);
 	margin-top:3px;
-	letter-spacing: -0.2px;
 }
 
 
@@ -736,7 +763,6 @@ body {
 
 
 #About {
-	background:var(--material-color);
 	color:var(--font-color);
 }
 
@@ -858,6 +884,13 @@ body {
 	margin:auto;
 }
 
+.cont-video {
+	width:85vw;
+	margin:auto;
+	height:auto;
+	background:var(--material-color);
+}
+
 /** mobile screens **/
 /** mobile screens **/
 /** mobile screens **/
@@ -866,6 +899,24 @@ body {
 /** mobile screens **/
 
 @media only screen and (max-width: 890px) {
+
+.higherlol {
+	display:none !important;
+}
+
+.shorterlol {
+	display:block !important;
+}
+
+.cont-container {
+	width:85vw;
+	margin:auto;
+	height:auto;
+	display:grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr;
+	grid-row-gap:0px;
+}
 
 .resleft {
 	text-align: left;
@@ -878,6 +929,14 @@ body {
 
 .aboutgrid {
 	display:block;
+}
+
+.higherlol {
+	display:block;
+}
+
+.shorterlol {
+	display:none;
 }
 
 .sub {
