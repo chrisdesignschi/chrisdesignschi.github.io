@@ -906,14 +906,16 @@ body {
 }
 
 .fearme {
-	padding-bottom:30px;
-	padding-top:30px;
-	border-bottom:2px solid var(--accent-2	);
+	border-bottom:20px solid var(--body-color);
 	background:var(--material-color);
 }
 
 .bluebox {
 	padding:20vh;
+	text-align:center;
+	font-family:Graphik Bold;
+	color:white;
+	font-size:25px;
 	background:url(../links/weoback.gif) !important;
 }
 
