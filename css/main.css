@@ -911,8 +911,8 @@ body {
 }
 
 .bluebox {
-	padding:20vh;
-	text-align:center;
+	padding: 20vh 30px 20vh 30px;
+	text-align:center !important;
 	font-family:Graphik Bold;
 	color:white;
 	font-size:25px;
