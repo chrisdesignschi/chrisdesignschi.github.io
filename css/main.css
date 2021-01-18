@@ -93,6 +93,20 @@
 	--boxheight:0;
 }
 
+[data-theme="wtf"] {
+	--body-color: red;
+	--material-color: red;
+	--material-2-color: red;
+	--accent-1: red;
+	--accent-2: red;
+	--font-color: #f0f0f0;
+	--accent-font-color: red;
+	--button: red;
+	--button-hover: red;
+	--tooltip:"Use light mode!";
+	--boxheight:0;
+}
+
 body {
 	overflow: hidden;
 /*	transition-timing-function: ease-in-out;
@@ -343,7 +357,7 @@ a {
 }
 
 input:checked + .slider { /* return */
-	background: #666;
+	background: #522CED;
 }
 
 input:checked + .slider:before {
@@ -1079,10 +1093,6 @@ body {
 	left: 4px;
 	position: absolute;
 	transition: .3s;
-}
-
-input:checked + .slider { /* return */
-	background: #666;
 }
 
 input:checked + .slider:before {

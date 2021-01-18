@@ -120,10 +120,6 @@
 	transition: .3s;
 }
 
-input:checked + .slider { /* return */
-	background: #666;
-}
-
 input:checked + .slider:before {
 	transform: translateX(22px);
 	background-image:url(../links/night.png);

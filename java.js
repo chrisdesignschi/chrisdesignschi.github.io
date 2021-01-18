@@ -65,6 +65,7 @@ function menuOpen(x) {
 /* night switch content */
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const toggleLocal = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 
 if (currentTheme) {
@@ -74,6 +75,7 @@ if (currentTheme) {
 		toggleSwitch.checked = true;
 	}
 }
+/** this one above just makes the checkbox indicate **/
 
 function switchTheme(e) {
 	if (e.target.checked) {
@@ -81,7 +83,18 @@ function switchTheme(e) {
 		localStorage.setItem('theme', 'dark');
 	}
 	else {		document.documentElement.setAttribute('data-theme', 'light');
-			localStorage.setItem('theme', 'light');
+		localStorage.setItem('theme', 'light');
+	}	
+}
+
+function localTheme(e) {
+	var today = new Date().getHours();
+	if (today >= 7 && today <= 19) {
+		document.documentElement.setAttribute('data-theme', 'light');
+		localStorage.setItem('theme', 'light');
+	}
+	else {		document.documentElement.setAttribute('data-theme', 'dark');
+		localStorage.setItem('theme', 'dark');
 	}	
 }
 
