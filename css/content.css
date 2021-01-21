@@ -173,6 +173,9 @@ input:checked + .slider:before {
 	grid-row-gap:0px;
 }
 
+.gimmeborder div {
+}
+
 .cont-container div {
 	background:var(--material-color);
 }
