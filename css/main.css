@@ -820,11 +820,17 @@ body {
 }
 
 .resleft {
-	text-align:right;
+	text-align:left;
 	padding:0px;
 	margin-top:30px;
 	font-family: Graphik Bold;
 	letter-spacing: -1px;
+}
+
+.sizing {
+	display:block;
+	padding:5vw 10vw 10vw 10vw;
+	margin:auto;
 }
 
 .reslink {
@@ -929,8 +935,24 @@ body {
 	text-align:center !important;
 	font-family:Graphik Bold;
 	color:white;
+	z-index: 19;
 	font-size:25px;
 	background:url(../links/weoback.gif) !important;
+}
+
+.bluebox2 {
+	padding: 12vh 30px 12vh 30px;
+	text-align:center !important;
+	font-family:Graphik Bold;
+	color:white;
+	z-index: 19;
+	font-size:23px;
+	background:url(../links/weoback.gif) !important;
+}
+
+.nomargin {
+	margin-top:0px !important;
+	border-top:8px solid var(--body-color);
 }
 
 /** mobilesscreens **/
@@ -958,15 +980,6 @@ body {
 	grid-template-rows: auto auto;
 	grid-template-columns: 1fr;
 	grid-row-gap:0px;
-}
-
-.resleft {
-	text-align: left;
-	padding-left:50px;
-}
-
-.resleft h1 {
-	margin:0px;
 }
 
 .twe {
