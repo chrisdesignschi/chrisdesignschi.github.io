@@ -1047,6 +1047,7 @@ body {
 	transform: scale(1);
 	z-index:100;
 }
+
 /** night switcher goes to top and becomes relative **/
 
 #tooltiptext, #tooltiptext2 {
