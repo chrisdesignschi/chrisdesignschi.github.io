@@ -383,6 +383,19 @@ input:checked + .slider:before {
 /** main navigation **/
 /** main navigation **/
 
+.cont-img:hover .hoverob {
+	display:flex !important;
+	font-family:Graphik Regular;
+	text-align: center;
+	background:var(--accent-1);
+	padding:15px;
+	color:white;
+	font-size:13px;
+	align-self: flex-end;
+	border-radius:3px;
+	bottom:-20px;
+}
+
 #top {
 	background: linear-gradient(to right, var(--accent-1),var(--accent-2));
 	height:8px;
