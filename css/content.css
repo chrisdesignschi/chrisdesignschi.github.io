@@ -143,6 +143,18 @@ input:checked + .slider:before {
 
 /** container modules **/
 
+.caliga {
+	display:none;
+}
+
+.caligh:hover .caligu {
+	display:none;
+}
+
+.caligh:hover .caliga {
+	display:block;
+}
+
 .cont-blank {
 	width:85vw;
 	margin:auto;
