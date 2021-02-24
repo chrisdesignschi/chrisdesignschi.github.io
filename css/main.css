@@ -973,6 +973,11 @@ body {
 box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.40);
 }
 
+.blueback {
+	background:url(../links/weoback.gif) !important;
+	background-repeat: repeat;
+}
+
 /** mobilesscreens **/
 /** mobile screens **/
 /** mobile screens **/
