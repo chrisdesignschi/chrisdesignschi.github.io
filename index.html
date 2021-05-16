@@ -16,7 +16,7 @@
 <script type="text/javascript">
 $.get("https://ipinfo.io/json", function (response) {
 $("#ip").html("IP: " + response.ip);
-$("#address").html(response.city);
+$("#address").html(response.region);
 $("#details").html(JSON.stringify(response, null, 4));
 }, "jsonp");</script>
 </head>
