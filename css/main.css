@@ -33,13 +33,19 @@
 @font-face {
 	font-family: "Graphik Regular";
 	font-weight:normal;
-	src:url(../links/fonts/Graphik/Graphik-Regular.otf);
+	src:url(../links/fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
 	font-family: "Graphik Bold";
 	font-weight:normal;
-	src:url(../links/fonts/Graphik/Graphik-Bold.otf);
+	src:url(../links/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight:normal;
+	src:url(../links/fonts/Poppins/Poppins-Bold.ttf);
 }
 
 .boxtest {
@@ -93,19 +99,6 @@
 	--boxheight:0;
 }
 
-[data-theme="wtf"] {
-	--body-color: red;
-	--material-color: red;
-	--material-2-color: red;
-	--accent-1: red;
-	--accent-2: red;
-	--font-color: #f0f0f0;
-	--accent-font-color: red;
-	--button: red;
-	--button-hover: red;
-	--tooltip:"Use light mode!";
-	--boxheight:0;
-}
 
 body {
 	overflow: hidden;
@@ -141,8 +134,8 @@ a {
 	transition-property: transform;
 }
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 	z-index:100;
 }
 
@@ -412,11 +405,6 @@ input:checked + .slider:before {
 	cursor: pointer;
 }
 
-.container:hover {
-	animation: tada; /* referring directly to the animation's @keyframe declaration */
-	animation-duration: 1s; /* don't forget to set a duration! */
-}
-
 .container:hover div {
 	margin-bottom:10px;
 	background:var(--accent-1);
@@ -522,15 +510,15 @@ input:checked + .slider:before {
 }
 
 .navitems:hover {
-	color:var(--accent-1) !important;
-	font-family:"Graphik Bold";
+	color:var(--accent-2) !important;
+	font-family:"Poppins";
 	font-weight:bold;
 	transition:all, 0.3s;
 	-webkit-transition:all, 0.3s;
 }
 
 .nav-select {
-	color:var(--accent-2);
+	color:var(--accent-1);
 }
 
 .nav1 {
@@ -539,19 +527,18 @@ input:checked + .slider:before {
 	display:inline-block;
 	text-align:left;
 	text-decoration: none;
-	font-family:"Graphik Bold";
+	font-family:"Poppins";
 	font-weight:bold;
 	letter-spacing: -1.5px;
+	line-height:100px;
 	margin-top:-3px !important;
 	font-size:2em;
-	line-height:100px;
 	color:var(--font-color);
 	transition:all, 0.6s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .nav1-a {
 	color:var(--accent-1);
-	font-variant: small-caps;
 }
 
 .sub {
@@ -741,9 +728,9 @@ body {
 }
 
 .weoweo-headline {
-	font-family:"Graphik Bold";
-	font-weight: bold;
-	font-size:1.7em;
+	font-family:"Poppins";
+	font-size:1.6em;
+	line-height: 1.3em;
 	text-decoration:none !important;
 	display:block;
 	color:var(--accent-font-color);
@@ -753,7 +740,7 @@ body {
 
 .weoweo-tag {
 	display:inline-block;
-	font-size:1.1em;
+	font-size:1.2em;
 	text-align: center;
 	margin-right:15px;
 	color:var(--font-color);
@@ -787,6 +774,15 @@ body {
 	height:3px;
 }
 
+#footer {
+	background: var(--material-color);
+	padding:1.5em 0 1.5em 0;
+	margin-top:5em;
+	width:100%;
+	display:flex;
+
+}
+
 /* secondary pages */
 /* secondary pages */
 /* secondary pages */
@@ -798,93 +794,9 @@ body {
 #About {
 	color:var(--font-color);
 	z-index:20;
-}
-
-.aboutgrid {
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-}
-
-.aboutgrid span {
-	display:block;
-	margin-bottom:10px;
-}
-
-.twe {
-	grid-template-columns: 1.1fr 2fr !important;
-	padding-bottom:5em;
-}
-
-.aboutcont {
-	background:var(--material-color);
-	height:auto;
-	font-family: DINNextLTPro-Regular;
-	color:var(--font-color);
-	padding:2em 0 2em 0;
-}
-
-.aboutbig {
-	font-size:18px !important;
-}
-
-.aboutbig h1 {
-	font-size:25px;
-	font-family: Graphik Regular;
-}
-
-.resleft {
-	text-align:left;
-	padding:0px;
-	margin-top:30px;
-	font-family: Graphik Bold;
-	letter-spacing: -1px;
-}
-
-.sizing {
-	display:block;
-	padding:5vw 10vw 10vw 10vw;
-	margin:auto;
-}
-
-.reslink {
-	display:inline-block;
-	background:var(--accent-1);
-	padding:15px;
-	font-family:DINNextLTPro-Medium;
-	letter-spacing: -1px;
-	font-size:20px;
-	text-decoration: none;
-	transition: 0.3s;
-	text-align: center;
-	color:var(--material-color);
-}
-
-.reslink:hover {
-	background: var(--accent-2);
-	transition: 0.3s;
-}
-
-.resleft h1 {
-	width:30%;
-	margin:0px 0px 0px 50px;
-	color:var(--accent-1);
-}
-
-.resright {
-	text-align:left;
-	font-size:15px;
-	margin:30px 50px 0px 50px;
-	font-family: DINNextLTPro-Regular;
-	font-size:20px;
-}
-
-.resrightdivide {
-	display:block;
-	height:10px;
-}
-
-.resright p {
-	font-size:18px;
+	width:60vw;
+	margin:0 20vw 0 20vw;
+	background: var(--material-color);
 }
 
 .cont-container {
@@ -976,6 +888,30 @@ box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.40);
 .blueback {
 	background:url(../links/weoback.gif) !important;
 	background-repeat: repeat;
+}
+
+.cont-abt-container {
+	width:60vw;
+	display:grid;;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.cont-abt {
+	height:30vw;
+}
+
+.abt-01 {
+	background:green;
+}
+.abt-02 {
+	background:red;
+}
+.abt-03 {
+	background:grey;
+}
+.abt-04 {
+	background:blue;
 }
 
 /** mobilesscreens **/

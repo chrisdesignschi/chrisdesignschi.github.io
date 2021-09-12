@@ -317,15 +317,14 @@ input:checked + .slider:before {
 	font-family: Graphik Bold;
 	color:var(--font-color);
 	font-size:1.9em;
+	line-height:1.3em;
 	letter-spacing: 0px;
 }
 
 .cont-nub {
-	text-transform: uppercase;
 	color:var(--accent-1);
 	display:block;
 	margin-bottom:10px;
-	letter-spacing: 2px;
 	font-size:20px;
 	font-family:DINNextLTPro-Condensed;
 }
@@ -339,10 +338,9 @@ input:checked + .slider:before {
 	padding:10px;
 	margin-top:20px;
 	animation:bounceIn;
-	animation-duration: 2.5s;
 	text-transform: uppercase;
+	animation-duration: 2.5s;
 	font-size:20px;
-	letter-spacing: 1px;
 }
 
 .cont-tags:nth-of-type(odd) {
