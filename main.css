@@ -68,13 +68,11 @@ a {
 @font-face {
   font-family: "Poppins Regular";
   src: url(assets/fonts/Poppins-Light.ttf);
-  font-weight:normal;
 }
 
 @font-face {
   font-family: "Poppins Bold";
   src: url(assets/fonts/Poppins-Semibold.ttf);
-  font-weight: normal;
 }
 
 .nav-container {
