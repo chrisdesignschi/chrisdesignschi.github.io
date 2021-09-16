@@ -1,7 +1,6 @@
 body {
 	background:#222227;
 	color:white;
-    font-family: "Poppins Regular", sans;
 }
 
 * {
@@ -74,7 +73,7 @@ a {
 @font-face {
   font-family: "Poppins SemiBold";
   font-weight: normal;
-  src: url(assets/fonts/Poppins-Semibold.ttf);
+  src: url(assets/fonts/Graphik-Bold.otf);
 }
 
 .nav-container {
