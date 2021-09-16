@@ -2,6 +2,7 @@ body {
 	background:#222227;
 	color:white;
     font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
 }
 
 * {
@@ -73,8 +74,9 @@ a {
 #nav {
 	width:65vw;
 	display:block;
-	margin:0px auto 0px auto;
-	height:7vh;
+	margin: 0 auto 0 auto;
+	height:auto;
+    padding:2.5vh 0 2.5vh 0;
 }
 
 .nav-cont a {
@@ -84,7 +86,6 @@ a {
 .nav-item {
 	color:var(--navy);
 	font-size:18px;
-	padding: 22px 0 22px 0;
 	letter-spacing: 3px;
 	display:inline-block;
     font-weight:300;
@@ -104,12 +105,12 @@ a {
 }
 
 .nav-left {
-	float:left;
     font-weight:600;
 }
 
 .nav-right {
-	float:right;
+    float:right;
+    display:inline-block;
     font-weight:300;
 	margin-left:50px;
 }
@@ -171,7 +172,7 @@ a {
 	display:grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap:1.8vw;
-	margin:auto;
+	margin:0 17.5vw 0 17.5vw;
 }
 
 .work-item {
@@ -270,7 +271,7 @@ a {
     width:65vw;
     font-family: 'Poppins', sans-serif;
     font-weight:300;
-    margin:auto;
+    margin:0 17.5vw 0 17.5vw;
     padding-top:70px;
     padding-bottom:200px;
 }
@@ -317,8 +318,19 @@ a {
     transition: 0.3s;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 950px) {
 
+
+#nav {
+    width:80vw;
+    display:block;
+    height:auto;
+}
+
+.nav-cont {
+    padding-top:15px;
+    padding-bottom: 15px;
+}
 
 .hero-text {
 	font-size:2.8em;
@@ -342,7 +354,7 @@ a {
 }
 
 .work-cont {
-    width:65vw;
+    width:80vw;
     display:grid;
     grid-template-columns: 1fr;
     grid-gap:5vh;
@@ -358,7 +370,6 @@ a {
 
 .footer-wrap {
     margin-bottom:30px;
-    background:red;
 }
 }
 
