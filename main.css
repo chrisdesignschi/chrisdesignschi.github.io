@@ -67,11 +67,13 @@ a {
 
 @font-face {
   font-family: "Poppins Regular";
+  font-weight:normal;
   src: url(assets/fonts/Poppins-Light.ttf);
 }
 
 @font-face {
-  font-family: "Poppins Bold";
+  font-family: "Poppins SemiBold";
+  font-weight: normal;
   src: url(assets/fonts/Poppins-Semibold.ttf);
 }
 
@@ -110,12 +112,12 @@ a {
 }
 
 .clickedon {
-	font-family:"Poppins Bold", sans;
+	font-family:"Poppins Semibold";
 }
 
 .nav-left {
 	float:left;
-    font-family:"Poppins Bold", sans;
+    font-family:"Poppins Semibold";
 }
 
 .nav-right {
@@ -232,7 +234,7 @@ a {
 
 .work-h1 {
     font-size:1.5em;
-    font-family:"Poppins Bold", sans;
+    font-family:"Poppins Semibold";
     letter-spacing: -0.2px;
     line-height: 1.3em;
     text-decoration: underline;
@@ -263,7 +265,7 @@ a {
 .work-capital {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family:"Poppins Bold", sans;
+    font-family:"Poppins SemiBold";
 }
 
 #footer {
