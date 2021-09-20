@@ -5,6 +5,26 @@ body {
     overflow-x:hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--material);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--accent2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent1);
+}
+
 * {
     padding:0px;
     scroll-behavior: smooth;
@@ -176,9 +196,10 @@ a {
 }
 
 .work-item {
-    height:auto;
+    height: auto;
     border:1px solid var(--accent2);
     border-radius:11px;
+    padding-bottom: 4%;
 }
 
 .work-item:hover {
@@ -197,6 +218,7 @@ a {
 .work-iter {
     background:var(--material);
     border-radius: 11px;
+    height:82%;
     margin:6%;
     padding-bottom: 30px;
 }
@@ -219,14 +241,15 @@ a {
     font-size:18px;
     position:relative;
     padding:0px;
-    margin:12px 30px 0px 30px;
+    margin:12px 7.5% 0px 7.5%;
 }
 
 .work-h1 {
-    font-size:1.5em;
+    font-size:1.3em;
     line-height: 1.3em;
     text-decoration: underline;
     display:block;
+    margin-bottom:40px;
     font-weight:600;
     text-decoration-color: var(--accent2);
 }
@@ -236,12 +259,21 @@ a {
 }
 
 .work-bottom {
-    margin-top:25px;
+    position:absolute;
+    bottom:6%;
+    display:block;
+    width:85%;
+    margin:12px 7.5% 0px 7.5%;
 }
 
 .work-left {
     display:inline-block;
     font-weight:300;
+    color:white;
+}
+
+.work-item:hover .work-iter .work-left {
+    color:var(--navy);
 }
 
 .work-right {
@@ -320,9 +352,28 @@ a {
 
 @media only screen and (max-width: 950px) {
 
+.work-cont {
+    width:60vw;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:5vh;
+    margin:auto;
+}
 
 #nav {
-    width:80vw;
+    width:60vw;
+    display:block;
+    height:auto;
+}
+
+
+}
+
+@media only screen and (max-width: 750px) {
+
+
+#nav {
+    width:70vw;
     display:block;
     height:auto;
 }
@@ -337,16 +388,16 @@ a {
     line-height: 53px;
 }
 
-.work-right {
+/*.work-right {
     display:none;
-}
+}*/
 
 .hero-spacer {
     height:8vh;
 }
 
 .goaway {
-    display:none;
+    display:none !important;
 }
 
 .appear {
@@ -354,11 +405,16 @@ a {
 }
 
 .work-cont {
-    width:80vw;
+    width:70vw;
     display:grid;
     grid-template-columns: 1fr;
     grid-gap:5vh;
     margin:auto;
+}
+
+.work-h1 {
+    font-size:1.4em;
+    font-weight:700;
 }
 
 .footer-top {
