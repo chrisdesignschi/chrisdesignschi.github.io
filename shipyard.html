@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 <script src="https://kit.fontawesome.com/3a2b9eae0b.js" crossorigin="anonymous"></script>
 
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;0,900;1,300;1,600;1,900&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
 
 </head>
 
-<!-- Hi there. This site was coded by Chris Zhu. -->
+<!-- Hi there. This site was coded by `. -->
 
 <body>
 
@@ -22,11 +23,13 @@
 
 <div class="nav-cont">
 	<a href="index.html" class="nav-item nav-left"><span style="color:var(--accent2)">!</span>CHRIS ZHU</a>
-	<a target="_blank" href="https://www.linkedin.com/in/chriszhudesigner/" class="goaway nav-item nav-right"><i class="fab fa-linkedin" style="font-size:22px"></i></a>
+
+<a href="#work" class="appear menubox nav-item nav-right"><i class="fas fa-bars"></i></a>
+
+	<div class="nav-item nav-right switch">
+	<label aria-hidden="true" class="" for="themeSwitch"><input type="checkbox" id="themeSwitch"><span class="fas fa-sun">/</span><span class="fas fa-moon"></span></label></div>
 	<a href="faq.html" class="goaway nav-item nav-right">FAQ</a>
 	<a href="#work" class="goaway nav-item clickedon nav-right">WORK</a>
-
-	<a href="#work" class="appear menubox nav-item nav-right"><i class="fas fa-bars"></i></a>
 
 </div>
 
@@ -36,25 +39,16 @@
 <div id="hero">
 
 <div class="hero-cont">
-	<div class="hero-spacer">
-	</div>
-	<div class="hero-text">
-		
-		Chris is a <span class="goaway">Chicago based</span><br>
-		<span style="cursor:pointer; letter-spacing:2px; color:var(--accent1); font-weight:bold;">DIGITAL DESIGNER</span> <span style="cursor:pointer; letter-spacing:2px; color:var(--accent2); font-weight:bold;"><br class="appear">& ART DIRECTOR.</span>
 
-	</div>
-	<div class="hero-spacer">
-	</div>
-
-<!-- 	<div class="work-options">
+	<div class="work-options">
 		<div class="work-options-items work-select">Featured</div>
 		<div class="work-options-items goaway">DIGITAL</div>
 		<div class="work-options-items goaway">MOTION</div>
-		<div class="work-options-items"><i style="color:var(--accent1)" class="fas fa-random hvr-grow"></i>
+		<div class="work-options-items"><i style="color:var(--accent2)" class="fas fa-random"></i>
+
 
 </div>
-	</div> -->
+	</div>
 
 </div>
 
@@ -86,8 +80,8 @@
 		</span>
 
 		<div class="work-bottom">
-		<div class="work-left"><span class="work-capital yellow">eCommerce</span> 2021</div>
-		<div class="work-right"><i class="yellow fas fa-shopping-cart"></i></div>
+		<div class="work-left"><span class="work-capital blue">eCommerce</span> 2021</div>
+		<div class="work-right"><i class="blue fas fa-shopping-cart"></i></div>
 		</div>
 
 		</div>
@@ -101,8 +95,8 @@
 		</span>
 
 		<div class="work-bottom">
-		<div class="work-left"><span class="work-capital yellow">eCommerce</span> 2021</div>
-		<div class="work-right"><i class="yellow fas fa-shopping-cart"></i></div>
+		<div class="work-left"><span class="work-capital blue">eCommerce</span> 2021</div>
+		<div class="work-right"><i class="blue fas fa-shopping-cart"></i></div>
 		</div>
 
 		</div>
@@ -146,8 +140,8 @@
 		</span>
 
 		<div class="work-bottom">
-		<div class="work-left"><span class="work-capital yellow">eCommerce</span> 2021</div>
-		<div class="work-right"><i class="yellow fas fa-shopping-cart"></i></div>
+		<div class="work-left"><span class="work-capital blue">eCommerce</span> 2021</div>
+		<div class="work-right"><i class="blue fas fa-shopping-cart"></i></div>
 		</div>
 
 		</div>
@@ -164,7 +158,7 @@
 <div class="footer-cont">
 <span class="footer-wrap"><a href="#work" class="footer-button">Work</a><a href="faq.html" class="footer-button">FAQ</a><p class="footer-button"><a target="_blank" href="https://www.linkedin.com/in/chriszhudesigner/" class="blue"><i class="hvr-grow blue fab fa-linkedin" style="font-size:30px"></i></a></p>
 
-<a href="#nav" class="footer-top footer-button yellow goaway">RETURN TO TOP</a></span>
+<a href="#nav" class="footer-top footer-button goaway" style="color:var(--footerbutton) !important">RETURN TO TOP</a></span>
 
 <p class="footer-p">Like what you see? This site was lovingly coded & designed by Chris Z in 2021.<br>
 ©2021 Chris Zhu & respective clients.</p>
@@ -173,6 +167,7 @@
 
 </div>
 
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
