@@ -18,20 +18,6 @@ a {
 }
 
 :root, [data-theme="default"] {
-    --body:#ece3b9;
-    --accent1:#28402c;
-    --accent2:#ff4a3c;
-    --material:#28402c;
-    --whisper:#869171;
-    --navy:#aaff00;
-    --footer:#28402c;
-    --footerbutton:#ff4a3c;
-    --footertext:#aaff00;
-
-}
-
-@supports (--css: variables) {
-  [data-theme="dark"] {
     --body:#222227;
     --accent1:#F9FD47;
     --accent2:#779AFF;
@@ -41,6 +27,19 @@ a {
     --footer:#1D1D21;
     --footerbutton:#F9FD47;
     --footertext:#fff;
+}
+
+@supports (--css: variables) {
+  [data-theme="dark"] {
+    --body:#ece3b9;
+    --accent1:#28402c;
+    --accent2:#ff4a3c;
+    --material:#28402c;
+    --whisper:#869171;
+    --navy:#aaff00;
+    --footer:#28402c;
+    --footerbutton:#ff4a3c;
+    --footertext:#aaff00;
   }
 }
 
