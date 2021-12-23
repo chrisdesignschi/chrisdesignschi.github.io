@@ -18,18 +18,34 @@
 
 <body>
 
+<div class="topnav">
+  <div id="myNav" onclick="openNav()">
+  	<span class="linkcontainer">
+    <a href="#news">Work</a>
+    <a href="#contact">About</a>
+    <a href="#about">Shuffle <i class="fas fa-random"></i></a>
+<p class="navtext"><i class="fas fa-times-circle hvr-grow"></i></p>
+</span>
+</div>
+</div>
+
+<div id="navbox">.</div>
+<div id="navbox2">.</div>
+<div id="dabox"></div>
+
 <span class="nav-container">
 <div id="nav">
-
 <div class="nav-cont">
 	<a href="index.html" class="nav-item nav-left"><span style="color:var(--accent2)">!</span>CHRIS ZHU</a>
 
-<a href="#work" class="appear menubox nav-item nav-right"><i class="fas fa-bars"></i></a>
+<a class="menubox nav-item nav-right hvr-grow" onclick="openNav()">
+	<i class="fas fa-bars"></i>
+</a>
 
-	<div class="nav-item nav-right switch">
-	<label aria-hidden="true" class="" for="themeSwitch"><input type="checkbox" id="themeSwitch"><span class="fas fa-sun">/</span><span class="fas fa-moon"></span></label></div>
-	<a href="faq.html" class="goaway nav-item nav-right">FAQ</a>
-	<a href="#work" class="goaway nav-item clickedon nav-right">WORK</a>
+	<a class="nav-item nav-right switch hvr-grow">
+	<label aria-hidden="true" class="" for="themeSwitch"><input type="checkbox" id="themeSwitch"><span style="color:var(--arise)" class="fas fa-sun"></span><span style="color:var(--whisper)">|</span><span style="color:var(--arise2)" class="fas fa-moon"></span></label></a>
+
+</div>
 
 </div>
 
@@ -42,8 +58,8 @@
 
 	<div class="work-options">
 		<div class="work-options-items work-select">Featured</div>
-		<div class="work-options-items goaway">DIGITAL</div>
-		<div class="work-options-items goaway">MOTION</div>
+		<div class="work-options-items goaway">Digital</div>
+		<div class="work-options-items goaway">Motion</div>
 		<div class="work-options-items"><i style="color:var(--accent2)" class="fas fa-random"></i>
 
 
@@ -156,12 +172,11 @@
 <div id="footer">
 
 <div class="footer-cont">
-<span class="footer-wrap"><a href="#work" class="footer-button">Work</a><a href="faq.html" class="footer-button">FAQ</a><p class="footer-button"><a target="_blank" href="https://www.linkedin.com/in/chriszhudesigner/" class="blue"><i class="hvr-grow blue fab fa-linkedin" style="font-size:30px"></i></a></p>
-
-<a href="#nav" class="footer-top footer-button goaway" style="color:var(--footerbutton) !important">RETURN TO TOP</a></span>
-
-<p class="footer-p">Like what you see? This site was lovingly coded & designed by Chris Z in 2021.<br>
+<span class="footer-wrap">
+<p class="footer-button">Like what you see? This site was lovingly coded & designed by Chris Z in 2021.<br>
 ©2021 Chris Zhu & respective clients.</p>
+
+<a href="#nav" class="footer-top footer-button goaway" style="color:var(--footerbutton) !important">Go to top <i class="fas fa-arrow-up"></i></a></span>
 
 </div>
 

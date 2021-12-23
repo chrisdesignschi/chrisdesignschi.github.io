@@ -11,6 +11,8 @@ body {
     scroll-behavior: smooth;
     margin:0px;
     font-family: Poppins;
+    transition:0.2s;
+    -webkit-transition:0.2s;
 }
 
 a {
@@ -18,7 +20,7 @@ a {
 }
 
 :root, [data-theme="default"] {
-    --body:#222227;
+    --body:#ece3b9;
     --accent1:#F9FD47;
     --accent2:#779AFF;
     --material:#383442;
@@ -27,6 +29,10 @@ a {
     --footer:#1D1D21;
     --footerbutton:#F9FD47;
     --footertext:#fff;
+    --arise2:#779aff;
+    --arise:#969696;
+    --box-pos:0;
+    --navbox:100vw;
 }
 
 @supports (--css: variables) {
@@ -40,14 +46,76 @@ a {
     --footer:#28402c;
     --footerbutton:#ff4a3c;
     --footertext:#aaff00;
+    --arise2:#869171;
+    --arise:#ff4a3c;
+    --box-pos:-100vw;
+    --navbox:0vw;
   }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav #myNav {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  top:-100vh;
+  background-color: var(--accent1);
+  text-align: center;
+  z-index:20;
+  position: fixed;
+  height:100vh;
+  width:100vw;
+}
+
+.linkcontainer {
+    width:100%;
+    display: block;
+    margin-bottom: 5em;
+
+}
+
+.topnav a {
+  color: var(--accent2);
+  text-decoration: none;
+  padding:5px;
+  font-size: 4em;
+  font-weight: 600;
+  width:100%;
+  display: block;
+}
+
+.topnav a:hover {
+    background:var(--accent2);
+    color:var(--accent1);
+}
+
+.navtext {
+    color:var(--accent2);
+    font-size:3.5em;
+    margin-top:0.3em;
+    cursor: pointer;
+}
+
+#dabox {
+    height:100vh;
+    z-index: -100;
+    transition:0.7s !important;
+    -webkit-transition:0.7s !important;
+    left:var(--box-pos);
+    width:100vw;
+    background:#222227;
+    position:fixed;
+    display:block;
 }
 
 div label input {
    margin-right:0px;
 }
 
-.switch label input {
+.switch label input, .menubox label input {
     display:none;
 }
 body {
@@ -57,7 +125,7 @@ body {
 .switch {
 display:inline-block;
   color:var(--accent2) !important;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .yellow {
@@ -92,89 +160,49 @@ display:inline-block;
     transition-property: transform;
 }
 .work-item:hover .hvr-grow-subtle, .work-item:focus .hvr-grow-subtle, .work-item:active .hvr-grow-subtle {
-    -webkit-transform: scale(1.08);
-    transform: scale(1.08);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
     z-index:100;
 }
-
-.theme-switch-wrapper {
-    display: flex;
-    position: absolute;
-    margin-top:3px !important;
-    align-items: center;
-    
-    em {
-    margin-left: 10px;
-    font-size: 1rem;
-    }
-
-}
-.theme-switch {
-    position: absolute;
-    display: inline-block;
-    right:-78vw;
-    margin-right:10px;
-    top:43px;
-    height: 26px !important;
-    width: 50px;
-}
-
-.theme-switch input {
-    display:none;
-}
-
-.slider {
-    background: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-}
-
-.slider:hover {
-    background: var(--button-hover) !important;
-}
-
-.slider:before {
-    background-color: #ffbf1f;
-    background-image:url(../links/day.png);
-    background-size:cover;
-    background-position:center;
-    top: 3px;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 4px;
-    position: absolute;
-    transition: .3s;
-}
-
-input:checked + .slider:before {
-    transform: translateX(22px);
-    background-image:url(../links/night.png);
-    background-size:contain;
-    background-color:#101c30;
-
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
 
 /** expo ends **/
 
 .nav-container {
     width:100vw;
+    z-index: 30;
+    position: relative;
     display:block;
-    background:var(--accent1);
+}
+
+#navbox2 {
+    background:#F9FD47;
+    z-index:-98;
+    width:100vw;
+    color:#F9FD47;
+    position:absolute;
+    padding:2.5vh 0 2.5vh 0;
+    font-size:18px;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none; 
+}
+
+#navbox {
+    background:#28402c;
+    color:var(--accent1);
+    transition:0.7s !important;
+    -webkit-transition:0.7s !important;
+    width:100vw;
+    z-index: -97;
+    left:var(--navbox);
+    position:absolute;
+    padding:2.5vh 0 2.5vh 0;
+    font-size:18px;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none; 
 }
 
 #nav {
@@ -199,12 +227,12 @@ input:checked + .slider:before {
 }
 
 .nav-item:hover {
-    transition:0.3s;
     color:var(--accent2);
 }
 
 .menubox {
     font-size:20px;
+    cursor:pointer;
 }
 
 .clickedon {
@@ -225,6 +253,8 @@ input:checked + .slider:before {
 #hero {
     display:block;
     width:100%;
+    z-index: 0;
+    position: relative;
     margin-top:4vh;
 }
 
@@ -249,8 +279,6 @@ input:checked + .slider:before {
 .work-options-items {
     display:inline-block;
     margin-right:30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     font-size:18px;
     font-family:Poppins;
     color:var(--whisper);
@@ -274,6 +302,8 @@ input:checked + .slider:before {
 #work {
     width:100%;
     padding-top:4vh;
+    z-index: 0;
+    position: relative;
 }
 
 .work-cont {
@@ -367,7 +397,7 @@ input:checked + .slider:before {
 }
 
 .work-right {
-    font-size:25px;
+    font-size:20px;
     position:absolute;
     bottom:-2px;
     right:-3px;
@@ -385,6 +415,7 @@ input:checked + .slider:before {
     border-top:5px solid var(--accent2);
     width:100%;
     margin-top:9vh;
+    z-index: 0;
 }
 
 
@@ -400,14 +431,13 @@ input:checked + .slider:before {
 .footer-button {
     display:inline-block;
     margin-right:30px;
-    font-size:20px;
-    color:var(--accent2);
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size:18px;
+    color:var(--whisper);
 }
 
 .footer-top {
     float:right;
+    font-weight: 600;
     color:var(--accent1) !important;
     margin-right:0px !important;
     text-align: right;
