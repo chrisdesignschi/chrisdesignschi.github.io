@@ -21,16 +21,16 @@
 <div class="topnav">
   <div id="myNav" onclick="openNav()">
   	<span class="linkcontainer">
-    <a href="#news">Work</a>
-    <a href="#contact">About</a>
-    <a href="#about">Shuffle <i class="fas fa-random"></i></a>
+    <a href="shipyard.html">Work</a>
+    <a href="pages/about.html">About</a>
+    <a onClick="randomlinks()">Shuffle <i class="fas fa-random"></i></a>
 <p class="navtext"><i class="fas fa-times-circle hvr-grow"></i></p>
 </span>
 </div>
 </div>
 
-<div id="navbox">.</div>
 <div id="navbox2">.</div>
+<div id="navbox">.</div>
 <div id="dabox"></div>
 
 <span class="nav-container">
@@ -56,11 +56,11 @@
 
 <div class="hero-cont">
 
-	<div class="work-options">
-		<div class="work-options-items work-select">Featured</div>
-		<div class="work-options-items goaway">Digital</div>
-		<div class="work-options-items goaway">Motion</div>
-		<div class="work-options-items"><i style="color:var(--accent2)" class="fas fa-random"></i>
+	<div class="work-options" id="myBtnContainer">
+		<div class="btn active work-options-items work-select" onclick="filterSelection('featured')">Featured</div>
+		<div class="btn work-options-items goaway" onclick="filterSelection('digital')">Digital</div>
+		<div class="btn work-options-items goaway" onclick="filterSelection('motion')">Motion</div>
+		<div onClick="randomlinks()" class="work-options-items"><i style="color:var(--accent2)" class="fas fa-random"></i>
 
 
 </div>
@@ -73,7 +73,7 @@
 <div id="work">
 
 <div class="work-cont">
-	<a href="pages/1.html" class="work-item">
+	<a href="pages/1.html" class="work-item filterDiv featured digital">
 		<div class="work-iter hvr-grow-subtle">
 		<img src="assets/img/1.png">
 		<span class="work-text">
@@ -88,7 +88,7 @@
 		</div>
 	</a>
 
-	<a href="pages/1.html" class="work-item">
+	<a href="pages/1.html" class="work-item filterDiv featured digital">
 		<div class="work-iter hvr-grow-subtle">
 		<img src="assets/img/2.png">
 		<span class="work-text">
@@ -103,7 +103,7 @@
 		</div>
 	</a>
 
-	<a href="pages/1.html" class="work-item">
+	<a href="pages/1.html" class="work-item filterDiv featured digital">
 		<div class="work-iter hvr-grow-subtle">
 		<img src="assets/img/3.png">
 		<span class="work-text">
@@ -118,7 +118,7 @@
 		</div>
 	</a>
 
-	<a href="pages/1.html" class="work-item">
+	<a href="pages/1.html" class="work-item filterDiv featured motion">
 		<div class="work-iter hvr-grow-subtle">
 		<img src="assets/img/4.png">
 		<span class="work-text">
@@ -133,7 +133,7 @@
 		</div>
 	</a>
 
-	<a href="pages/1.html" class="work-item">
+	<a href="pages/1.html" class="work-item filterDiv featured motion">
 		<div class="work-iter hvr-grow-subtle">
 		<img src="assets/img/5.png">
 		<span class="work-text">
@@ -148,7 +148,7 @@
 		</div>
 	</a>
 
-	<a href="pages/1.html" class="work-item">
+	<a href="pages/1.html" class="work-item filterDiv featured digital motion">
 		<div class="work-iter hvr-grow-subtle">
 		<img src="assets/img/6.png">
 		<span class="work-text">

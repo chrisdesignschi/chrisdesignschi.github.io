@@ -164,6 +164,25 @@ display:inline-block;
     z-index:100;
 }
 
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  cursor: pointer;
+}
+
+.btn.active {
+    border-bottom:4px solid var(--accent2);
+    color:var(--accent1);
+    font-weight:600;
+}
+
 /** expo ends **/
 
 .nav-container {
@@ -283,12 +302,6 @@ display:inline-block;
     color:var(--whisper);
     padding:5px 0 5px 0;
     border-bottom:0px solid var(--body);
-}
-
-.work-select {
-    border-bottom:4px solid var(--accent2);
-    color:var(--accent1);
-    font-weight:600;
 }
 
 .work-options-items:hover {
@@ -467,7 +480,6 @@ display:inline-block;
     color:var(--accent2);
     transition: 0.3s;
 }
-
 
 @media only screen and (max-width: 950px) {
 
