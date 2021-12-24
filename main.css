@@ -97,7 +97,7 @@ body {
 }
 
 .navtext {
-    color:var(--navy);
+    color:var(--flashborder);
     font-size:3.5em;
     margin-top:0.3em;
     cursor: pointer;
