@@ -49,7 +49,7 @@ a {
     --footertext:#aaff00;
     --arise2:#869171;
     --arise:#ff4a3c;
-    --box-pos:-150vw;
+    --box-pos:-130vw;
     --navbox:-50vw;
     --flashborder:#aaff00;
   }
@@ -106,12 +106,12 @@ body {
 #dabox {
     height:100vh;
     z-index: -100;
-    transition:0.6s !important;
-    -webkit-transition:0.6s !important;
+    transition:0.8s !important;
+    -webkit-transition:0.8s !important;
     left:var(--box-pos);
     width:100vw;
     background:#222227;
-    border-right:50vw solid var(--flashborder);
+    border-right:30vw solid var(--flashborder);
     position:fixed;
     display:block;
 }
@@ -217,8 +217,8 @@ display:inline-block;
     background:#28402c;
     border-left:50vw solid var(--flashborder);
     color:var(--accent1);
-    transition:0.6s !important;
-    -webkit-transition:0.6s !important;
+    transition:0.8s !important;
+    -webkit-transition:0.8s !important;
     width:100vw;
     z-index: 500 !important;
     left:var(--navbox);
