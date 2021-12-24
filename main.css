@@ -33,6 +33,7 @@ a {
     --arise:#969696;
     --box-pos:0;
     --navbox:100vw;
+    --flashborder:#779AFF;
 }
 
 @supports (--css: variables) {
@@ -48,8 +49,9 @@ a {
     --footertext:#aaff00;
     --arise2:#869171;
     --arise:#ff4a3c;
-    --box-pos:-100vw;
-    --navbox:0vw;
+    --box-pos:-150vw;
+    --navbox:-50vw;
+    --flashborder:#aaff00;
   }
 }
 
@@ -61,13 +63,16 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  top:-100vh;
+  top:-150vh;
   background-color: var(--accent1);
   text-align: center;
   z-index:20;
   position: fixed;
   height:100vh;
   width:100vw;
+  border-bottom: 50vh solid var(--flashborder);
+  transition:0.5s;
+  -webkit-transition:0.5s;
 }
 
 .linkcontainer {
@@ -92,7 +97,7 @@ body {
 }
 
 .navtext {
-    color:var(--accent2);
+    color:var(--navy);
     font-size:3.5em;
     margin-top:0.3em;
     cursor: pointer;
@@ -101,11 +106,12 @@ body {
 #dabox {
     height:100vh;
     z-index: -100;
-    transition:0.7s !important;
-    -webkit-transition:0.7s !important;
+    transition:0.6s !important;
+    -webkit-transition:0.6s !important;
     left:var(--box-pos);
     width:100vw;
     background:#222227;
+    border-right:50vw solid var(--flashborder);
     position:fixed;
     display:block;
 }
@@ -187,17 +193,18 @@ display:inline-block;
 
 .nav-container {
     width:100vw;
-    z-index: 30;
-    position: relative;
+    z-index: 500 !important;
+    position: fixed;
+    top:0px !important;
     display:block;
 }
 
 #navbox2 {
     background:#F9FD47;
-    z-index:-98;
+    z-index: 500 !important;
     width:100vw;
     color:#F9FD47;
-    position:absolute;
+    position:fixed;
     padding:2.5vh 0 2.5vh 0;
     font-size:18px;
     -webkit-user-select: none;  /* Chrome all / Safari all */
@@ -208,13 +215,14 @@ display:inline-block;
 
 #navbox {
     background:#28402c;
+    border-left:50vw solid var(--flashborder);
     color:var(--accent1);
-    transition:0.7s !important;
-    -webkit-transition:0.7s !important;
+    transition:0.6s !important;
+    -webkit-transition:0.6s !important;
     width:100vw;
-    z-index: -97;
+    z-index: 500 !important;
     left:var(--navbox);
-    position:absolute;
+    position:fixed;
     padding:2.5vh 0 2.5vh 0;
     font-size:18px;
     -webkit-user-select: none;  /* Chrome all / Safari all */
@@ -229,6 +237,7 @@ display:inline-block;
     margin: 0 auto 0 auto;
     height:auto;
     padding:2.5vh 0 2.5vh 0;
+    position: relative;
 }
 
 .nav-cont a {
@@ -273,12 +282,12 @@ display:inline-block;
     width:100%;
     z-index: 0;
     position: relative;
-    margin-top:4vh;
 }
 
 .hero-cont {
     width:65vw;
     margin:0 17.5vw 0 17.5vw;
+    padding-top:11vh;
 }
 
 .hero-spacer {
@@ -351,6 +360,8 @@ display:inline-block;
     border-radius: 11px;
     height:82%;
     margin:6%;
+    transition: 0.5s !important;
+    -webkit-transition: 0.5s !important;
     padding-bottom: 30px;
 }
 
@@ -424,9 +435,8 @@ display:inline-block;
 
 #footer {
     background:var(--footer);
-    border-top:5px solid var(--accent2);
     width:100%;
-    margin-top:9vh;
+    margin-top:25vh;
     z-index: 0;
 }
 

@@ -49,7 +49,7 @@
 function openNav() {
   var x = document.getElementById("myNav");
   if (x.style.top === "0vh") {
-    x.style.top = "-100vh";
+    x.style.top = "-150vh";
   } else {
     x.style.top = "0vh";
   }
