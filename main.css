@@ -44,20 +44,20 @@ a {
 @supports (--css: variables) {
   [data-theme="dark"] {
     --body:#ece3b9;
-    --accent1:#F9FD47;
-    --accent2:#779AFF;
+    --accent1:#FFCE2D;
+    --accent2:#FF3569;
     --material:#383442;
     --whisper:#969696;
     --navy:#121742;
-    --footer:#1D1D21;
-    --footerbutton:#F9FD47;
+    --footer:#141925;
+    --footerbutton:#FFCE2D;
     --footertext:#fff;
-    --arise2:#779aff;
+    --arise2:#FF3569;
     --arise:#969696;
     --box-pos:0;
     --navbox:100vw;
-    --flashborder:#779AFF;
-    --justforu:#f9fd47;
+    --flashborder:#FF3569;
+    --justforu:#FFCE2D;
     --darktext:#121742;
     --daynight:'day';
     --dayswitch:none;
@@ -120,7 +120,7 @@ body {
     -webkit-transition:0.8s !important;
     left:var(--box-pos);
     width:100vw;
-    background:#222227;
+    background:#1A2030;
     border-right:30vw solid var(--flashborder);
     position:fixed;
     display:block;
@@ -210,10 +210,10 @@ display:inline-block;
 }
 
 #navbox2 {
-    background:#F9FD47;
+    background:#FFCE2D;
     z-index: 500 !important;
     width:100vw;
-    color:#F9FD47;
+    color:#FFCE2D;
     position:fixed;
     padding:2.5vh 0 2.5vh 0;
     font-size:18px;
