@@ -21,24 +21,6 @@ a {
 
 :root, [data-theme="default"] {
     --body:#ece3b9;
-    --accent1:#F9FD47;
-    --accent2:#779AFF;
-    --material:#383442;
-    --whisper:#969696;
-    --navy:#121742;
-    --footer:#1D1D21;
-    --footerbutton:#F9FD47;
-    --footertext:#fff;
-    --arise2:#779aff;
-    --arise:#969696;
-    --box-pos:0;
-    --navbox:100vw;
-    --flashborder:#779AFF;
-}
-
-@supports (--css: variables) {
-  [data-theme="dark"] {
-    --body:#ece3b9;
     --accent1:#28402c;
     --accent2:#ff4a3c;
     --material:#28402c;
@@ -52,6 +34,34 @@ a {
     --box-pos:-130vw;
     --navbox:-30vw;
     --flashborder:#aaff00;
+    --justforu:#aaff00;
+    --darktext:#28402c;
+    --daynight:'night';
+    --dayswitch:inline-block;
+    --nightswitch:none;
+}
+
+@supports (--css: variables) {
+  [data-theme="dark"] {
+    --body:#ece3b9;
+    --accent1:#F9FD47;
+    --accent2:#779AFF;
+    --material:#383442;
+    --whisper:#969696;
+    --navy:#121742;
+    --footer:#1D1D21;
+    --footerbutton:#F9FD47;
+    --footertext:#fff;
+    --arise2:#779aff;
+    --arise:#969696;
+    --box-pos:0;
+    --navbox:100vw;
+    --flashborder:#779AFF;
+    --justforu:#f9fd47;
+    --darktext:#121742;
+    --daynight:'day';
+    --dayswitch:none;
+    --nightswitch:inline-block;
   }
 }
 
@@ -232,7 +242,7 @@ display:inline-block;
 }
 
 #nav {
-    width:80vw;
+    width:75vw;
     display:block;
     margin: 0 auto 0 auto;
     height:auto;
@@ -285,8 +295,8 @@ display:inline-block;
 }
 
 .hero-cont {
-    width:80vw;
-    margin:0 10vw 0 10vw;
+    width:75vw;
+    margin:0 12.5vw 0 12.5vw;
     padding-top:11vh;
 }
 
@@ -328,11 +338,11 @@ display:inline-block;
 }
 
 .work-cont {
-    width:80vw;
+    width:75vw;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:1.8vw;
-    margin:0 10vw 0 10vw;
+    margin:0 12.5vw 0 12.5vw;
 }
 
 .work-item {
@@ -435,16 +445,100 @@ display:inline-block;
 #footer {
     background:var(--footer);
     width:100%;
-    margin-top:25vh;
+    margin-top:15vh;
     z-index: 0;
 }
 
+.footer-cont-1 {
+    width:75vw;
+    margin:0 12.5vw 0 12.5vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:8vh;
+    padding-bottom: 17vh;
+}
 
+.footer-left a {
+    color:inherit;
+}
+
+.footer-left a:hover {
+    color:var(--accent2);
+}
+
+.footer-email-note {
+    color:var(--accent2);
+}
+
+.footer-email {
+    color:var(--justforu);
+    font-size:1.7em;
+}
+
+.footer-right {
+    text-align: right;
+    padding-right:5vh;
+    width:auto;
+}
+
+.daynight:before {
+    content:var(--daynight);
+}
+
+.footer-right a input {
+    display: none
+}
+
+.footer-right a {
+    cursor: pointer;
+    background:var(--accent2);
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:25px;
+    padding-right:25px;
+    margin-left:2px;
+}
+
+.footer-cont a:hover {
+    background:var(--footertext);
+    color:var(--darktext) !important;
+}
+
+.footer-right a:first-of-type {
+    border-radius:0px 8px 8px 0px;
+}
+
+.footer-right a:last-of-type {
+    border-radius:8px 0px 0px 8px;
+}
+
+.justforu {
+    color:var(--justforu);
+}
+
+.footer-top:hover .justforu {
+    color:var(--darktext);
+}
+
+.footer-top {
+    float:right;
+    font-weight: 600;
+    color:var(--darktext);
+    margin-right:0px !important;
+    text-align: right;
+    display:block;
+}
+
+.footer-box-note {
+    color:var(--whisper);
+}
+
+/*
 .footer-cont {
-    width:65vw;
+    width:75vw;
     font-family: 'Poppins', sans-serif;
     font-weight:300;
-    margin:0 17.5vw 0 17.5vw;
+    margin:0 12.5vw 0 12.5vw;
     padding-top:70px;
     padding-bottom:200px;
 }
@@ -488,9 +582,9 @@ display:inline-block;
 #footer a:hover {
     color:var(--accent2);
     transition: 0.3s;
-}
+}*/
 
-@media only screen and (max-width: 950px) {
+/*@media only screen and (max-width: 950px) {
 
 .work-cont {
     width:60vw;
@@ -524,10 +618,30 @@ display:inline-block;
     display:none !important;
 }
 
+}*/
+
+@media only screen and (max-width: 1000px) {
+
+.footer-right {
+    display: none;
 }
+}
+
 
 @media only screen and (max-width: 750px) {
 
+
+.footer-cont-1 {
+    width:70vw;
+    margin:0 15vw 0 15vw;
+    display:block;
+    padding-top:8vh;
+    padding-bottom: 17vh;
+}
+
+.footer-email {
+    font-size:1.4em;
+}
 
 #nav {
     width:70vw;
@@ -584,6 +698,14 @@ display:inline-block;
 
 .footer-wrap {
     margin-bottom:30px;
+}
+
+
+.nav-right {
+    float:right;
+    display:inline-block;
+    font-weight:300;
+    margin-left:20px;
 }
 
 }
