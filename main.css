@@ -680,7 +680,7 @@ display:inline-block;
 }
 
 .work-exp li:before {
-    content:'+ ';
+    content:'> ';
     color:var(--accent2);
 }
 
@@ -695,6 +695,20 @@ display:inline-block;
     margin:25px 0 25px 0;
     display: block;
     background: var(--accent2)
+}
+
+.work-exp-jobs b {
+    font-weight: 600;
+}
+
+.work-exp-jobs a {
+    color:var(--accent1);
+    text-decoration: underline;
+    text-decoration-color: var(--accent2);
+}
+
+.work-exp-jobs a:hover {
+    color:var(--accent2);
 }
 
 @media only screen and (max-width: 1000px) {
