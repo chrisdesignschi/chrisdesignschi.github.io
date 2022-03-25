@@ -932,17 +932,6 @@ display:inline-block;
     margin-bottom:20px;
 }
 
-.block-end {
-    width:auto;
-    border-radius: 11px;
-    margin:auto;
-    background: red;
-}
-
-.block-end a:first-of-type {
-
-}
-
 @media only screen and (max-width: 1000px) {
 
 .footer-right {
