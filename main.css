@@ -86,21 +86,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.topnav #myNav {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  top:-150vh;
-  background-color: var(--accent1);
-  text-align: center;
-  z-index:20;
-  height:100vh;
-  width:100vw;
-  border-bottom: 50vh solid var(--flashborder);
-  transition:0.5s;
-  -webkit-transition:0.5s;
-}
-
 .linkcontainer {
     width:100%;
     display: block;
@@ -827,6 +812,7 @@ display:inline-block;
     width:75vw;
     line-height: 0;
     margin:0 12.5vw 50px 12.5vw;
+    border:1px solid var(--accent2);
 }
 
 .block-one img {
@@ -857,6 +843,7 @@ display:inline-block;
     margin-top:15px;
     display:grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap:15px;
 }
 
 .block-details-2 {
@@ -877,7 +864,7 @@ display:inline-block;
 
 .block-hero {
     color:var(--ptext);
-    font-weight:600;
+    font-weight:300;
     font-size:20px;
 }
 
@@ -944,6 +931,72 @@ display:inline-block;
     font-weight:300;
     font-size:16px;
     margin-bottom:20px;
+}
+
+.block-video {
+    border-radius:11px;
+    width:75vw;
+    line-height: 0;
+    margin:0 12.5vw 50px 12.5vw;
+    overflow: hidden;
+    border:1px solid var(--accent1);
+}
+
+.block-hovergif .hovergif-preview {
+    display: block;
+    opacity:0.5;
+}
+
+.block-hovergif:hover .hovergif-preview {
+    display:none;
+}
+
+.block-hovergif .hovergif-main {
+    display: none;
+}
+
+.block-hovergif:hover .hovergif-main {
+    display: block;
+}
+
+.block-end {
+    margin:auto;
+    height:auto;
+    font-size:16px;
+    display: block;
+    text-align: center;
+    font-weight:600;
+}
+
+.block-end a {
+    display: inline-block;
+    width:auto;
+    padding:20px;
+    border-radius: 11px;
+    border: 1px solid var(--accent2);
+    text-align: center;
+    margin:0px;
+    color:var(--accent2);
+}
+
+.block-end a:first-of-type {
+    border-radius:11px 0 0 11px;
+    border:1px solid var(--accent2);
+    margin-right:-2px;
+}
+
+.block-end a:last-of-type {
+    border-radius:0 11px 11px 0px;
+    border:1px solid var(--accent2);
+    margin-left:-2px;
+}
+
+.block-end a:hover {
+    background:var(--accent2);
+    color:var(--navy);
+    cursor:pointer;
+    transition:0.2s;
+    -webkit-transition:0.2s;
 }
 
 @media only screen and (max-width: 1000px) {
