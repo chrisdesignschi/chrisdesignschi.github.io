@@ -1062,6 +1062,8 @@ display:inline-block;
     width:70vw;
     display:block;
     height:auto;
+    margin-bottom:0px;
+    padding-bottom: 0px;
 }
 
 .hero-cont {
@@ -1073,6 +1075,7 @@ display:inline-block;
 .nav-cont {
     padding-top:0px;
     padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .hero-text {
@@ -1090,6 +1093,27 @@ display:inline-block;
 
 .appear {
     display:block;
+}
+
+.nav-item {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:0px;
+}
+
+.mobile-nav {
+    width:70vw;
+    display:block;
+    margin: auto;
+    margin-bottom:35px;
+    margin-top:15px;
+}
+
+.mobile-btn {
+    font-size:30px;
+    font-weight: 600;
+    margin-right:12px;
+    color:var(--accent2);
 }
 
 .work-cont {
