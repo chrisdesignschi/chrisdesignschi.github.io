@@ -640,6 +640,8 @@ display:inline-block;
 .about-0 {
     border-radius:11px;
     background:var(--accent1);
+    transition:0.2s;
+    -webkit-transition:0.2s;
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 35px;
