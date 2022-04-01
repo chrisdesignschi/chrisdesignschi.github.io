@@ -24,12 +24,12 @@ a {
 
 ::selection {
     background: var(--accent2); /* WebKit/Blink Browsers */
-    color:white;
-}
+    color:white;}
+
 ::-moz-selection {
     background: var(--accent2); /* WebKit/Blink Browsers */
-    color:white;
-}
+    color:white;}
+
 @supports (--css: variables) {
   [data-theme="dark"] {
     --body:#ece3b9;
@@ -57,7 +57,7 @@ a {
 }
 
 :root, [data-theme="default"] {
-    --body:#FFCE2D;
+    --body:#1A2030;
     --accent1:#FFCE2D;
     --accent2:#FF3569;
     --material:#383442;
@@ -160,9 +160,6 @@ display:inline-block;
     color:white;
 }
 
-.active {
-    color:var(--accent2) !important;
-}
 /** expo **/
 
 .hvr-grow {
@@ -173,6 +170,7 @@ display:inline-block;
     -webkit-transition-property: transform;
     transition-property: transform;
 }
+
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
@@ -283,7 +281,7 @@ display:inline-block;
 }
 
 .nav-item:hover {
-    color:var(--accent2);
+    color:var(--accent1);
 }
 
 .menubox {
@@ -304,6 +302,7 @@ display:inline-block;
     display:inline-block;
     font-weight:300;
     margin-left:50px;
+    color:var(--accent2);
 }
 
 .btn {
@@ -873,6 +872,32 @@ display:inline-block;
 .block-full {
     width:100%;
     margin-bottom: 50px;
+}
+
+.block-3phones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 6vw;
+    width:65vw;
+    padding-left:5vw;
+    padding-right:5vw;
+    line-height: 0;
+    margin:0 12.5vw 50px 12.5vw;
+}
+
+.block-3phones img {
+    width:100%;
+    height:auto;
+}
+
+.block-3phones video {
+    position: absolute;
+    width:15.8vw;
+    display: block;
+    margin-top:6.55vw;
+    margin-left:0.95vw;
+    margin-right:1vw;
+
 }
 
 .block-full img {
