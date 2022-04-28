@@ -377,13 +377,13 @@ display:inline-block;
 #work {
     width:100%;
     z-index: 0;
-    position: relative;
+    position: absolute;
 }
 
 #about {
     width:100%;
     z-index: 0;
-    position: relative;
+    position: absolute;
 }
 
 .about-cont {
