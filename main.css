@@ -913,12 +913,15 @@ display:inline-block;
 }
 
 .block-two div:first-of-type, .block-two div:first-of-type img {
-    border-radius: 11px 0 0 11px;
+    border-radius: 9px 0 0 9px;
     line-height: 0;
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 .block-two div:last-of-type, .block-two div:last-of-type img {
-    border-radius: 0px 11px 11px 0px;
+    border-radius: 0px 9px 9px 0px;
+    line-height: 0;
 }
 
 .block-two img {
