@@ -928,6 +928,12 @@ display:inline-block;
     width:100%;
 }
 
+.block-figma {
+    height: 85vh;
+    border-right: 1px solid var(--accent2);
+    border-bottom: 1px solid var(--accent2);
+}
+
 .block-para {
     padding:25px;
     color:var(--ptext);
