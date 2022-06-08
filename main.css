@@ -741,7 +741,6 @@ display:inline-block;
 /** portfolio blocks **/
 
 .block-cont {
-    width:75vw;
     margin:0 12.5vw 50px 12.5vw;
 }
 
@@ -816,6 +815,20 @@ display:inline-block;
     border:1px solid var(--accent2);
 }
 
+.block-hug {
+    border-radius:11px;
+    display: block;
+    padding: 0px 0px 15px 10px;
+    width: 290px;
+    margin: auto;
+    margin-bottom: 50px;
+    border:1px solid var(--accent2);
+}
+
+.block-hug a {
+    margin-bottom: 3px;
+}
+
 .block-one img {
     border-radius:11px;
     width:100%;
@@ -831,6 +844,7 @@ display:inline-block;
 
 .block-h1 {
     font-size:28px;
+    line-height: 33px;
     color:var(--accent2);
 }
 
@@ -967,6 +981,30 @@ display:inline-block;
     font-weight:300;
     font-size:16px;
     margin-bottom:20px;
+}
+
+.block-para a {
+    color: var(--ptext);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    text-decoration: underline;
+}
+
+.block-para a:hover {
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    color: var(--accent1);
+}
+
+.block-para li {
+    list-style: none;
+}
+
+.block-para li:before {
+    content: "> ";
+    color: var(--accent2);
+    font-weight: 300;
+    font-size: 16px;
 }
 
 .block-video {
