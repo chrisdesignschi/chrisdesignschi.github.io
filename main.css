@@ -818,15 +818,11 @@ display:inline-block;
 .block-hug {
     border-radius:11px;
     display: block;
-    padding: 0px 0px 15px 10px;
-    width: 290px;
+    padding: 0px 0px 15px 15px;
+    width: 273px;
     margin: auto;
     margin-bottom: 50px;
     border:1px solid var(--accent2);
-}
-
-.block-hug a {
-    margin-bottom: 3px;
 }
 
 .block-one img {
@@ -987,7 +983,6 @@ display:inline-block;
     color: var(--ptext);
     transition: 0.2s;
     -webkit-transition: 0.2s;
-    text-decoration: underline;
 }
 
 .block-para a:hover {
@@ -998,13 +993,12 @@ display:inline-block;
 
 .block-para li {
     list-style: none;
+    margin-bottom: 3px;
 }
 
 .block-para li:before {
     content: "> ";
-    color: var(--accent2);
-    font-weight: 300;
-    font-size: 16px;
+    color: var(--accent1);
 }
 
 .block-video {
