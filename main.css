@@ -743,6 +743,7 @@ display:inline-block;
 .block-note {
     width: 27vw;
     margin: auto;
+    display: block;
     padding: 3vw;
     padding-bottom: 1.9vw;
     border: 1px solid var(--accent2);
@@ -975,10 +976,6 @@ display:inline-block;
     padding:25px;
 }
 
-.cushion-left {
-    padding: 35px;
-}
-
 .block-para {
     color:var(--ptext);
     line-height:normal !important;
@@ -1152,6 +1149,11 @@ display:inline-block;
 }
 
 @media only screen and (max-width: 750px) {
+
+.block-cushion {
+    padding:25px;
+    margin-top: 35px;
+}
 
 .work-cont {
     width:70vw;
