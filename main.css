@@ -756,17 +756,29 @@ display:inline-block;
 .block-note-icon {
     text-align: center;
     display: block;
-    margin-top: 18px;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24px;
+    padding: 10px;
+    border-radius: 900px;
     color: var(--accent1);
     font-size: 16px;
 }
 
-.block-note-icon a {
-    color: inherit;
+.block-note-icon:hover {
+    background: var(--material);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    padding: 10px;
 }
 
-.block-note-icon a:hover {
+.block-note-icon:hover {
     color: var(--accent2);
+}
+
+.block-note-icon a {
+    color: inherit;
 }
 
 .block-cont {
