@@ -706,6 +706,7 @@ display:inline-block;
 
 .skills span:before {
     content: "> ";
+    color: var(--footerbutton);
 }
 
 .about-job {
@@ -1078,31 +1079,34 @@ display:inline-block;
     width:auto;
     padding:20px;
     border-radius: 11px;
-    border: 1px solid var(--accent2);
     text-align: center;
     margin:0px;
-    color:var(--accent2);
+    background:var(--accent2);
+    color: var(--darktext);
 }
 
 .block-end a:first-of-type {
     border-radius:11px 0 0 11px;
-    border:1px solid var(--accent2);
     margin-right:-2px;
+    border-right: 2px solid var(--body);
 }
 
 .block-end a:last-of-type {
     border-radius:0 11px 11px 0px;
-    border:1px solid var(--accent2);
     margin-left:-2px;
 }
 
 .block-end a:hover {
-    background:var(--accent2);
-    color:var(--navy);
+    background:var(--footertext);
+    color:var(--darktext) !important;
     cursor:pointer;
-    transition:0.2s;
-    -webkit-transition:0.2s;
 }
+
+.block-end a:hover i {
+    color: var(--darktext);
+}
+
+*/
 
 @media only screen and (max-width: 1000px) {
 
@@ -1145,13 +1149,18 @@ display:inline-block;
     margin-top:15px;
 }
 
+.block-para {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 30px;
+}
 
 }
 
 @media only screen and (max-width: 750px) {
 
 .block-cushion {
-    padding:25px;
+    padding:25px 0px 25px 0px;
     margin-top: 35px;
 }
 
