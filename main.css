@@ -840,6 +840,21 @@ display:inline-block;
     line-height:0;
 }
 
+.block-quad-full {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 0;
+    padding: 0px;
+    width: 100vw;
+    margin: 0 0 80px 0;
+}
+
+.block-quad-full img {
+    width: 50vw;
+    height: auto;
+}
+
+
 .block-img {
     border-top:1px solid var(--accent2);
     border-left:1px solid var(--accent2);
@@ -904,7 +919,7 @@ display:inline-block;
 
 .block-left span:first-of-type {
     font-weight:600;
-    color:var(--accent1);
+    color:var(--footerbutton);
     font-size:16px;
 }
 
@@ -1121,6 +1136,17 @@ display:inline-block;
 
 
 @media only screen and (max-width: 1000px) {
+
+.block-quad-full {
+    display: block;
+}
+
+.block-quad-full img {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 8px;
+}
+
 
 .footer-right {
     display: none;
