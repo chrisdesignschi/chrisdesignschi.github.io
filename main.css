@@ -743,7 +743,7 @@ display:inline-block;
 
 .block-note {
     width: 55vw;
-    margin: auto;
+    margin: auto auto 80px auto;
     display: block;
     border-bottom: 0px;
     border-radius: 11px 11px 0 0;
@@ -798,7 +798,7 @@ display:inline-block;
 }
 
 .block-cont {
-    margin:80px 12.5vw 80px 12.5vw;
+    margin:0px 12.5vw 80px 12.5vw;
 }
 
 .block-quad {
@@ -872,11 +872,8 @@ display:inline-block;
 
 
 .block-img {
-    border-top:1px solid var(--accent2);
-    border-left:1px solid var(--accent2);
-    border-right:1px solid var(--accent2);
     border-radius:11px 11px 0 0;
-    width:74.88vw;
+    width:100%;
 }
 
 .block-one {
@@ -954,7 +951,6 @@ display:inline-block;
 .block-full {
     width:100%;
     margin-bottom: 80px;
-    margin-top: 80px;
 }
 
 .block-3phones {
@@ -1210,6 +1206,15 @@ display:inline-block;
     margin-top: 30px;
 }
 
+.block-note {
+    width: 75vw;
+    display: block;
+}
+
+.block-note h2 {
+    text-align: left;
+}
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -1312,15 +1317,6 @@ display:inline-block;
     width:70vw;
     display:block;
     margin:auto;
-}
-
-.block-note {
-    width: 70vw;
-    display: block;
-}
-
-.block-note h2 {
-    text-align: left;
 }
 
 .nav-cont {
