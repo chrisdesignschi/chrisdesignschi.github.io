@@ -741,6 +741,29 @@ display:inline-block;
 
 /** portfolio blocks **/
 
+.quicklinks-float {
+    position: fixed;
+    width: 11vw;
+    text-align: right;
+    z-index: 1000;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--accent1);
+}
+
+.quicklinks-float a {
+    color: inherit;
+}
+
+.quicklinks-float a:hover {
+    color: var(--accent2);
+}
+
+.quicklinks-float li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
 .block-note {
     width: 55vw;
     margin: auto auto 80px auto;
@@ -760,41 +783,12 @@ display:inline-block;
     display: block;
     border: 1px solid var(--accent2);
     padding: 3vw;
-    padding-bottom: 1.9vw;
     margin-bottom: 80px;
     border-radius: 11px;
 }
 
 .note-nogrid h2 {
     text-align: left;
-}
-
-.block-note-icon {
-    text-align: center;
-    display: block;
-    margin-top: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 24px;
-    padding: 10px;
-    border-radius: 900px;
-    color: var(--accent1);
-    font-size: 16px;
-}
-
-.block-note-icon:hover {
-    background: var(--material);
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    padding: 10px;
-}
-
-.block-note-icon:hover {
-    color: var(--accent2);
-}
-
-.block-note-icon a {
-    color: inherit;
 }
 
 .block-cont {
