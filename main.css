@@ -766,7 +766,7 @@ display:inline-block;
 
 .block-note {
     width: 55vw;
-    margin: auto auto 80px auto;
+    margin: auto auto 40px auto;
     display: block;
     border-bottom: 0px;
     border-radius: 11px 11px 0 0;
@@ -964,6 +964,7 @@ display:inline-block;
     display: block;
     width: 100%;
     height: auto;
+    cursor: url(assets/img/AP/cursor.svg), auto;
 }
 
 input[type="checkbox"]:checked {
