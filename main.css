@@ -958,6 +958,23 @@ display:inline-block;
     margin-bottom: 80px;
 }
 
+.xray input[type="checkbox"] {
+    content: url('assets/img/AP/mobile.webp');
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+input[type="checkbox"]:checked {
+    content: url('assets/img/AP/mobile2.webp');
+}
+
+.geniusmadman img {
+    width: 0;
+    height: 0;
+}
+
 .block-3phones {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
