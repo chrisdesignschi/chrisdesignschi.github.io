@@ -647,16 +647,16 @@ display:inline-block;
     transition:0.2s;
     -webkit-transition:0.2s;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 3fr;
     grid-column-gap: 35px;
 }
 
 .about-0 p {
-    max-width:80%;
+    max-width:85%;
+    margin-bottom: 18px;
 }
 
 .about-0 h1 {
-    margin-bottom:20px !important;
     color:var(--overt) !important;
 }
 
@@ -673,11 +673,11 @@ display:inline-block;
 }
 
 .about-modal h1 {
-    font-size:35px;
+    font-size:30px;
     color:var(--ptext);
-    margin-bottom: 40px;
+    margin-bottom: 18px;
     font-weight: 600;
-    line-height: 35px;
+    line-height: 38px;
     letter-spacing: -1px;
 }
 
@@ -724,7 +724,7 @@ display:inline-block;
 }
 
 .about-job span:nth-of-type(1) {
-    font-size:20px;
+    font-size:16px;
     display: block;
     color:var(--footerbutton);
     font-weight: 600;
@@ -734,7 +734,7 @@ display:inline-block;
     font-size:16px;
     display: block;
     color:var(--ptext);
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .about-job span:nth-of-type(3) {
@@ -1174,9 +1174,25 @@ input[type="checkbox"]:checked {
     color: var(--darktext);
 }
 
+.aboutphoto {
+    display: block;
+}
+
+.aboutphotomobile {
+    display: none;
+}
 
 
 @media only screen and (max-width: 1000px) {
+
+.aboutphoto {
+    display: none;
+}
+
+.aboutphotomobile {
+    display: block;
+    margin: auto auto 30px auto;
+}
 
 .block-quad-full {
     display: block;
