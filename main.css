@@ -673,11 +673,11 @@ display:inline-block;
 }
 
 .about-modal h1 {
-    font-size:30px;
+    font-size:28px;
     color:var(--ptext);
     margin-bottom: 18px;
     font-weight: 600;
-    line-height: 38px;
+    line-height: 37px;
     letter-spacing: -1px;
 }
 
