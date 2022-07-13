@@ -872,7 +872,6 @@ display:inline-block;
 .block-img {
     border-radius:11px 11px 0 0;
     width:100%;
-    border: 1px solid var(--accent2);
 }
 
 .block-one {
@@ -913,7 +912,6 @@ display:inline-block;
 .block {
     margin-top:-8px;
     border-radius:0 0 11px 11px;
-    border:1px solid var(--accent2);
     padding:35px;
 }
 
@@ -927,6 +925,11 @@ display:inline-block;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-column-gap:20px;
+}
+
+#site-first {
+     border:1px solid var(--accent2);
+     border-radius: 11px;
 }
 
 .block-details-1 {
