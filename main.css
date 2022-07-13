@@ -872,6 +872,7 @@ display:inline-block;
 .block-img {
     border-radius:11px 11px 0 0;
     width:100%;
+    border: 1px solid var(--accent2);
 }
 
 .block-one {
