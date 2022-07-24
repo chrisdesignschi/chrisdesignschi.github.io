@@ -710,11 +710,11 @@ display:inline-block;
     line-height: 30px;
 }
 
-.skills span:before {
+/*.skills span:before {
     content: "> ";
     color: var(--footerbutton);
 }
-
+*/
 .about-job {
     margin-bottom: 25px;
     line-height: 23px;
@@ -873,6 +873,49 @@ display:inline-block;
 .block-img {
     border-radius:11px 11px 0 0;
     width:100%;
+}
+
+.block-trio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.block-trio div {
+    border-radius: 11px;
+    padding: 40px;
+    text-align: left;
+    border: 2px solid var(--accent2);
+}
+
+.block-trio div h1 {
+    font-weight: 600;
+    color: var(--accent1);
+    font-size: 16px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.trio-spacer {
+    width: 30px;
+    height: 3px;
+    background: var(--accent2);
+    display: block;
+    margin: 30px 0 30px 0;
+}
+
+.block-trio p {
+    color: var(--ptext);
+    font-weight: 300;
+}
+
+.block-trio p i {
+    margin-top: 10px;
+    display: block;
+    font-weight: 300;
 }
 
 .block-one {
@@ -1188,6 +1231,15 @@ input[type="checkbox"]:checked {
 
 
 @media only screen and (max-width: 1000px) {
+
+.block-trio {
+    display: block;
+}
+
+.block-trio div {
+    margin-bottom: 25px;
+}
+
 
 .aboutphoto {
     display: none;
