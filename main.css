@@ -1232,6 +1232,11 @@ input[type="checkbox"]:checked {
 
 @media only screen and (max-width: 1000px) {
 
+.block-one-five {
+    width: 80vw;
+    margin: inherit 10vw inherit 10vw;
+}
+
 .block-trio {
     display: block;
 }
