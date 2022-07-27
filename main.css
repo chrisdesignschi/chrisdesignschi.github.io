@@ -1234,7 +1234,7 @@ input[type="checkbox"]:checked {
 
 .block-one-five {
     width: 80vw;
-    margin: inherit 10vw inherit 10vw;
+    margin: auto;
 }
 
 .block-trio {
