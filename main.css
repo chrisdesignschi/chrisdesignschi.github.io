@@ -1019,8 +1019,17 @@ display:inline-block;
     cursor: url(assets/img/AP/cursor.svg), auto;
 }
 
+.xray2 input[type="checkbox"] {
+    content: url('assets/img/CS/landing.png');
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: url(assets/img/AP/cursor.svg), auto;
+}
+
 input[type="checkbox"]:checked {
-    content: url('assets/img/AP/mobile2.webp');
+    content: url('assets/img/CS/landingnote.png');
 }
 
 .geniusmadman img {
