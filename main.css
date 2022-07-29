@@ -1028,7 +1028,11 @@ display:inline-block;
     cursor: url(assets/img/AP/cursor.svg), auto;
 }
 
-input[type="checkbox"]:checked {
+.xray input[type="checkbox"]:checked {
+    content: url('assets/img/AP/mobile2.webp');
+}
+
+.xray2 input[type="checkbox"]:checked {
     content: url('assets/img/CS/landingnote.png');
 }
 
