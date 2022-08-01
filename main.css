@@ -1020,7 +1020,7 @@ display:inline-block;
 }
 
 .xray2 input[type="checkbox"] {
-    content: url('assets/img/CS/landing.png');
+    content: url('assets/img/CS/landing.webp');
     appearance: none;
     display: block;
     width: 100%;
@@ -1033,7 +1033,7 @@ display:inline-block;
 }
 
 .xray2 input[type="checkbox"]:checked {
-    content: url('assets/img/CS/landingnote.png');
+    content: url('assets/img/CS/landingnote.webp');
 }
 
 .geniusmadman img {
