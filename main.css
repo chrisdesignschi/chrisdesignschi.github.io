@@ -194,7 +194,6 @@ display:inline-block;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  border-radius: 8px;
 }
 .hvr-sweep-to-right:before {
   content: "";
@@ -202,7 +201,6 @@ display:inline-block;
   z-index: -1;
   top: 0;
   left: 0;
-  border-radius: 8px;
   right: 0;
   bottom: 0;
   background: var(--accent2);
