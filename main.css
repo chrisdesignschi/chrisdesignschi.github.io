@@ -836,7 +836,7 @@ display:inline-block;
 
 .about-0 {
     border-radius:11px;
-    background:var(--accent1);
+    border: 1px solid var(--accent1);
     transition:0.2s;
     -webkit-transition:0.2s;
     display: grid;
@@ -850,11 +850,11 @@ display:inline-block;
 }
 
 .about-0 h1 {
-    color:var(--overt) !important;
+    color:var(--accent1) !important;
 }
 
 .about-0 p {
-    color:var(--navy2) !important;
+    color:var(--ptext) !important;
 }
 
 .about-1 {
