@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    width: 100vw;
 }
 
 #hero {
@@ -9,12 +10,12 @@ body {
 
 .d-topimg {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 15px;
     padding-left: 10vw;
-    width: 100vw;
+    padding-right: 10vw;
+    margin: inherit auto inherit auto;
     overflow: auto;
-    white-space: nowrap;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
