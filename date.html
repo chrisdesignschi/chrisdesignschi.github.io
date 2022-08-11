@@ -22,22 +22,39 @@
 
 <div class="d-topimg">
 
-	<div class="d-imgcontainer"><img class="d-heroimg" src="assets/img/DA/main.png"></div>
-	<div class="d-imgcontainer"><img class="d-heroimg" src="assets/img/DA/main4.png"></div>
-	<div class="d-imgcontainer"><img class="d-heroimg" src="assets/img/DA/main3.png"></div>
-	<div class="d-imgcontainer"><img class="d-heroimg" src="assets/img/DA/main2.png"></div>
+	<div class="d-imgcontainer"><img class="d-heroimg" src="assets/img/DA/main.webp"></div>
+	<div class="d-imgcontainer"><img class="d-heroimg" src="assets/img/DA/main4.webp"></div>
+	<div class="d-imgcontainer"><img class="d-heroimg" src="assets/img/DA/main3.webp"></div>
+	<div class="d-imgcontainer"><img class="d-heroimg" src="assets/img/DA/main2.webp"></div>
+
+	<div class="d-swiper"><i class="fa-solid fa-angle-right"></i></div>
 
 </div>
 
 
 <div id="hero">
 	<div class="d-texts">
-	<div class="d-herotext hvr-bubble-float-left">lorem ipsum dolor sit amet</div>
-	<div class="d-herotext hvr-bubble-float-left">lorem ipsum <i style="color: var(--justforu" class="fa-solid fa-face-grin"></i></div></div>
+	<div class="d-timestamp" id="priordatetime"></div>
+	<div class="d-herotext hvr-bubble-float-left">Hi, I'm Chris <i style="color: var(--justforu" class="fa-solid fa-face-grin"></i></div>
+	<div class="d-herotext hvr-bubble-float-left">This is my web submission for "nerdiest guy you've ever swiped on." Nice to meet you!</div>
 
+	<div class="d-timestamp" id="datetime" style="text-align:right;"></div>
+	<div class="d-herotext2 hvr-bubble-float-right">what the hell is this?</div>
+</div></div>
+
+<div id="d2">
+	<div class="d-floater"><i class="fa-solid fa-arrow-down"></i></div>
+	<h1>I'm glad you ask.<br>It all started when I was born.</h1>
 </div>
 
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script><script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script><script>
+var dt = new Date();
+document.getElementById("priordatetime").innerHTML = dt.toLocaleTimeString();
+</script>
+
 </body>
 </html>
