@@ -1677,6 +1677,10 @@ display:inline-block;
     display:block
 }
 
+.aboutphotomobile {
+    width: 100%;
+}
+
 .block-hero {
     display: block;
     margin-top:20px;
