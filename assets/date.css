@@ -62,7 +62,7 @@ body {
     width: auto !important;
     padding: 18px 22px 18px 22px;
 }
-
+/*
 #datetime:before {
     content: "Today ";
 }
@@ -70,7 +70,7 @@ body {
 #priordatetime:before {
     content:  "Today ";
 }
-
+*/
 .d-timestamp {
     margin-top: 8px;
     margin-bottom: 3px;
