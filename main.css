@@ -479,13 +479,13 @@ display:inline-block;
     font-size: 35px;
     line-height: 47px;
     font-weight: 300;
-    color: var(--justforu);
     margin-top: 20px;
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 35px 8px 8px 8px;
     display: inline-block;
     background: var(--footer);
+    color: var(--justforu);
     transition: all, 0.3s;
     -webkit-transition:  all, 0.3s;
 }
@@ -1607,12 +1607,12 @@ display:inline-block;
     font-size: 35px;
     line-height: 52px;
     font-weight: 300;
-    color: var(--body);
     margin-top: 0px;
     margin-bottom: 20px;
     border-radius: 35px 8px 8px 8px;
     display: inline-block;
-    background: var(--accent2);
+    background: var(--footer);
+    color: var(--justforu);
 }
 
 #headline .touch {
