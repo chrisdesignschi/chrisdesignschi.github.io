@@ -55,12 +55,14 @@ a {
     --nightswitch:none;
     --ptext:#28402c;
     --overt:#ff4a3c;
+    --contrast:#869171;
+    --contrast2:#ece3b9;
 }
 
 :root, [data-theme="default"] {
     --body:#1A2030;
     --accent1:#FFCE2D;
-    --accent2:#FF3569;
+    --accent2:#FF3535;
     --material:#383442;
     --whisper:#969696;
     --navy:#121742;
@@ -68,11 +70,11 @@ a {
     --footer:#141925;
     --footerbutton:#FFCE2D;
     --footertext:#fff;
-    --arise2:#FF3569;
+    --arise2:#FF3535;
     --arise:#969696;
     --box-pos:0;
     --navbox:100vw;
-    --flashborder:#FF3569;
+    --flashborder:#FF3535;
     --justforu:#FFCE2D;
     --darktext:#121742;
     --daynight:'day';
@@ -80,6 +82,8 @@ a {
     --nightswitch:inline-block;
     --ptext:white;
     --overt:#383442;
+    --contrast:#404B69;
+    --contrast2:#DAE0F2;
   }
 }
 
@@ -421,7 +425,7 @@ display:inline-block;
 }
 
 #nav {
-    width:75vw;
+    width:68vw;
     display:block;
     margin: 0px auto 0px auto;
     height:auto;
@@ -470,24 +474,70 @@ display:inline-block;
 }
 
 #headline {
-    width: 63vw;
+    width: 68vw;
     margin: auto auto 5vh auto;
     text-align: center;
 }
 
+.headsecondary {
+    width:57vw;
+    text-align:center;
+}
+
 #headline p {
+    background:var(--footer);
     font-size: 35px;
     line-height: 47px;
     font-weight: 300;
     margin-top: 20px;
-    padding: 30px;
+    padding: 0px;
     margin-bottom: 20px;
     border-radius: 35px 8px 8px 8px;
+    border:1px solid var(--contrast);
     display: inline-block;
-    background: var(--footer);
     color: var(--justforu);
     transition: all, 0.3s;
     -webkit-transition:  all, 0.3s;
+}
+
+.headlinetop {
+    padding:30px;
+    border-radius:35px 7px 0 0;
+    display: inline-block;
+}
+
+#headline .more {
+    width:100%;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    font-size:18px;
+    padding: 10px 0 10px 0;
+    font-weight:500;
+    text-align: center;
+    border-right:1px solid var(--contrast);
+}
+
+#headline .more:first-of-type {
+    border-radius: 0 0 0 7px;
+}
+
+#headline .more:last-of-type {
+    border-radius: 0 0 7px 0;
+}
+
+#headline .more:hover {
+    background:var(--justforu);
+    color:var(--footer) !important;
+    transition:0.3s;
+}
+
+#headline .subhead {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    width:100%;
+    margin:0px;
+    border-top:1px solid var(--contrast);
 }
 
 #headline .touch {
@@ -513,7 +563,7 @@ display:inline-block;
 }
 
 .hero-cont {
-    width:75vw;
+    width:68vw;
     margin:0 12.5vw 0 12.5vw;
     padding-top:11vh;
 }
@@ -551,7 +601,7 @@ display:inline-block;
 #content-nav {
     padding-top:2.5vh;
     display: block;
-    width:75vw;
+    width:68vw;
     margin:0 12.5vw 0 12.5vw;
     margin-bottom:6.5vh;
 }
@@ -574,6 +624,10 @@ display:inline-block;
     position: absolute;
 }
 
+.gigagoaway {
+    display:none;
+}
+
 #about {
     width:100%;
     z-index: 0;
@@ -581,17 +635,17 @@ display:inline-block;
 }
 
 .about-cont {
-    width:75vw;
+    width:68vw;
     display:block;
-    margin:0 12.5vw 25px 12.5vw;
+    margin:0 auto 25px auto;
 }
 
 .work-cont {
-    width:75vw;
+    width:68vw;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:1.8vw;
-    margin:0 12.5vw 0 12.5vw;
+    margin:0 auto 0 auto;
 }
 
 .work-item {
@@ -700,7 +754,7 @@ display:inline-block;
 }
 
 .footer-cont-1 {
-    width:75vw;
+    width:68vw;
     margin:0 12.5vw 0 12.5vw;
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -798,7 +852,7 @@ display:inline-block;
 }
 
 .base-cont {
-    width:75vw;
+    width:68vw;
     margin:0 12.5vw 0 12.5vw;
 }
 
@@ -1112,7 +1166,7 @@ display:inline-block;
 
 .block-one {
     border-radius:11px;
-    width:75vw;
+    width:68vw;
     line-height: 0;
     margin:0 12.5vw 50px 12.5vw;
 }
@@ -1375,7 +1429,7 @@ display:inline-block;
 
 .block-video {
     border-radius:11px;
-    width:75vw;
+    width:68vw;
     line-height: 0;
     margin:0 12.5vw 50px 12.5vw;
     overflow: hidden;
@@ -1595,7 +1649,7 @@ display:inline-block;
 }
 
 .block-note {
-    width: 75vw;
+    width: 68vw;
     display: block;
 }
 
@@ -1622,6 +1676,10 @@ display:inline-block;
 }
 
 @media only screen and (max-width: 750px) {
+
+#headline .subhead {
+    display: none;
+}
 
 #headline {
     text-align: center;
