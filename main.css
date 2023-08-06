@@ -1681,6 +1681,15 @@ display:inline-block;
     display: none;
 }
 
+.about-cont {
+    width:80vw;
+}
+
+.about-cont h1 {
+    font-size:26px;
+    line-height: 34px;
+}
+
 #headline {
     text-align: center;
     width: 80vw;
