@@ -904,7 +904,7 @@ display:inline-block;
 }
 
 .about-0 h1 {
-    color:var(--accent1) !important;
+    color:var(--ptext) !important;
 }
 
 .about-0 p {
@@ -1690,9 +1690,10 @@ display:inline-block;
 }
 
 #headline p {
-    margin-bottom: 25px;
     font-size: 30px;
     line-height: 43px;
+    margin-top:25px;
+    margin-bottom: 0px !important;
 }
 
 #site-first {
