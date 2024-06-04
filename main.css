@@ -568,7 +568,7 @@ display:inline-block;
 
 .hero-cont {
     width:68vw;
-    margin:0 12.5vw 0 12.5vw;
+    margin:0 auto 0 auto;
     padding-top:11vh;
 }
 
@@ -1172,7 +1172,7 @@ display:inline-block;
     border-radius:11px;
     width:68vw;
     line-height: 0;
-    margin:0 12.5vw 50px 12.5vw;
+    margin:0 auto 50px auto;
 }
 
 .block-one-five {
@@ -1435,7 +1435,7 @@ display:inline-block;
     border-radius:11px;
     width:68vw;
     line-height: 0;
-    margin:0 12.5vw 50px 12.5vw;
+    margin:0 auto 50px auto;
     overflow: hidden;
     border:1px solid var(--accent1);
 }
@@ -1669,8 +1669,6 @@ display:inline-block;
     margin-bottom: 20px;
     border-radius: 35px 8px 8px 8px;
     display: inline-block;
-    background: var(--footer);
-    color: var(--justforu);
 }
 
 #headline .touch {
