@@ -1,0 +1,252 @@
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+#hero {
+    width: 80vw;
+    margin: auto;
+}
+
+.d-topimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin: inherit auto inherit auto;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.d-swiper {
+    display: block;
+    padding: 11px 7px 11px 15px;
+    background: var(--accent1);
+    color: var(--overt);
+    position: absolute;
+    right: 0px;
+    border-radius: 30px 0 0 30px;
+    top: 47vw;
+}
+
+.d-topimg::-webkit-scrollbar {
+    display: none;
+}
+
+.d-imgcontainer {
+    width: 60vw;
+    display: inline-block;
+    margin-top: 22px;
+    margin-right: 8px;
+    border-radius: 13px;
+    margin-bottom: 22px;
+    border: 1px solid var(--accent1);
+}
+
+.d-heroimg {
+    display: block;
+    border-radius: 25px;
+    width: 90%;
+    padding: 5%;
+}
+
+.d-herotext {
+    display: inline-block !important;
+    border-radius: 15px 8px 8px 8px;
+    color: var(--darktext);
+    width: auto;
+    font-size: 18px;
+    display: inline-block !important;
+    width: auto !important;
+    padding: 18px 22px 18px 22px;
+}
+/*
+#datetime:before {
+    content: "Today ";
+}
+
+#priordatetime:before {
+    content:  "Today ";
+}
+*/
+.d-timestamp {
+    margin-top: 8px;
+    margin-bottom: 3px;
+    color: var(--whisper);
+    font-size: 15px;
+    width: 100%;
+}
+
+.d-herotext2 {
+    display: inline-block !important;
+    border-radius: 15px 8px 8px 8px;
+    color: var(--overt);
+    float: right;
+    width: auto;
+    font-size: 18px;
+    display: inline-block !important;
+    width: auto !important;
+    padding: 18px 22px 18px 22px;
+}
+
+.d-herotext {
+    background: var(--accent2);
+    margin-bottom: 5px;
+}
+
+.d-herotext2 {
+    background: var(--accent1);
+    margin-bottom: 5px;
+}
+
+.hvr-bubble-float-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-left:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: 0px;
+  left: -9px;
+  border-style: solid;
+  border-width: 20px 20px 0px 0;
+  border-color: transparent var(--accent2) transparent transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-bubble-float-left, .hvr-bubble-float-left, .hvr-bubble-float-left {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+.hvr-bubble-float-left:before, .hvr-bubble-float-left:before, .hvr-bubble-float-left:before {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.hvr-bubble-float-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-right:before {
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  right: 0;
+  content: '';
+  border-style: solid;
+  border-width: 20px 0px 0px 20px;
+  border-color: transparent transparent transparent var(--accent1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-right, .hvr-bubble-float-right, .hvr-bubble-float-right {
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+.hvr-bubble-float-right:before, .hvr-bubble-float-right:before, .hvr-bubble-float-right:before {
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+#d2 {
+    display: block;
+    width: 80%;
+    padding: 18px 10% 8% 10%;
+    background: var(--accent2);
+    border-radius: 20px 20px 0 0;
+    margin: 110px auto auto auto;
+}
+
+#d2 h1 {
+    color: var(--darktext);
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+.d-floater {
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+    text-align: center;
+    color: var(--justforu);
+}
+
+.d-contents {
+    display: block;
+    width: 220px;
+    margin: auto;
+}
+
+#d2 a {
+    color: var(--darktext);
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    padding: 12px;
+    background: var(--justforu);
+    border-radius: 7px;
+    margin-bottom: 5px;
+    display: bold;
+    font-size: 18px;
+}
+
+.d-moreimg {
+    width: auto;
+    background: var(--accent2);
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    padding: 0 5% 5% 5%;
+}
+
+.d-moreimg img {
+    height: 35vh;
+    padding: 20px;
+    border-radius: 10px 10px 10px 50px;
+    border: 1px solid var(--accent1);
+    display: inline-block;
+
+}
+
+#d3 {
+    border-radius: 0 0 20px 20px;
+    background: var(--accent2);
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+}
+
+@media only screen and (max-width: 750px) {
+
+}
