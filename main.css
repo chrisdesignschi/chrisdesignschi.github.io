@@ -1442,12 +1442,8 @@ display:inline-block;
 
 .block-hovergif .hovergif-preview {
     display: block;
-}
-
-.half {
     opacity:0.5;
 }
-
 
 .block-hovergif:hover .hovergif-preview {
     display:none;
