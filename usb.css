@@ -819,21 +819,21 @@ h1, h2, h3, h4 {
 
 @media only screen and (max-width: 1380px) {
 
+.topdoglaw {
+    padding:8vh 0 8vh 0;
+}
+
 .goaway {
     display: none !important;
 }
 
 .footer {
-    max-width:70%;
-    min-width:50%;
     margin:50px auto 100px auto;
     padding-left:24px;
     padding-right:24px;
 }
 
 .block-case {
-    max-width:70%;
-    min-width:50%;
     display: flex;
     flex-direction: column;
     column-gap: 0px;
