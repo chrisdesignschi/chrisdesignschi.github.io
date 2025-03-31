@@ -20,18 +20,6 @@ b {
 @supports (--css: variables) {
 
     :root, [data-theme="default"] {
-    --box:0vw;
-    --daybutton:block;
-    --nightbutton:none;
-    --subtle:#FCEBD2;
-    --vivid:#CF2A36;
-    --mid:#235ae4;
-    --caption:#6D5D48;
-    --bodytext:#291904;
-    --whiteorred:#CF2A36;
-    }
-
-  [data-theme="dark"] {
     --box:100vw;
     --daybutton:none;
     --nightbutton:block;
@@ -41,6 +29,18 @@ b {
     --caption:#B2B2B6;
     --bodytext:#fff;
     --whiteorred:white;
+    }
+
+  [data-theme="dark"] {
+    --box:0vw;
+    --daybutton:block;
+    --nightbutton:none;
+    --subtle:#FCEBD2;
+    --vivid:#CF2A36;
+    --mid:#235ae4;
+    --caption:#6D5D48;
+    --bodytext:#291904;
+    --whiteorred:#CF2A36;
     }
 }
 
