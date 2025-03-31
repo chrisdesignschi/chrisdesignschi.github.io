@@ -1,5 +1,5 @@
 body {
-    background:#ece3b9;
+    background:#FEFAF0;
     color:white;
     font-family: Poppins;
     overflow-x:hidden;
@@ -33,35 +33,6 @@ a {
 
 @supports (--css: variables) {
   [data-theme="dark"] {
-    --body:#ece3b9;
-    --accent1:#28402c;
-    --accent2:#ff4a3c;
-    --material:#28402c;
-    --whisper:#869171;
-    --navy:#aaff00;
-    --navy2:#ece3b9;
-    --footer:#28402c;
-    --footerbutton:#ff4a3c;
-    --footertext:#aaff00;
-    --arise2:#869171;
-    --arise:#ff4a3c;
-    --box-pos:-130vw;
-    --navbox:-30vw;
-    --flashborder:#aaff00;
-    --justforu:#aaff00;
-    --darktext:#28402c;
-    --daynight:'night';
-    --dayswitch:inline-block;
-    --nightswitch:none;
-    --ptext:#28402c;
-    --overt:#ff4a3c;
-    --contrast:#869171;
-    --contrast2:#ece3b9;
-    --head:#F0DDB8;
-    --headtext:#28402c;
-}
-
-:root, [data-theme="default"] {
     --body:#1A2030;
     --accent1:#FFCE2D;
     --accent2:#FF3535;
@@ -88,6 +59,35 @@ a {
     --contrast2:#DAE0F2;
     --head:#141925;
     --headtext:#FFCE2D;
+}
+
+:root, [data-theme="default"] {
+    --body:#FEFAF0;
+    --accent1:#235ae4;
+    --accent2:#CF2A36;
+    --material:#132035;
+    --whisper:#FCEBD2;
+    --navy:#aaff00;
+    --navy2:#ece3b9;
+    --footer:#132035;
+    --footerbutton:#ff4a3c;
+    --footertext:#aaff00;
+    --arise2:#869171;
+    --arise:#ff4a3c;
+    --box-pos:-130vw;
+    --navbox:-30vw;
+    --flashborder:#aaff00;
+    --justforu:#291904;
+    --darktext:#291904;
+    --daynight:'night';
+    --dayswitch:inline-block;
+    --nightswitch:none;
+    --ptext:#28402c;
+    --overt:#ff4a3c;
+    --contrast:#6D5D48;
+    --contrast2:#ece3b9;
+    --head:#FCEBD2; /** **/
+    --headtext:#291904;
   }
 }
 
@@ -130,7 +130,7 @@ body {
     -webkit-transition:0.8s !important;
     left:var(--box-pos);
     width:100vw;
-    background:#1A2030;
+    background:#FEFAF0;
     border-right:30vw solid var(--flashborder);
     position:fixed;
     display:block;
