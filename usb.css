@@ -89,7 +89,7 @@ width:50px;
 
 body {
     margin:0;
-    font-family: "Reddit Sans", sans;
+    font-family: "Reddit Sans", sans-serif;
     color:white;
     font-weight: 300;
     display: flex !important;
@@ -621,7 +621,7 @@ h1, h2, h3, h4 {
 
 .doublep {
     color:var(--bodytext);
-    max-width:100ch;
+    max-width:120ch;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 36px;
@@ -703,6 +703,11 @@ h1, h2, h3, h4 {
     grid-column-gap: 15px;
     border-radius: 8px;
     margin-top:100px;
+}
+
+.block-case:hover {
+    background: var(--subtle);
+    border-radius: 20px;
 }
 
 .block-case img {
@@ -815,9 +820,40 @@ h1, h2, h3, h4 {
     color:var(--mid);
 }
 
+.aboutImg {
+    display: flex;
+    gap:10px;
+    margin-bottom: 10px;
+}
+
+.aboutImg span {
+    height:40vh;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.aboutImg img {
+    display: flex;
+    margin:auto;
+}
+
 /** screen rules **/
 
 @media only screen and (max-width: 1380px) {
+
+.aboutImg {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap:16px;
+}
+
+.aboutImg span {
+    width:100%;
+    height:auto;
+}
 
 .topdoglaw {
     padding:8vh 0 8vh 0;
