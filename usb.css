@@ -839,6 +839,33 @@ h1, h2, h3, h4 {
     margin:auto;
 }
 
+.resumep {
+    font-size:18px;
+    padding:16px;
+    border-radius: 10px;
+    background: var(--subtle);
+    max-width: 80ch;
+    margin-bottom: 16px;
+}
+
+.resumedate {
+    display: flex;
+    gap:10px;
+}
+
+.resumedate span {
+    display: inline-block;
+}
+
+.resumedate span:first-of-type {
+    font-weight: 600;
+    color:var(--vivid);
+}
+
+.resumedate span:last-of-type {
+    font-style: italic;
+}
+
 /** screen rules **/
 
 @media only screen and (max-width: 1380px) {
