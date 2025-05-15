@@ -780,9 +780,23 @@ h1, h2, h3, h4 {
     animation-fill-mode: forwards;
 }
 
+.mauser {
+    position:absolute;
+    width:100vw;
+    z-index: -99999;
+    top:0;
+    right:0;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 .topdoglaw h1, .topdoglaw a {
     display: inline-block;
-    font-size:36px;
+    font-size:30px;
     color:var(--bodytext);
     border-radius: 16px 16px 16px 4px;
     margin:0px;
@@ -796,7 +810,7 @@ h1, h2, h3, h4 {
 .topdoglaw a {
     background: var(--vivid);
     color:white;
-    font-size:24px;
+    font-size:20px;
     font-weight: 300;
 }
 
@@ -841,6 +855,7 @@ h1, h2, h3, h4 {
 
 .resumep {
     font-size:18px;
+    color:var(--bodytext);
     padding:16px;
     border-radius: 10px;
     background: var(--subtle);
@@ -869,6 +884,10 @@ h1, h2, h3, h4 {
 /** screen rules **/
 
 @media only screen and (max-width: 1380px) {
+
+.mauser {
+    display:none;
+}
 
 .aboutImg {
     display: flex;
