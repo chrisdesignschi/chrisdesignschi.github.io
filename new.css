@@ -30,7 +30,7 @@
   --switchtext: 'View in dark mode';
   --bubba: 0vw;
   --mid: #7f7f84;
-  --accent: #235ae4;
+  --accent: #E4F223;
   --accent2: #B45AFF;
 }
 
@@ -196,6 +196,8 @@ b, h1, h2, h3 {
 }
 
 .primary:hover {
+    background:var(--accent);
+    color:var(--text-primary);
 }
 
 .secondary {
@@ -281,7 +283,17 @@ b, h1, h2, h3 {
     font-size:22px !important;
 }
 
+.heroContainer {
+    width:100%;
+    display: block;
+    text-align: center;
+}
+
 @media only screen and (max-width: 1100px) {
+
+.heroContainer {
+    margin-top:25px;
+}
 
 body {
     text-align: center;
