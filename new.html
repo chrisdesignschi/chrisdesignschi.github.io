@@ -1,0 +1,131 @@
+ <!DOCTYPE html><html><head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/3a2b9eae0b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="new.css">
+</head>
+
+<!-- bubba over -->
+
+
+
+<body>
+
+<div class="bubba"></div>
+
+<div class="navBar">
+	<span class="navLeft">
+	<a href="#" class="dark logo hvr-grow"><img height="28px" src="img/logo.png"></a>
+	<a href="#" class="light logo hvr-grow"><img height="28px" src="img/logo-light.png"></a>
+	<a href="#" class="goaway">Work</a>
+	<a href="#" class="goaway">About</a>
+	<a href="#"class="goaway">Skills</a>
+	</span>
+
+	<span class="navRight">
+	    <button id="theme-toggle" class="navbar__theme-toggle" type="button"><i class="light fa-regular fa-moon"></i><i class="dark fa-regular fa-sun"></i> </button>
+	<a href="#"><i class="fa-brands fa-linkedin"></i> <span class="goaway">LinkedIn</span></a>
+	<a href="#"><i class="fa-solid fa-at"></i> <span class="goaway">Email</span></a>
+	</span>
+</div>
+
+<!-- navbar over -->
+
+	<div class="main">
+		<h1>Lorem ipsum dolor sit amet.</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		<span class="buttonContainer">
+		<a href="#"class="primary">See my product work</a>
+		<a href="#"class="secondary"><i class="fa-regular fa-face-smile"></i> About me</a>
+		</span>
+	</div>
+
+	<div class="twoBlock">
+		<div class="twoBlockDiv">
+			<div class="articleContainer">
+			<img src="img/rect.png">
+			<h1>Scaling a startup acquisition to 472k users
+			<span>
+			<span class="tag">LOREM IPSUM</span>
+			<span class="tag">'25</span></span>
+			</h1>
+			<a href="#" class="secondary">See project</a><br><br>
+		</div>
+		</div>
+
+		<div class="twoBlockDiv">
+			<div class="articleContainer">
+			<img src="img/rect.png" width="100%">
+			<h1>Healthier at Home with NorthShore Connect
+			<span>
+			<span class="tag">LOREM IPSUM</span>
+			<span class="tag">'25</span></span>
+			</h1>
+			<a href="#" class="secondary">See project</a><br><br>
+		</div>
+		</div>
+	</div>
+
+	<div class="twoBlock threeBlockOverride">
+		<div class="twoBlockDiv">
+			<div class="articleContainer">
+			<img src="img/rect.png" width="100%">
+			<h1>lorem ipsum dolor sit amet
+			<span>
+			<span class="tag">LOREM IPSUM</span>
+			<span class="tag">'25</span></span>
+			</h1>
+			<a href="#" class="secondary">See project</a><br><br>
+		</div>
+		</div>
+
+		<div class="twoBlockDiv">
+			<div class="articleContainer">
+			<img src="img/rect.png" width="100%">
+			<h1>lorem ipsum dolor sit amet
+			<span>
+			<span class="tag">LOREM IPSUM</span>
+			<span class="tag">'25</span></span>
+			</h1>
+			<a href="#" class="secondary">See project</a><br><br>
+		</div>
+		</div>
+
+		<div class="twoBlockDiv">
+			<div class="articleContainer">
+			<img src="img/rect.png" width="100%">
+			<h1>lorem ipsum dolor sit amet
+			<span>
+			<span class="tag">LOREM IPSUM</span>
+			<span class="tag">'25</span></span>
+			</h1>
+			<a href="#" class="secondary">See project</a><br><br>
+		</div>
+		</div>
+	</div>
+
+	<!-- main over -->
+
+
+
+<!-- body over -->
+
+  <script>
+    const root = document.documentElement; // <html>
+    const toggleBtn = document.getElementById('theme-toggle');
+
+    toggleBtn.addEventListener('click', () => {
+      const isLight = root.getAttribute('data-theme') === 'light';
+
+      if (isLight) {
+        // Go back to default (:root) theme
+        root.removeAttribute('data-theme');
+      } else {
+        // Apply light theme overrides
+        root.setAttribute('data-theme', 'light');
+      }
+    });
+  </script>
+
+</body></html>

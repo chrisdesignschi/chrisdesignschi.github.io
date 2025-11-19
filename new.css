@@ -1,0 +1,320 @@
+* {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight:400;
+    transition:all, 0.2s;
+}
+
+:root {
+  --text-primary: #fff;
+  --text-reverse: #000;
+  --alt30: #4c4c4c;
+  --alt10: #171717;
+  --dark: inline-block;
+  --light: none;
+  --switchtext: 'View in light mode';
+  --bubba: -100vw;
+  --mid: #7f7f84;
+  --accent: #235ae4;
+}
+
+[data-theme="light"] {
+  --text-primary: #000;
+  --text-reverse: #fff;
+  --alt30: #CDD1E2;
+  --alt10: #fff;
+  --dark: none;
+  --light: inline-block;
+  --switchtext: 'View in dark mode';
+  --bubba: 0vw;
+  --mid: #7f7f84;
+  --accent: #235ae4;
+}
+
+.bubba {
+    width:100vw;
+    height:100vh;
+    background: #fafafa;
+    position: fixed;
+    z-index: -900;
+    margin-left:var(--bubba);
+    transition: all, 0.6s;
+}
+
+#theme-toggle::after {
+    content:var(--switchtext);
+}
+
+#theme-toggle {
+    font-size:16px;
+    cursor: pointer;
+    background: none;
+}
+
+.dark img, .dark {
+    display: var(--dark) !important;
+}
+.light img, .light {
+    display: var(--light) !important;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background: #000;
+    margin-bottom: 100px;
+}
+
+b, h1, h2, h3 {
+    font-weight:600;
+}
+
+.hvr-grow {
+    -webkit-transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index:100;
+}
+
+.navBar {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:16px 24px 16px 24px;
+    font-size:16px;
+    /*background: var(--alt10);*/
+    /*border-bottom: 1px solid var(--alt30);*/
+}
+
+.navBar .navLeft {
+    display: flex;
+    gap: 32px;
+    align-items:center;
+}
+
+.navBar .navRight {
+    display: flex;
+    gap: 8px;
+}
+
+.navLeft a {
+    display: inline-flex;
+    font-weight: 400;
+    text-decoration: none;
+    color:var(--mid);
+    padding:8px;
+}
+
+.navLeft a:hover {
+    color:var(--text-primary);
+}
+
+.navLeft .logo {
+    height:28px !important;
+    width:auto;
+}
+
+.navRight a, #theme-toggle {
+    text-decoration: none;
+    padding:8px;
+    color:var(--text-primary);
+    border-radius: 8px;
+    border:1px solid var(--alt30);
+    background: var(--text-reverse);
+}
+
+.navRight a:hover, #theme-toggle:hover {
+    background: var(--text-primary);
+    border:1px solid var(--text-primary);
+    color:var(--text-reverse);
+}
+
+.main {
+    display: block;
+    color:var(--text-primary);
+    max-width: 900px;
+    min-width: 300px;
+    margin-left:auto;
+    padding:48px;
+    margin-right:auto;
+    margin-top:-1px;
+    border:1px solid var(--alt30);
+}
+
+.main:hover {
+    background: var(--alt10);
+}
+
+.main h1 {
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -1.5px;
+}
+
+.main p {
+    font-size:16px;
+    text-align: center;
+    line-height: 30px;
+    color:var(--mid);
+}
+
+.buttonContainer {
+    margin:auto;
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    width:auto;
+    flex-direction: row;
+    gap:16px;
+    align-items: center;
+}
+
+.buttonContainer:hover .secondary, .buttonContainer:hover .primary, {
+    padding:16px 10px 16px 10px;
+}
+
+.primary {
+    display: inline-flex;
+    border-radius: 100px;
+    background: var(--text-primary);
+    color: var(--text-reverse);
+    padding:16px 24px 16px 24px;
+    text-decoration: none;
+    font-size:16px;
+    align-items: center;
+}
+
+.primary:hover {
+}
+
+.secondary {
+    display: inline-block;
+    border-radius: 100px;
+    border: 1px solid var(--alt30);
+    color: var(--text-primary);
+    padding:16px 24px 16px 24px;
+    text-decoration: none;
+    font-size:16px;
+}
+
+.secondary:hover {
+    background:var(--text-reverse) !important;
+}
+
+.twoBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color:var(--text-primary);
+    max-width: 996px;
+    min-width: 300px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:-1px;
+    border:1px solid var(--alt30);
+}
+
+.twoBlockDiv {
+    padding:0px !important;
+    border-right:1px solid var(--alt30);
+    margin-bottom: 0px !important;
+}
+
+.twoBlockDiv:hover {
+    background:var(--alt10);
+}
+
+.twoBlockDiv:last-of-type {
+    border-right:none;
+}
+
+.articleContainer {
+    padding:48px;
+    padding-top:48px;
+    transition:all, 0s;
+}
+
+.articleContainer:hover {
+    border:2px solid var(--accent) !important;
+    padding:46px !important;
+    transition: all, 0s;
+}
+
+.twoBlockDiv .articleContainer h1 {
+    display: inline-block;
+    font-size:32px;
+    align-items: center;
+}
+
+.twoBlockDiv .articleContainer span {
+    vertical-align: middle;
+    gap:5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twoBlockDiv .articleContainer .tag {
+    display: inline-block;
+    color:var(--text-primary);
+    font-size:12px;
+    padding:4px;
+    border: 1px solid var(--text-primary);
+    border-radius: 4px;
+}
+
+.twoBlockDiv img {
+    margin:0px !important;
+    border-radius: 8px;
+    width:100%;
+}
+
+.threeBlockOverride {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+.threeBlockOverride h1 {
+    font-size:22px !important;
+}
+
+@media only screen and (max-width: 960px) {
+
+.twoBlock, .threeBlockOverride {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.twoBlockDiv {
+    border-bottom: 1px solid var(--alt30);
+    border-right:none !important;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    margin-left:50px;
+    margin-right:50px;
+}
+
+#theme-toggle::after {
+    content:none;
+}
+
+.goaway {
+    display: none !important;
+}

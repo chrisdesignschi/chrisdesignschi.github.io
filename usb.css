@@ -245,6 +245,10 @@ h1, h2, h3, h4 {
     margin-bottom: 150px;
 }
 
+#aboveFold img {
+    border-radius:8px;
+}
+
 #aboveFold h1 {
     margin:0px;
     max-width: 35ch;
@@ -269,6 +273,12 @@ h1, h2, h3, h4 {
     display: flex;
     row-gap: 8px;
     flex-direction: column;
+}
+
+#aboveFold .subItems h1 {
+    font-size:24px;
+    display: flex;
+    flex-grow:1;
 }
 
 #aboveFold .subItems div span:first-of-type {
@@ -564,12 +574,6 @@ h1, h2, h3, h4 {
     border:2px solid var(--subtle);
 }
 
-.block-three div:hover {
-    border:2px solid var(--vivid);
-    transition:0.3s;
-    border-radius: 10px 10px 100px 10px !important;
-}
-
 .block-three a:hover {
     background:var(--mid);
     color:white !important;
@@ -611,12 +615,6 @@ h1, h2, h3, h4 {
     border:2px solid var(--subtle);
 }
 
-.block-four div:hover, .block-four a:hover {
-    border:2px solid var(--vivid);
-    transition:0.3s;
-    border-radius: 10px 10px 100px 10px !important;
-}
-
 .block-three a:hover p {
     color: white !important;
 }
@@ -626,7 +624,7 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    font-size: 18px;
+    font-size: 16px;
     color:var(--bodytext);
     text-align: left;
     font-weight: 300;
