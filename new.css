@@ -224,29 +224,23 @@ b, h1, h2, h3 {
 }
 
 .twoBlockDiv {
-    padding:0px !important;
+    padding:48px;
+    padding-top:48px;
+    transition:all, 0s;
     border-right:1px solid var(--alt30);
     margin-bottom: 0px !important;
+
 }
 
 .twoBlockDiv:hover {
     background:var(--alt10);
+    border:1px solid var(--accent) !important;
+    padding:47px !important;
+    transition: all, 0s;
 }
 
 .twoBlockDiv:last-of-type {
     border-right:none;
-}
-
-.articleContainer {
-    padding:48px;
-    padding-top:48px;
-    transition:all, 0s;
-}
-
-.articleContainer:hover {
-    border:1px solid var(--accent) !important;
-    padding:47px !important;
-    transition: all, 0s;
 }
 
 .twoBlockDiv .articleContainer h1 {
@@ -314,14 +308,6 @@ body {
     padding:24px;
     margin-left:30px;
     margin-right:30px;
-}
-
-.articleContainer {
-    padding:24px;
-}
-
-.articleContainer:hover {
-    padding:24px !important;
 }
 
 #theme-toggle::after {
