@@ -259,7 +259,7 @@ b, h1, h2, h3 {
     justify-content: center;
 }
 
-.twoBlockDiv .bw {
+/*.twoBlockDiv .bw {
     display: block;
 }
 
@@ -273,7 +273,7 @@ b, h1, h2, h3 {
 
 .twoBlockDiv:hover .color {
     display: block;
-}
+}*/
 
 .twoBlockDiv .articleContainer .tag {
     display: inline-block;
