@@ -259,6 +259,22 @@ b, h1, h2, h3 {
     justify-content: center;
 }
 
+.twoBlockDiv .bw {
+    display: block;
+}
+
+.twoBlockDiv:hover .bw {
+    display: none;
+}
+
+.twoBlockDiv .color {
+    display: none;
+}
+
+.twoBlockDiv:hover .color {
+    display: block;
+}
+
 .twoBlockDiv .articleContainer .tag {
     display: inline-block;
     color:var(--text-primary);
