@@ -159,7 +159,7 @@ b, h1, h2, h3 {
 .main h1 {
     font-size: 48px;
     text-align: center;
-    letter-spacing: -1.5px;
+    letter-spacing: -1px;
 }
 
 .main p {
@@ -315,10 +315,14 @@ body {
     border-right:none !important;
 }
 
+.threeBlockOverride h1 {
+    font-size:32px !important;
+}
+
 .buttonContainer {
     display: flex;
-    flex-direction: row;
-    gap:10px;
+    flex-direction: column;
+    gap:16px;
     margin-bottom: 30px;
 }
 
