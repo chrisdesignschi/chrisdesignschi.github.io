@@ -6,6 +6,10 @@
     transition:all, 0.2s;
 }
 
+h1, h2, h3 {
+    letter-spacing: -1px ;
+}
+
 :root {
   --text-primary: #fff;
   --text-reverse: #000;
@@ -455,6 +459,10 @@ b, h1, h2, h3 {
   display: flex;
 }
 
+.modal h2 {
+    font-size: 24px;
+}
+
 .modal-content {
   background: white;
   width: 900px;
@@ -552,6 +560,17 @@ b, h1, h2, h3 {
     display: grid;
     margin-top:100px;
     grid-template-columns: 1fr;
+    text-align: left;
+}
+
+.factContainer {
+    display: block;
+    text-align: center;
+}
+
+.factContainer .facts {
+    /*display: block;*/
+    border-bottom: 1px solid var(--alt30);
 }
 
 }
