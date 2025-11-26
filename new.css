@@ -169,6 +169,13 @@ b, h1, h2, h3 {
     color:var(--mid);
 }
 
+.twoBlockDiv .para {
+    display: block;
+    font-size:16px;
+    text-align: left;
+    color:var(--mid);   
+}
+
 .buttonContainer {
     margin:auto;
     margin-top:30px;
@@ -259,23 +266,7 @@ b, h1, h2, h3 {
     justify-content: center;
 }
 
-/*.twoBlockDiv .bw {
-    display: block;
-}
-
-.twoBlockDiv:hover .bw {
-    display: none;
-}
-
-.twoBlockDiv .color {
-    display: none;
-}
-
-.twoBlockDiv:hover .color {
-    display: block;
-}*/
-
-.twoBlockDiv .articleContainer .tag {
+.tag {
     display: inline-block;
     color:var(--text-primary);
     font-size:12px;
@@ -305,7 +296,206 @@ b, h1, h2, h3 {
     text-align: center;
 }
 
+.portHeader .byline {
+    font-size:16px;
+    color:var(--mid);
+    display: block;
+    margin-bottom: 14px;
+}
+
+.portHeader .byline a {
+    text-decoration: underline;
+    color:inherit;
+}
+
+.portHeader {
+    color:var(--text-primary);
+    text-align: center;
+    padding:36px 36px 36px 36px;
+}
+
+.portHeader h1 {
+    letter-spacing: -1px;
+    max-width: 30ch;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-size:32px;
+}
+
+.portHeader p {
+    max-width: 80ch;
+    margin:auto;
+    font-size: 16px;
+    color:var(--mid);
+    margin-top:10px;
+    margin-bottom: 10px;
+
+}
+
+.factContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    border-top:1px solid var(--alt30);
+}
+
+.factContainer .facts {
+    color:var(--text-primary);
+    padding:24px;
+    border-right:1px solid var(--alt30);
+    display: grid;
+}
+
+.factContainer .facts span:first-of-type {
+    font-size:24px;
+    font-weight: 800;
+}
+
+.factContainer .facts span:last-of-type {
+    color:var(--mid);
+}
+
+/** portfolio stuff **/
+
+.portMain {
+    margin-top:-1px;
+    border:1px solid var(--alt30);
+}
+
+.container {
+    max-width: 996px;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid var(--alt30);
+}
+
+.threeGrid {
+    display: grid;
+    margin-top:100px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.threeGrid div {
+    display: grid;
+    grid-gap:10px;
+    padding:30px;
+    color:var(--text-primary);
+    border-right:1px solid var(--alt30);
+    font-size:20px;
+    font-weight:500;
+    border-bottom: 1px solid var(--alt30);
+}
+
+.threeGrid div:hover {
+    background: var(--alt10);
+}
+
+.threeGrid img {
+    border-radius: 8px;
+}
+
+.threeGrid div a {
+    display: block;
+    font-weight:300;
+    color:var(--text-primary);
+    font-size:16px;
+}
+
+.threeGrid .hero {
+    display: block;
+}
+
+.threeGrid .hero h1 {
+    display: block;
+    font-size:36px;
+    color:var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.threeGrid p {
+    margin:0 !important;
+    color:var(--mid) !important;
+    font-size:18px;
+}
+
+/** modal stuff **/
+
+.threeGrid button {
+    margin-right:auto;
+    width:auto;
+    background: inherit;
+    padding:12px 24px;
+    border:1px solid var(--alt30);
+    cursor:pointer;
+    color:var(--text-primary);
+    border-radius: 100px;
+    font-size: 16px;
+}
+
+.threeGrid button:hover {
+    background: var(--text-primary);
+    color:var(--text-reverse);
+}
+
+/* Modal Content */
+
+   .modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding: 40px;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  width: 900px;
+  padding: 48px;
+  border-radius: 8px;
+  position: relative;
+  max-height: 65vh;
+  overflow-y:scroll;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 36px;
+  color:var(--mid);
+  cursor: pointer;
+  background: none;
+  border:none;
+  font-weight: 300;
+}
+
+.close:hover {
+    color:var(--text-reverse);
+}
+
+/** media queries **/
+
 @media only screen and (max-width: 1100px) {
+
+.threeGrid {
+    display: grid;
+    margin-top:100px;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
+.container {
+    margin-left:30px;
+    margin-right:30px;
+}
 
 .navBar {
     font-size:24px;
@@ -315,9 +505,9 @@ b, h1, h2, h3 {
     margin-top:25px;
 }
 
-body {
+/*body {
     text-align: center;
-}
+}*/
 
 .twoBlock, .threeBlockOverride {
     display: grid;
@@ -354,4 +544,14 @@ body {
 
 .goaway {
     display: none !important;
+}
+
+@media only screen and (max-width: 500px) {
+
+.threeGrid {
+    display: grid;
+    margin-top:100px;
+    grid-template-columns: 1fr;
+}
+
 }
