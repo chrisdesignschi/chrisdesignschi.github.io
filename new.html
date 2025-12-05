@@ -9,19 +9,16 @@
 	<title>Chris Z / NYC UX Design</title>
 </head>
 
-<!-- bubba over -->
-
-
 
 <body>
 
-<div class="bubba"></div>
+<!-- <div class="bubba"></div> -->
 
 <div class="navBar">
 	<span class="navLeft">
 	<a href="#" class="dark logo hvr-grow"><img height="22px" src="img/logo.png"></a>
 	<a href="#" class="light logo hvr-grow"><img height="22px" src="img/logo-light.png"></a>
-	<a href="#" class="goaway">Work</a>
+	<a href="index.html" class="goaway">Work</a>
 	<a href="#" class="goaway">About</a>
 	<a href="#"class="goaway">Skills</a>
 	</span>
@@ -54,7 +51,7 @@
 			<span class="tag">PRODUCT DESIGN</span>
 			<span class="tag">'25</span></span>
 			</h1>
-			<a href="#" class="secondary">See project</a><br><br>
+			<a href="usbank.html" class="secondary">See project</a><br><br>
 		</div>
 		</div>
 
@@ -114,22 +111,7 @@
 
 
 <!-- body over -->
+<script src="main.js"></script>
 
-  <script>
-    const root = document.documentElement; // <html>
-    const toggleBtn = document.getElementById('theme-toggle');
-
-    toggleBtn.addEventListener('click', () => {
-      const isLight = root.getAttribute('data-theme') === 'light';
-
-      if (isLight) {
-        // Go back to default (:root) theme
-        root.removeAttribute('data-theme');
-      } else {
-        // Apply light theme overrides
-        root.setAttribute('data-theme', 'light');
-      }
-    });
-  </script>
 
 </body></html>
