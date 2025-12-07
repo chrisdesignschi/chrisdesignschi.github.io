@@ -14,11 +14,10 @@
   --text-primary: #000;
   --text-reverse: #fff;
   --alt30: #CDD1E2;
-  --alt10: #fff;
+  --alt10: #F9F9F9;
   --dark: none;
   --light: inline-block;
   --switchtext: 'View in dark mode';
-  --bubba: 0vw;
   --mid: #7f7f84;
   --accent: #E4F223;
   --accent2: #B45AFF;
@@ -32,7 +31,6 @@
   --dark: inline-block;
   --light: none;
   --switchtext: 'View in light mode';
-  --bubba: -100vw;
   --mid: #B0B0B0;
   --accent: #235ae4;
   --accent2: #B45AFF;
@@ -86,8 +84,8 @@ b, h1, h2, h3 {
 }
 
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     z-index:100;
 }
 
@@ -209,6 +207,7 @@ b, h1, h2, h3 {
 .primary:hover {
     background:var(--accent);
     color:var(--text-primary);
+    border:1px solid var(--text-primary);
 }
 
 .secondary {
@@ -222,7 +221,9 @@ b, h1, h2, h3 {
 }
 
 .secondary:hover {
-    background:var(--text-reverse) !important;
+    background:var(--accent);
+    color:var(--text-primary);
+    border:1px solid var(--text-primary);
 }
 
 .twoBlock {
@@ -247,8 +248,6 @@ b, h1, h2, h3 {
 
 .twoBlockDiv:hover {
     background:var(--alt10);
-    border:1px solid var(--accent) !important;
-    padding:47px !important;
     transition: all, 0s;
 }
 
@@ -322,6 +321,48 @@ b, h1, h2, h3 {
     gap:24px;
 }
 
+.portTitle {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid var(--alt30);
+  margin:0px;
+  font-size: 24px;
+  font-weight: 300;
+  color:var(--text-primary);
+}
+
+.portSplitItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:var(--text-primary);
+}
+
+.portSplitItems p {
+    color:var(--mid);
+}
+
+.portSplitItems b {
+    color:var(--text-primary);
+}
+
+.portSplitItems span {
+    padding:24px;
+    border-right:1px solid var(--alt30);
+}
+
+.portCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:16px;
+}
+
+.portCard span {
+    padding:16px;
+    border-radius: 8px;
+    border: 1px solid var(--alt30);
+}
+
 .portHeaderRight h3 {
     font-size:20px;
     line-height: 20px;
@@ -386,6 +427,13 @@ b, h1, h2, h3 {
     margin-left:auto;
     margin-right:auto;
     border:1px solid var(--alt30);
+}
+
+.subTitle {
+    padding:8px 24px;
+    font-size:16px;
+    text-align: center;
+    color:var(--text-primary);
 }
 
 .threeGrid {
@@ -462,9 +510,18 @@ b, h1, h2, h3 {
     font-size: 24px;
 }
 
+.modal h3 {
+    font-size: 16px;
+}
+
 .modal img {
+    width:100%;
     border-radius: 8px;
-    width:65%;
+    margin-bottom: 30px;
+}
+
+.modal p {
+    margin-bottom: 20px;
 }
 
 .modal-content {
@@ -522,6 +579,16 @@ b, h1, h2, h3 {
 /** media queries **/
 
 @media only screen and (max-width: 1100px) {
+
+.portSplitItems {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.portSplitItems span {
+    border-right: none;
+    border-bottom: 1px solid var(--alt30);
+}
 
 .threeGrid {
     display: grid;
