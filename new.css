@@ -6,9 +6,12 @@
     transition:all, 0.2s;
 }
 
-/*h1, h2, h3 {
-    letter-spacing: -1px ;
-}*/
+h1, h2, h3 {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight:500;
+}
 
 :root {
   --text-primary: #fff;
@@ -25,7 +28,7 @@
 }
 
 [data-theme="light"] {
-  --text-primary: #000;
+  --text-primary: #302A2A;
   --text-reverse: #fff;
   --alt30: #CDD1E2;
   --alt10: #F9F9F9;
@@ -72,7 +75,7 @@ body {
     margin-bottom: 100px;
 }
 
-b, h1, h2, h3 {
+b {
     font-weight:600;
 }
 
@@ -88,7 +91,6 @@ b, h1, h2, h3 {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    z-index:100;
 }
 
 .navBar {
@@ -347,52 +349,6 @@ b, h1, h2, h3 {
     border-top:none;
 }
 
-.portTitle {
-  display: flex;
-  align-items: center;
-  padding: 24px;
-  border-bottom: 1px solid var(--alt30);
-  margin:0px;
-  font-size: 24px;
-  font-weight: 300;
-  color:var(--text-primary);
-}
-
-.portSplitItems {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    color:var(--text-primary);
-}
-
-.portSplitItems2 {
-    grid-template-columns: 1fr 1fr !important;
-}
-
-.portSplitItems p {
-    color:var(--mid);
-}
-
-.portSplitItems b {
-    color:var(--text-primary);
-}
-
-.portSplitItems span {
-    padding:24px;
-    border-right:1px solid var(--alt30);
-}
-
-.portCard {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:16px;
-}
-
-.portCard span {
-    padding:16px;
-    border-radius: 8px;
-    border: 1px solid var(--alt30);
-}
-
 .portHeaderRight h3 {
     font-size:20px;
     line-height: 20px;
@@ -405,11 +361,11 @@ b, h1, h2, h3 {
 
 .portHeader h1 {
     text-align: left;
-    letter-spacing: -1px;
     max-width: 30ch;
     margin-top:10px;
     margin-bottom: 10px;
-    font-size:32px;
+    font-size:36px;
+    line-height: 46px;
 }
 
 .portHeader p {
@@ -436,9 +392,15 @@ b, h1, h2, h3 {
     display: grid;
 }
 
+.factContainer .facts:last-of-type {
+    border-right:none;
+}
+
 .factContainer .facts span:first-of-type {
-    font-size:24px;
-    font-weight: 800;
+    font-size:32px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-family: "Newsreader", serif;
 }
 
 .factContainer .facts span:last-of-type {
@@ -508,6 +470,10 @@ b, h1, h2, h3 {
     margin:0 !important;
     color:var(--mid) !important;
     font-size:18px;
+}
+
+.threeGrid p b {
+    color:var(--text-primary);
 }
 
 /** refugee camp **/
@@ -682,8 +648,9 @@ b, h1, h2, h3 {
 }
 
 .threeGrid button:hover {
-    background: var(--text-primary);
-    color:var(--text-reverse);
+    background:var(--accent);
+    color:var(--text-primary);
+    border:1px solid var(--text-primary);
 }
 
 /* Modal Content */
@@ -694,6 +661,7 @@ b, h1, h2, h3 {
 
 .modal h3 {
     font-size: 16px;
+    font-family:Geist;
 }
 
 .modal img {
@@ -762,20 +730,6 @@ b, h1, h2, h3 {
 
 @media only screen and (max-width: 1100px) {
 
-.portSplitItems2 {
-    display: grid;
-    grid-template-columns: 1fr !important;
-}
-
-.portSplitItems {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.portSplitItems span {
-    border-right: none;
-    border-bottom: 1px solid var(--alt30);
-}
 
 .threeGrid {
     display: grid;
