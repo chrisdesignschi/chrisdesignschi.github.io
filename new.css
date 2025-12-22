@@ -527,27 +527,17 @@ b {
     height:40px;
     border-radius:150px;
     background: url(img/profile-loc.webp);
-
     background-size: contain;
     align-self:flex-end;
 }
 
-.interlocutor-profile:hover .loc-profile-hover {
-    display: block;
-}
-
-.interlocutor-profile:hover .interloc-profile-hover {
-    display: block;
-}
-
 .locutor-profile {
-    display: block;
     width:40px;
     height:40px;
     border-radius:150px;
     background: url(img/profile-inter.png);
     background-size: contain;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     align-self:flex-end;
 }
 
@@ -672,6 +662,7 @@ b {
 
 .modal p {
     margin-bottom: 20px;
+    max-width: 70ch;
 }
 
 .modal-content {
@@ -816,8 +807,8 @@ b {
 @media only screen and (max-width: 500px) {
 
 .textchain {
-    margin-left:30px;
-    margin-right:30px;
+    margin-left:16px;
+    margin-right:16px;
 }
 
 .modal img {
