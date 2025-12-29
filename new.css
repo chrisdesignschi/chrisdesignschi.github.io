@@ -22,7 +22,7 @@ h1, h2, h3 {
   --light: none;
   --switchtext: 'View in light mode';
   --mid: #B0B0B0;
-  --accent: #235ae4;
+  --accent: #8B23E1;
   --accent2: #B45AFF;
   --interim:#202530;
 }
@@ -36,9 +36,9 @@ h1, h2, h3 {
   --light: inline-block;
   --switchtext: 'View in dark mode';
   --mid: #7f7f84;
-  --accent: #E4F223;
+  --accent: #EBD3FF;
   --accent2: #B45AFF;
-  --interim:#fafafa;
+  --interim:#F9F9F9;
 }
 
 .bubba {
@@ -117,7 +117,7 @@ b {
 
 .navLeft a {
     display: inline-flex;
-    font-weight: 400;
+    font-weight: 300;
     text-decoration: none;
     color:var(--mid);
     padding:8px;
@@ -145,6 +145,11 @@ b {
     background: var(--text-primary);
     border:1px solid var(--text-primary);
     color:var(--text-reverse);
+}
+
+.myname {
+    font-weight: 600 !important;
+    letter-spacing: -0.5px;
 }
 
 .main {
@@ -328,6 +333,7 @@ b {
 .portMain .portHeaderLeft {
     padding-left:36px;
     padding-top: 36px;
+    padding-bottom: 36px;
 }
 
 .portMain .portHeaderRight {
@@ -414,6 +420,7 @@ b {
     margin-left:auto;
     margin-right:auto;
     border:1px solid var(--alt30);
+    border-top: 3px solid var(--accent2);
 }
 
 .subTitle {
@@ -432,7 +439,7 @@ b {
 .threeGrid div {
     display: grid;
     grid-gap:10px;
-    padding:30px;
+    padding:36px;
     color:var(--text-primary);
     font-size:20px;
     font-weight:500;
@@ -446,6 +453,7 @@ b {
 
 .threeGrid img {
     border-radius: 8px;
+    border:1px solid var(--alt30);
 }
 
 .threeGrid div a {
@@ -646,7 +654,10 @@ b {
 /* Modal Content */
 
 .modal h2 {
-    font-size: 24px;
+    font-size: 32px;
+    display: block;
+    padding-bottom: 22px;
+    border-bottom:2px solid var(--accent2);
 }
 
 .modal h3 {
@@ -667,11 +678,11 @@ b {
 
 .modal-content {
   background: white;
-  width: 900px;
+  width: 1050px;
   padding: 48px;
   border-radius: 8px;
   position: relative;
-  height: 65vh;
+  height: 72vh;
   overflow-y:scroll;
 }
 
@@ -689,6 +700,20 @@ b {
 
 .close:hover {
     color:var(--text-reverse);
+}
+
+.close2 {
+    display: bold;
+    position:relative !important;
+    width:100%;
+    font-size:16px;
+    font-weight: 600;
+    color:var(--accent);
+    text-align: center;
+    padding-top:30px;
+    border-top:1px solid var(--mid);
+    margin-bottom: 30px;
+    margin-top:30px;
 }
 
 /** delet **/
@@ -809,6 +834,10 @@ b {
 .textchain {
     margin-left:16px;
     margin-right:16px;
+}
+
+.locutor, .interlocutor {
+    font-size: 16px;
 }
 
 .modal img {
