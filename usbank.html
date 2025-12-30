@@ -16,14 +16,13 @@
   <span class="navLeft">
   <a href="index.html" class="hvr-grow myname">Chris Zhu</a>
   <a href="index.html" class="goaway">Work</a>
-  <a href="#" class="goaway">About</a>
-  <a href="#"class="goaway">Skills</a>
+  <a href="index.html#about" class="goaway">About</a>
   </span>
 
   <span class="navRight">
       <button id="theme-toggle" class="navbar__theme-toggle" type="button"><i class="light fa-regular fa-moon"></i><i class="dark fa-regular fa-sun"></i> </button>
-  <a href="#"><i class="fa-brands fa-linkedin"></i> <span class="goaway">LinkedIn</span></a>
-  <a href="#"><i class="fa-solid fa-at"></i> <span class="goaway">Email</span></a>
+  <a target="_blank" href="https://www.linkedin.com/in/chriszhudesigner/"><i class="fa-brands fa-linkedin"></i> <span class="goaway">LinkedIn</span></a>
+  <a href="mailto:chris.zixun.zhu@gmail.com"><i class="fa-solid fa-at"></i> <span class="goaway">Email</span></a>
   </span>
 </div>
 
@@ -164,33 +163,32 @@
 </div>
 
 
-
-<!-- takeaways -->
-
-<!-- <div class="twoBlock container" style="border-right:none !important; border-bottom: none !important;">
-
-  <div class="hero">
-    <h1>Wins and Fails</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-
-  <div>Win ✅
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  <div>Win ✅
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  <div>Fail ❌
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  <div>Fail ❌
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  <div>Win ✅
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-
-</div> -->
+<div class="container" style="margin-top:100px; margin-bottom: 100px;">
+  <div class="portHeader winsfails">
+  <h1>Reflection: Wins and Fails</h1><span></span>
+  <h2>🟢 Win: cross-functional collaboration</h1>
+  <p>After being acquired, the amount of partners involved in our daily processes tripled. We used design as a means to bridge gaps between partners like Product and Compliance! Strong relationships let us continue to scale up and perform things like <b>compliance review</b>, <b>developer handoff</b>, and <b>UX research.</b></p>
+  <h2>❌ Fail: ambiguity slowed decision-making</h1>
+  <p>With added decision-makers, there was added process and ambiguity. Some work took longer, with designs changing constantly. Knowing what I know now, I would have worked <b>more proactively with product managers to identify our top priotities</b>.</p>
+  <h2>🟢 Win: integrating into a complex system</h1>
+  <p>At the end of the day, we adapted our small start-up product to the absolutely massive ecosystem of U.S. Bank. We changed our processes, fit into their servicing architecture, and even use their design system. I learned a lot about <b>scaling small products to huge customer bases</b></p>
+</div>
+<div class="factContainer">
+<div class="facts">
+  <span>150M+</span>
+  <span>transactions secured</span>
+</div>
+<div class="facts">
+  <span>12K+</span>
+  <span>businesses onboarded</span>
+</div>
+<div class="facts">
+  <span>$8.3K</span>
+  <span>Avg monthly spend via platform</span>
+</div>
+</div>
+</div>
+</div>
 
 <!-- modals -->
 
@@ -356,111 +354,28 @@
 
 <!-- levels -->
 
-<div class="textchain">
-  <div class="interlocutorwrapper">
-  <div class="interlocutor-profile"></div>
-  <div class="interlocutorchain">
-    <span>You</span>
-  <div class="interlocutor">What were your takeaways?</div>
-</div>
-  </div>
-
-  <div class="locutorwrapper">
-  <div class="locutorchain">
-  <span>Chris Z</span>
-  <div class="locutor">Good question.</div>
-  <div class="locutor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
-  <div class="locutor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
-  </div>
-
-  <div class="locutor-profile"></div>
-  </div>
-</div>
-
 <!-- main over -->
 
+<div class="endModule">
 
+<a href="#" class="pastModule">
+<span>Previous</span>
+<span><i class="fa-solid fa-arrow-left"></i> Project 1</span>
+</a>
+
+<a href="index.html" class="home">
+  Return to home
+</a>
+
+<a href="#" class="nextModule">
+<span>Next</span>
+<span>Project 6 <i class="fa-solid fa-arrow-right"></i>
+</span>
+</a>
+
+</div>
 
 <!-- body over -->
-
-<script>
-let scrollY = 0;
-
-function lockScroll() {
-  scrollY = window.scrollY;
-  document.body.style.position = "fixed";
-  document.body.style.top = `-${scrollY}px`;
-  document.body.style.width = "100%";
-}
-
-function unlockScroll() {
-  document.body.style.position = "";
-  document.body.style.top = "";
-  document.body.style.width = "";
-  window.scrollTo(0, scrollY);
-}
-
-// Open modal
-document.querySelectorAll("[data-modal-target]").forEach(trigger => {
-  trigger.addEventListener("click", () => {
-    const modal = document.querySelector(trigger.dataset.modalTarget);
-
-    modal.classList.add("active");
-    lockScroll();           // 🚫 disable background scrolling
-
-    // trigger animation
-    requestAnimationFrame(() => {
-      modal.classList.add("show");
-    });
-  });
-});
-
-// Close modal (button)
-document.querySelectorAll(".modal .close").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const modal = btn.closest(".modal");
-    modal.classList.remove("show");
-
-    modal.addEventListener("transitionend", () => {
-      modal.classList.remove("active");
-    }, { once: true });
-
-    unlockScroll();
-  });
-});
-
-// Close modal by clicking outside modal-content
-document.querySelectorAll(".modal").forEach(modal => {
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.remove("show");
-
-      modal.addEventListener("transitionend", () => {
-        modal.classList.remove("active");
-      }, { once: true });
-
-      unlockScroll();
-    }
-  });
-});
-
-// Close on Escape
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    document.querySelectorAll(".modal.active").forEach(modal => {
-      modal.classList.remove("show");
-
-      modal.addEventListener("transitionend", () => {
-        modal.classList.remove("active");
-      }, { once: true });
-
-      unlockScroll();
-    });
-  }
-});
-
-
-</script>
 
 <script src="main.js"></script>
 
