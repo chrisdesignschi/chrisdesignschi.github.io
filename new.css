@@ -89,8 +89,8 @@ b {
 }
 
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .navBar {
@@ -256,6 +256,14 @@ b {
 
 }
 
+.margin {
+    margin-bottom: 100px;
+}
+
+.margo {
+    margin-top: 100px;
+}
+
 .twoBlockDiv:hover {
     background:var(--alt10);
     transition: all, 0s;
@@ -267,6 +275,7 @@ b {
 
 .twoBlockDiv .articleContainer h1 {
     display: inline-block;
+    font-family: Geist, sans-serif;
     font-size:32px;
     align-items: center;
 }
@@ -425,6 +434,15 @@ b {
     border-top: 3px solid var(--accent2);
 }
 
+.nocontainer {
+    max-width: 800px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    text-align: center;
+    color:var(--text-primary);
+}
+
 .subTitle {
     padding:8px 24px;
     font-size:16px;
@@ -545,7 +563,7 @@ b {
     width:40px;
     height:40px;
     border-radius:150px;
-    background: url(img/profile-inter.png);
+    background: url(img/profile-inter.webp);
     background-size: contain;
     background-repeat: no-repeat;
     align-self:flex-end;
@@ -796,8 +814,81 @@ b {
     color:var(--accent2) !important;
 }
 
-.winsfails b {
+.winsfails b, .blockOpen b {
     color:var(--text-primary);
+}
+
+/** nuclear waste handling **/
+
+.block-note {
+    width: 250px;
+    margin: 100px auto 40px auto;
+    display: block;
+    display: grid;
+    color:var(--text-primary);
+    padding:24px;
+}
+
+.block-note li {
+    list-style: none;
+}
+
+.block-note a {
+    color:var(--text-primary);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.block-note h2 {
+    text-align: left;
+}
+
+.note-nogrid {
+    display: block;
+    border: 1px solid var(--accent2);
+    border-radius: 11px;
+}
+
+.blockOpen {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding:24px;
+}
+
+.blockOpen h2 {
+    font-size: 32px;
+    color:var(--text-primary);
+}
+
+.blockOpen p {
+    max-width: 80ch;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--mid);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.xray2 input[type="checkbox"] {
+    content: url('img/cs/landing.webp');
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor:pointer;
+}
+
+.xray2 input[type="checkbox"]:checked {
+    content: url('img/cs/landingnote.webp');
+}
+
+.container2 {
+    max-width: 1100px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 /** media queries **/
