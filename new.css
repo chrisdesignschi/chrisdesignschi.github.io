@@ -930,10 +930,19 @@ b {
     padding:24px;
 }
 
+.line {
+    width:100%;
+    display: block;
+    background: var(--alt30);
+    height:1px;
+    margin-bottom: 24px;
+    width:100%;
+}
+
 .workItem {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
 }
 
 .workLeft span:first-of-type {
@@ -986,6 +995,11 @@ b {
     font-family:Geist, sans-serif;
     font-weight: 300;
     margin-top:100px;
+}
+
+.resumeButton {
+    display: block;
+    background: ;
 }
 
 /** media queries **/
