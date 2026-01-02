@@ -891,10 +891,126 @@ b {
     margin-right:auto;
 }
 
+/** about stuff **/
+
+#about {
+    font-size: 32px;
+    text-align: left;
+    max-width:997px;
+    margin-left:auto;
+    margin-right:auto;
+    color:var(--text-primary);
+}
+
+.workImg {
+    max-width: 997px;
+    margin-left:auto;
+    margin-right:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+    margin-top:24px;
+}
+
+.workImg img {
+    border-radius: 8px;
+}
+
+.aboutMain {
+    max-width: 997px;
+    margin-left:auto;
+    margin-right:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border:1px solid var(--alt30);
+}
+
+.workExp {
+    color:var(--text-primary);
+    padding:24px;
+}
+
+.workItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.workLeft span:first-of-type {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.workLeft span:last-of-type {
+    display: block;
+    font-size: 14px;
+    color:var(--mid);
+    font-weight: 400;
+}
+
+.workRight {
+    font-family: Geist, sans-serif;
+    text-align: right;
+}
+
+.workRight span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size:14px;
+    font-weight: 500 !important;
+}
+
+.workAbt {
+    color:var(--text-primary);
+    padding:24px;
+    border-right:1px solid var(--alt30);
+}
+
+.workAbt h1 {
+    display: block;
+    line-height: 36px;
+    font-size:32px;
+}
+
+.workAbt p {
+    color:var(--mid);
+}
+
+.footer {
+    width:100%;
+    display: block;
+    color:var(--mid);
+    text-align: center;
+    font-size:16px;
+    font-family:Geist, sans-serif;
+    font-weight: 300;
+    margin-top:100px;
+}
+
 /** media queries **/
 
 @media only screen and (max-width: 1100px) {
 
+.aboutMain {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: block;
+}
+
+#about {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.workImg {
+    margin-left:30px;
+    margin-right:30px;
+}
+
+.workAbt {
+    border-bottom:1px solid var(--alt30);
+}
 
 .threeGrid {
     display: grid;
