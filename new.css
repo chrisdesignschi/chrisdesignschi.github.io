@@ -444,9 +444,12 @@ b {
 }
 
 .subTitle {
-    padding:8px 24px;
+    padding:24px 24px !important;
     font-size:16px;
     text-align: center;
+    max-width: 60ch;
+    margin-left:auto;
+    margin-right:auto;
     color:var(--text-primary);
 }
 
@@ -967,7 +970,7 @@ b {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size:14px;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
 }
 
 .workAbt {
