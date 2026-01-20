@@ -14,20 +14,6 @@ h1, h2, h3 {
 }
 
 :root {
-  --text-primary: #fff;
-  --text-reverse: #000;
-  --alt30: #4c4c4c;
-  --alt10: #171717;
-  --dark: inline-block;
-  --light: none;
-  --switchtext: 'View in light mode';
-  --mid: #B0B0B0;
-  --accent: #8B23E1;
-  --accent2: #B45AFF;
-  --interim:#202530;
-}
-
-[data-theme="light"] {
   --text-primary: #302A2A;
   --text-reverse: #fff;
   --alt30: #CDD1E2;
@@ -39,6 +25,20 @@ h1, h2, h3 {
   --accent: #E4F223;
   --accent2: #B45AFF;
   --interim:#F9F9F9;
+}
+
+[data-theme="light"] {
+  --text-primary: #fff;
+  --text-reverse: #000;
+  --alt30: #4c4c4c;
+  --alt10: #171717;
+  --dark: inline-block;
+  --light: none;
+  --switchtext: 'View in light mode';
+  --mid: #B0B0B0;
+  --accent: #8B23E1;
+  --accent2: #B45AFF;
+  --interim:#202530;
 }
 
 .bubba {
