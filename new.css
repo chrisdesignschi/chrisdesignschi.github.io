@@ -1027,6 +1027,11 @@ b {
 
 @media only screen and (max-width: 1100px) {
 
+.motionbanner {
+    margin-left: 30px;
+    margin-right:30px;
+}
+
 .aboutMain {
     margin-left: 30px;
     margin-right: 30px;
