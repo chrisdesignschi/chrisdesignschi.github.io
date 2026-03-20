@@ -27,7 +27,7 @@
     { id: "portfolio", name: "Portfolio", desc: "Design work", icon: "briefcase", href: "https://chriszhu.com" },
     { id: "gratitude", name: "Gratitude", desc: "Daily journal", icon: "heart", href: "https://chriszhu.com/gratitude/" },
     { id: "menu", name: "Menu", desc: "Tinder for my fridge", icon: "utensils", href: "https://chriszhu.com/menu/" },
-    { id: "todo", name: "To Do", desc: "Task tracker", icon: "check", href: "https://chriszhu.com/todo/" },
+    // { id: "todo", name: "To Do", desc: "Task tracker", icon: "check", href: "https://chriszhu.com/todo/" },
     { id: "muaytracker", name: "Muay Tracker", desc: "Building fight IQ", icon: "flame", href: "https://chriszhu.com/muaytracker/" },
   ];
 
